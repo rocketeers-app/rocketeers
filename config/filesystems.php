@@ -48,6 +48,11 @@ return [
             'root' => storage_path('app'),
         ],
 
+        'posts' => [
+            'driver' => 'local',
+            'root' => resource_path('markdown/posts'),
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),

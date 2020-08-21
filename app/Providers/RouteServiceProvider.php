@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
+use Spatie\Sheets\Sheets;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -30,9 +31,13 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
-
         parent::boot();
+
+        Route::bind('post', function ($path) {
+            return $this->app->make(Sheets::class)
+            ->collection('posts')
+            ->get($path) ?? abort(404);
+        });
     }
 
     /**
