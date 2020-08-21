@@ -1,13 +1,8 @@
-<!DOCTYPE html>
+@extends('layouts.app')
 
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Rocketeers</title>
-    </head>
-    <body>
-        <h1>{{ $post->title }}</h1>
-        {{ $post->contents }}
-    </body>
-</html>
+@section('title', $post->title)
+
+@section('body')
+    <h1>{{ $post->title }}</h1>
+    {{ $post->contents }}
+@endsection
