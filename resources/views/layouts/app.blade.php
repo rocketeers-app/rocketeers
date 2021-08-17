@@ -11,8 +11,13 @@
         @endenv
     </head>
     <body>
-        <main class="container mx-auto">
-            @yield('body')
+        <main class="container max-w-screen-sm py-10 mx-auto">
+            <div class="prose-xl">
+                Hi! I'm <a href="https://twitter.com/markvaneijk" class="font-semibold">Mark van Eijk</a>, co-founder and Chief Tech at <a href="https://vormkracht10.nl" class="font-semibold">Vormkracht10</a>,<br>Full-Stack Maker of Webs and now building  🚀 <a href="https://rocketeers.app" class="font-semibold">Rocketeers</a>.
+            </div>
+            <div class="prose-xl">
+                @yield('body')
+            </div>
         </main>
     </body>
 </html>

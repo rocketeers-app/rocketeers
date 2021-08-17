@@ -4,7 +4,7 @@
 
 @section('body')
     @foreach($posts as $post)
-    <h2><a href="{{ $post->url }}">{{ $post->title }}</a></h2>
+    <h3 class="font-bold"><a href="{{ $post->url }}">{{ $post->title }}</a></h3>
     <p>{{ $post->intro }}</p>
     @endforeach
 @endsection
