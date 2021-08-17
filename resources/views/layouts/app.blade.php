@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ config('app.name') }}</title>
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        @env('production')
         <script src="https://cdn.usefathom.com/script.js" data-site="EXPMPOZO" defer></script>
+        @endenv
     </head>
     <body>
         <main class="container mx-auto">
