@@ -1,4 +1,6 @@
 <?php
 
-Route::get('/', 'PostController@index');
-Route::get('{post}', 'PostController@show')->where('post', '.*');
+use App\Http\Controllers\PostController;
+
+Route::get('/', [PostController::class, 'index']);
+Route::get('{post}', [PostController::class, 'show'])->where('post', '.*');
