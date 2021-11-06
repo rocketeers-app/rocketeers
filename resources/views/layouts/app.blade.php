@@ -4,20 +4,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ config('app.name') }}</title>
+        <title>{{ config('app.name') }} - Sites management for digital agencies and developers</title>
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         @env('production')
         <script src="https://cdn.usefathom.com/script.js" data-site="EXPMPOZO" defer></script>
         @endenv
     </head>
-    <body>
-        <main class="container max-w-screen-sm py-10 mx-auto">
-            <div class="prose-xl">
-                Hi! I'm <a href="https://twitter.com/markvaneijk" class="font-semibold">Mark van Eijk</a>, co-founder and Chief Tech at <a href="https://vormkracht10.nl" class="font-semibold">Vormkracht10</a>,<br>Full-Stack Maker of Webs and now building  🚀 <a href="https://rocketeers.app" class="font-semibold">Rocketeers</a>.
-            </div>
-            <div class="prose-xl">
-                @yield('body')
-            </div>
-        </main>
+    <body class="bg-gray-900">
+        @yield('body')
+        <footer class="pt-8 mt-12 border-t border-gray-800">
+          <p class="text-base text-gray-600 xl:text-center">
+            &copy; {{ date('Y') }} Mark van Eijk - All rights reserved.
+          </p>
+        </footer>
     </body>
 </html>
