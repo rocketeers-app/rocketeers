@@ -914,6 +914,12 @@ video {
 .pb-5 {
 	padding-bottom: 1.25rem;
 }
+.pr-\[100px\] {
+	padding-right: 100px;
+}
+.pr-\[140px\] {
+	padding-right: 140px;
+}
 .text-center {
 	text-align: center;
 }
@@ -1177,6 +1183,10 @@ video {
 	.sm\:px-10 {
 		padding-left: 2.5rem;
 		padding-right: 2.5rem;
+	}
+
+	.sm\:pr-\[180px\] {
+		padding-right: 180px;
 	}
 
 	.sm\:text-4xl {
