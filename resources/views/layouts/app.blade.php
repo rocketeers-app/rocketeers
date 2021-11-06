@@ -60,7 +60,7 @@
             x-show="menu" style="display: none">
             <div class="overflow-hidden bg-gray-800 rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
               <div class="flex items-center justify-between px-5 pt-4">
-                <div class="text-xl font-extrabold text-white">
+                <div class="text-2xl font-extrabold text-white">
                   Rocketeers
                 </div>
                 <div class="-mr-2">
