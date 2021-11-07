@@ -17,7 +17,7 @@
             <nav class="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6" aria-label="Global">
               <div class="flex items-center flex-1">
                 <div class="flex items-center justify-between w-full md:w-auto">
-                  <a href="#" class="text-2xl font-extrabold text-white hover:text-gray-200">
+                  <a href="/" class="text-2xl font-extrabold text-white hover:text-gray-200">
                     Rocketeers
                   </a>
                   <div class="flex items-center md:hidden">

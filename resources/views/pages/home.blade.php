@@ -5,11 +5,11 @@
 @section('body')
     <main class="container max-w-screen-md pt-5 mx-auto md:pt-10">
         <div class="px-4 py-10 mx-auto text-center">
-            <h2 class="block text-3xl font-extrabold text-green-400 sm:text-6xl">
+            <p class="block mb-2 text-base text-gray-600 sm:text-xl">Launching in 2022</p>
+            <h2 class="block mb-4 text-3xl font-extrabold text-green-400 sm:text-6xl">
                 Sites management for digital agencies and developers
             </h2>
-            <p class="block m-4 text-base text-gray-600 sm:text-xl">Launching in 2022</p>
-            <p class="max-w-xl mx-auto mt-4 text-base leading-normal text-white sm:text-xl">Always in control in every aspect of your sites and web apps using our SaaS control panel for server hosting, domains,<br>performance, uptime, metrics and more.</p>
+            <p class="max-w-xl m-4 mx-auto text-base leading-normal text-white sm:text-xl">Always in control in every aspect of your sites and web apps using our SaaS control panel for server hosting, domains,<br>performance, uptime, metrics and more.</p>
         </div>
         @if(session('message'))
             <div class="mt-4 font-bold text-center text-green-400">
