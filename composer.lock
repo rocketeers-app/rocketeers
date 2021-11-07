@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d96df7403470c1c3d804523d38f0c05",
+    "content-hash": "742e0e67d5a862a4825b1e32972ac315",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2888,6 +2888,131 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
+        },
+        {
+            "name": "rocketeers-app/rocketeers-api-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rocketeers-app/rocketeers-api-client.git",
+                "reference": "3c63ac1e32ee5b1c64c3e6cdfa6a319103ef826f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rocketeers-app/rocketeers-api-client/zipball/3c63ac1e32ee5b1c64c3e6cdfa6a319103ef826f",
+                "reference": "3c63ac1e32ee5b1c64c3e6cdfa6a319103ef826f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.8.0|^6.0.0|^7.0.0|^8.0.0",
+                "php": "^7.0|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0.0",
+                "phpunit/phpunit": "^9.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rocketeers\\RocketeersServiceProvider"
+                    ],
+                    "aliases": {
+                        "Rocketeers": "Rocketeers\\Facades\\RocketeersFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rocketeers\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark van Eijk",
+                    "email": "mark@vaneijk.co",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Rocketeers API Client",
+            "homepage": "https://github.com/rocketeers-app/rocketeers-api-client",
+            "keywords": [
+                "Mark van Eijk",
+                "rocketeers-api-client"
+            ],
+            "support": {
+                "issues": "https://github.com/rocketeers-app/rocketeers-api-client/issues",
+                "source": "https://github.com/rocketeers-app/rocketeers-api-client/tree/master"
+            },
+            "time": "2021-09-01T10:32:16+00:00"
+        },
+        {
+            "name": "rocketeers-app/rocketeers-laravel",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rocketeers-app/rocketeers-laravel.git",
+                "reference": "307debebe383d49e1af75d1800cbdc046734bf52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rocketeers-app/rocketeers-laravel/zipball/307debebe383d49e1af75d1800cbdc046734bf52",
+                "reference": "307debebe383d49e1af75d1800cbdc046734bf52",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.8.0|^6.0.0|^7.0.0|^8.0.0",
+                "php": "^7.0|^8.0",
+                "rocketeers-app/rocketeers-api-client": "dev-master"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0.0",
+                "phpunit/phpunit": "^9.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rocketeers\\Laravel\\RocketeersLoggerServiceProvider"
+                    ],
+                    "aliases": {
+                        "RocketeersLogger": "Rocketeers\\Laravel\\Facades\\RocketeersLoggerFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rocketeers\\Laravel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark van Eijk",
+                    "email": "mark@vaneijk.co",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Rocketeers integration for Laravel",
+            "homepage": "https://github.com/rocketeers-app/rocketeers-laravel",
+            "keywords": [
+                "rocketeers-app",
+                "rocketeers-laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/rocketeers-app/rocketeers-laravel/issues",
+                "source": "https://github.com/rocketeers-app/rocketeers-laravel/tree/master"
+            },
+            "time": "2021-10-14T14:39:20+00:00"
         },
         {
             "name": "ryangjchandler/git",
@@ -8033,7 +8158,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "rocketeers-app/rocketeers-laravel": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
