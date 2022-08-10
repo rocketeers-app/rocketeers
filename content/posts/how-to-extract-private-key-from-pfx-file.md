@@ -1,6 +1,6 @@
 ---
-title: How to extract private key from PFX file on macOS
-slug: how-to-extract-private-key-from-pfx-file-on-macos
+title: How to extract private key from PFX file
+slug: how-to-extract-private-key-from-pfx-file
 date: 2022-08-10
 ---
 

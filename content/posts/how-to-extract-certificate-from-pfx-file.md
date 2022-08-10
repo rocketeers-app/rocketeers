@@ -1,6 +1,6 @@
 ---
-title: How to extract certificate from PFX file on macOS
-slug: how-to-extract-certificate-from-pfx-file-on-macos
+title: How to extract certificate from PFX file
+slug: how-to-extract-certificate-from-pfx-file
 date: 2022-08-10
 ---
 
