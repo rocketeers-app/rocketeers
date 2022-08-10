@@ -17,7 +17,7 @@
         "resolve-url-loader": "^3.1.0"
     },
     "dependencies": {
-        "@tailwindcss/typography": "^0.4.1",
-        "tailwindcss": "^2.2.7"
+        "@tailwindcss/typography": "^0.5.4",
+        "tailwindcss": "^3.1.8"
     }
 }

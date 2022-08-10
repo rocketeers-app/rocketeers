@@ -1,10 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Rocketeers')
+@section('title', 'Posts - '.config('app.name'))
 
 @section('body')
-    @foreach($posts as $post)
-    <h3 class="font-bold"><a href="{{ $post->url }}">{{ $post->title }}</a></h3>
-    <p>{{ $post->intro }}</p>
-    @endforeach
+    <div class="container max-w-screen-md p-5 mx-auto md:p-10">
+        <h1 class="mb-5 font-extrabold leading-tight text-gray-200 sm:text-4xl">Posts</h1>
+
+        @foreach($posts as $post)
+        <p class="mb-2"><a href="{{ $post->url }}" class="text-white border-b-2 border-emerald-200">{{ $post->title }}</a></p>
+        @endforeach
+    </div>
 @endsection
