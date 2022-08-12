@@ -109,6 +109,7 @@
                 <div>
                     <h2 class="mb-4 text-sm tracking-wide text-gray-500 uppercase">Rocketeers</h2>
                     <ul class="leading-loose list-disc">
+                        <li class="text-gray-600"><a href="{{ route('feature.index') }}" class="text-white">Features</a></li>
                         <li class="text-gray-600"><a href="{{ route('article.index') }}" class="text-white">Knowledge</a></li>
                         <li class="text-gray-600"><a href="https://rocketeers.app" class="text-white">Login</a></li>
                     </ul>
