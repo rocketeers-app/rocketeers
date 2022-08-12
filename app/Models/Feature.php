@@ -8,15 +8,11 @@ use Orbit\Concerns\Orbital;
 use Spatie\Sitemap\Contracts\Sitemapable;
 use Spatie\Sitemap\Tags\Url;
 
-class Post extends Model implements Sitemapable
+class Feature extends Model implements Sitemapable
 {
     use Orbital;
 
     public $incrementing = false;
-
-    protected $casts = [
-        'date' => 'date:Y-m-d',
-    ];
 
     public function getKeyName()
     {
@@ -27,13 +23,13 @@ class Post extends Model implements Sitemapable
     {
         $table->string('title');
         $table->string('slug');
-        $table->text('date');
+        $table->text('description')->nullable();
         $table->text('content')->nullable();
     }
 
     public function getUrlAttribute()
     {
-        return route('post.show', $this->attributes['slug']);
+        return route('feature.show', $this->attributes['slug']);
     }
 
     public function toSitemapTag(): Url | string | array

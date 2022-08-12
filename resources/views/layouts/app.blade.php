@@ -20,7 +20,7 @@
                     aria-label="Global">
                     <div class="flex items-center flex-1">
                         <div class="flex items-center justify-between w-full md:w-auto">
-                            <a href="/" class="text-2xl font-extrabold text-emerald-400 hover:text-gray-200">
+                            <a href="/" class="text-2xl font-extrabold text-emerald-400 hover:text-emerald-200">
                                 Rocketeers
                             </a>
                             <div class="flex items-center md:hidden">
@@ -42,7 +42,8 @@
                         </div>
                     </div>
                     <div class="hidden text-base font-medium text-white md:flex md:items-center md:space-x-6">
-                        <a href="{{ route('post.index') }}" class="hover:text-gray-300">Knowledge</a> <span class="mr-2">|</span>
+                        <a href="{{ route('feature.index') }}" class="hover:text-gray-300">Features</a> <span class="mr-2">|</span>
+                        <a href="{{ route('article.index') }}" class="hover:text-gray-300">Knowledge</a> <span class="mr-2">|</span>
                         <a href="https://rocketeers.app" class="hover:text-gray-300">
                             Login
                             <span
@@ -69,7 +70,7 @@
                 <div class="overflow-hidden bg-gray-800 rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
                     <div class="flex items-center justify-between px-5 pt-4">
                         <div class="text-2xl font-extrabold text-white">
-                            Rocketeers
+                            <a href="/">Rocketeers</a>
                         </div>
                         <button type="button"
                             class="inline-flex items-center justify-center p-2 text-gray-800 bg-gray-600 rounded-md hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-600"
@@ -84,11 +85,10 @@
                         </button>
                     </div>
                     <div class="p-3 pb-8">
-                        <div class="px-2 space-y-1">
-                            <a href="{{ route('post.index') }}" class="block px-4 py-3 mb-4 text-base font-medium text-gray-200 rounded-md hover:bg-gray-700">Knowledge</a>
-                            <a href="https://rocketeers.app"
-                                class="block w-full px-4 py-3 font-medium text-white rounded-md shadow bg-emerald-400 hover:bg-emerald-500">Login
-                                <span class="px-2 py-1 text-sm rounded bg-emerald-600">BETA</span></a>
+                        <div class="px-2">
+                            <a href="{{ route('feature.index') }}" class="block px-4 py-3 text-base font-medium text-gray-200 border-t border-gray-700 rounded-md hover:bg-gray-700">Features</a>
+                            <a href="{{ route('article.index') }}" class="block px-4 py-3 text-base font-medium text-gray-200 border-t border-gray-700 rounded-md hover:bg-gray-700">Knowledge</a>
+                            <a href="https://rocketeers.app" class="block w-full px-4 py-3 font-medium text-white rounded-md shadow bg-emerald-400 hover:bg-emerald-300">Login&nbsp;&nbsp;<span class="px-2 py-1 text-sm rounded bg-emerald-600">BETA</span></a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
         <main>
             @yield('body')
         </main>
-        <footer class="pt-8 mt-12 border-t border-gray-800">
+        <footer class="py-8 mt-8 border-t border-gray-800">
             <p class="text-base text-center text-gray-600">
                 &copy; {{ date('Y') }} Mark van Eijk - All rights reserved.
             </p>
