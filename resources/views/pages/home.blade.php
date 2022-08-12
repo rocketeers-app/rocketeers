@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('main')
-    <div class="container max-w-screen-md mx-auto">
+    <div class="container max-w-screen-md py-10 mx-auto">
         <div class="text-center">
             <p class="block mb-2 text-base text-gray-500 sm:text-xl">Launching in 2022</p>
             <h1 class="block mb-4 text-3xl font-extrabold text-emerald-400 sm:text-6xl">
