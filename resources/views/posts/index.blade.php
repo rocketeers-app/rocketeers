@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Posts - '.config('app.name'))
+@section('title', 'Knowledge - '.config('app.name'))
 
 @section('body')
     <div class="container max-w-screen-md p-5 mx-auto md:p-10">

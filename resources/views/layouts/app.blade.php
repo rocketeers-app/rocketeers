@@ -85,10 +85,10 @@
                     </div>
                     <div class="p-3 pb-8">
                         <div class="px-2 space-y-1">
-                            <a href="{{ route('post.index') }}" class="block px-4 py-3 mb-4 text-base font-medium text-gray-200 rounded-md hover:bg-gray-700">Posts</a>
+                            <a href="{{ route('post.index') }}" class="block px-4 py-3 mb-4 text-base font-medium text-gray-200 rounded-md hover:bg-gray-700">Knowledge</a>
                             <a href="https://rocketeers.app"
-                                class="block w-full px-4 py-3 font-medium text-white bg-emerald-400 rounded-md shadow hover:bg-emerald-500">Login
-                                <span class="px-2 py-1 text-sm bg-emerald-600 rounded">BETA</span></a>
+                                class="block w-full px-4 py-3 font-medium text-white rounded-md shadow bg-emerald-400 hover:bg-emerald-500">Login
+                                <span class="px-2 py-1 text-sm rounded bg-emerald-600">BETA</span></a>
                         </div>
                     </div>
                 </div>
