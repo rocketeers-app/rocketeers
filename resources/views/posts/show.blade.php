@@ -3,7 +3,7 @@
 @section('title', $post->title. ' - '. config('app.name'))
 
 @section('body')
-    <div class="container max-w-screen-md pt-5 mx-auto md:pt-10">
+    <div class="container max-w-screen-md p-5 mx-auto md:pt-10">
         <h1 class="mb-5 text-4xl font-extrabold leading-tight text-gray-200">{{ $post->title }}</h1>
         <x-markdown class="prose prose-xl text-gray-200 prose-invert">
             {!! $post->content !!}
