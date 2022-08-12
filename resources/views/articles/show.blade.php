@@ -2,8 +2,9 @@
 
 @section('title', $article->title. ' - '. config('app.name'))
 
-@section('body')
-    <div class="container max-w-screen-md p-5 mx-auto md:pt-20">
+@section('main')
+    <div class="max-w-screen-md mx-auto">
+        <h2 class="mb-4 text-lg font-bold tracking-wide text-gray-600 uppercase md:text-xl">Knowledge</h2>
         <h1 class="mb-5 text-xl font-extrabold leading-tight text-white md:text-4xl">{{ $article->title }}</h1>
         <x-markdown class="prose text-gray-200 md:prose-xl prose-invert">
             {!! $article->content !!}

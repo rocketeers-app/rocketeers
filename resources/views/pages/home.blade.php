@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('body')
-    <div class="container max-w-screen-md pt-5 mx-auto md:pt-10">
-        <div class="px-4 py-10 mx-auto text-center">
+@section('main')
+    <div class="container max-w-screen-md mx-auto">
+        <div class="text-center">
             <p class="block mb-2 text-base text-gray-500 sm:text-xl">Launching in 2022</p>
             <h1 class="block mb-4 text-3xl font-extrabold text-emerald-400 sm:text-6xl">
                 Sites management for digital agencies and developers
             </h1>
-            <p class="max-w-xl m-4 mx-auto text-base leading-normal text-white sm:text-xl">Always in control in every aspect of your sites and web apps using our SaaS control panel for server hosting, domains,<br>performance, uptime, metrics and more.</p>
+            <p class="max-w-xl m-4 mx-auto mb-8 text-base leading-normal text-white sm:text-xl">Always in control in every aspect of your sites and web apps using our SaaS control panel for server hosting, domains,<br>performance, uptime, metrics and more.</p>
         </div>
         @if(session('message'))
             <div class="mt-4 font-bold text-center text-emerald-400">

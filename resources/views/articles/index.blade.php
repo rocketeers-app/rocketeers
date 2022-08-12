@@ -2,8 +2,8 @@
 
 @section('title', 'Knowledge - '.config('app.name'))
 
-@section('body')
-    <div class="container max-w-screen-md p-5 mx-auto md:p-20">
+@section('main')
+    <div class="max-w-screen-md mx-auto">
         <h1 class="mb-5 font-extrabold leading-tight text-gray-200 sm:text-4xl">Knowledge</h1>
 
         @foreach($articles as $article)

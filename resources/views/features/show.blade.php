@@ -2,9 +2,10 @@
 
 @section('title', $feature->title. ' - '. config('app.name'))
 
-@section('body')
-    <div class="container max-w-screen-md p-5 mx-auto md:pt-20">
-        <h1 class="mb-5 text-4xl font-extrabold leading-tight text-emerald-400">{{ $feature->title }}</h1>
+@section('main')
+    <div class="max-w-screen-md mx-auto">
+        <h2 class="mb-4 text-lg font-bold tracking-wide text-gray-600 uppercase md:text-xl">Features</h2>
+        <h1 class="mb-5 text-xl font-extrabold leading-tight md:text-4xl text-emerald-400">{{ $feature->title }}</h1>
         <x-markdown class="prose prose-xl text-gray-200 prose-invert">
             {!! $feature->description !!}
         </x-markdown>
