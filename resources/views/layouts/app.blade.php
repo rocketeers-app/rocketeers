@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="hidden text-base font-medium text-white md:flex md:items-center md:space-x-6">
-                        <a href="{{ route('post.index') }}" class="hover:text-gray-300">Posts</a> <span class="mr-2">|</span>
+                        <a href="{{ route('post.index') }}" class="hover:text-gray-300">Knowledge</a> <span class="mr-2">|</span>
                         <a href="https://rocketeers.app" class="hover:text-gray-300">
                             Login
                             <span
