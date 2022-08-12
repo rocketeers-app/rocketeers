@@ -97,8 +97,27 @@
         <main>
             @yield('body')
         </main>
-        <footer class="py-8 mt-8 border-t border-gray-800">
-            <p class="text-base text-center text-gray-600">
+        <footer class="py-8 mt-8">
+            <div class="container p-6 mx-auto border-gray-800 border-y">
+                <div class="grid grid-cols-3 gap-4 text-sm">
+                    <div>
+                        <h2 class="mb-1 text-sm tracking-wide text-gray-500 uppercase">Features</h2>
+                        <ul class="leading-relaxed list-disc">
+                            @foreach($features as $feature)
+                            <li class="text-gray-600"><a href="{{ route('feature.show', $feature) }}" class="text-white">{{ $feature->title }}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-1 text-sm tracking-wide text-gray-500 uppercase">Rocketeers</h2>
+                        <ul class="leading-relaxed list-disc">
+                            <li class="text-gray-600"><a href="{{ route('article.index') }}" class="text-white">Knowledge</a></li>
+                            <li class="text-gray-600"><a href="https://rocketeers.app" class="text-white">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-8 text-base text-center text-gray-600">
                 &copy; {{ date('Y') }} Mark van Eijk - All rights reserved.
             </p>
         </footer>

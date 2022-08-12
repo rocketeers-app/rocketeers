@@ -3,7 +3,7 @@
 @section('body')
     <div class="container max-w-screen-md pt-5 mx-auto md:pt-10">
         <div class="px-4 py-10 mx-auto text-center">
-            <p class="block mb-2 text-base text-gray-600 sm:text-xl">Launching in 2022</p>
+            <p class="block mb-2 text-base text-gray-500 sm:text-xl">Launching in 2022</p>
             <h1 class="block mb-4 text-3xl font-extrabold text-emerald-400 sm:text-6xl">
                 Sites management for digital agencies and developers
             </h1>
