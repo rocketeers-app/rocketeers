@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('title', $feature->title. ' - '. config('app.name'))
 
