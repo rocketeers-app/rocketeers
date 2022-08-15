@@ -5,6 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noindex,nofollow">
         <style>
+        @font-face {
+            font-family: -apple-system;
+            font-weight: 100;
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+        }
+
+        @font-face {
+            font-family: -apple-system;
+            font-weight: 200;
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+        }
+
+        @font-face {
+            font-family: -apple-system;
+            font-weight: 400;
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+        }
+
+        @font-face {
+            font-family: -apple-system;
+            font-weight: 500;
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+        }
+
+        @font-face {
+            font-family: -apple-system;
+            font-weight: 600;
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+        }
+
+        @font-face {
+            font-family: -apple-system;
+            font-weight: 700;
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+        }
+
         {!! file_get_contents(public_path('css/app.css')) !!}
         </style>
     </head>
