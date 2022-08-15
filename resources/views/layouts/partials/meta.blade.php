@@ -1,13 +1,8 @@
 @php($title = app()->view->getSections()['title'] ?? config('app.name').' - Sites management for digital agencies and developers')
 
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="apple-mobile-web-app-title" content="Rocketeers">
-<meta property="author" content="Mark van Eijk">
-<meta name="generator" content="Rocketeers">
-<meta name="robots" content="index,follow">
 <title>{{ $title }}</title>
+<link rel="canonical" href="{{ url()->current() }}">
 @if(isset($description))
 <meta name="description" content="{{ $description }}">
 <meta property="og:description" content="{{ $description }}">
@@ -15,6 +10,12 @@
 @if(isset($keywords))
 <meta name="keywords" content="{{ $keywords }}">
 @endif
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="apple-mobile-web-app-title" content="Rocketeers">
+<meta property="author" content="Mark van Eijk">
+<meta name="generator" content="Rocketeers">
+<meta name="robots" content="index,follow">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ url()->current() }}">
@@ -27,7 +28,6 @@
 @if(app()->view->getSections()['updated_at'])
 <meta property="article:modified_time" content="{{ app()->view->getSections()['updated_at'] }}">
 @endif
-<link rel="canonical" href="{{ url()->current() }}">
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 @env('production')
     <script src="https://cdn.usefathom.com/script.js" data-site="EXPMPOZO" defer></script>
