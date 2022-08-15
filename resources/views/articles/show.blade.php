@@ -2,7 +2,7 @@
 
 @section('title', $article->title. ' - '. config('app.name'))
 @section('created_at', $article?->created_at?->format('Y-m-d'))
-@section('updated_at', $article?->updated_at?->format('Y-m-d') ?? null)
+@section('updated_at', $article?->updated_at?->format('Y-m-d'))
 
 @section('main')
     <div class="max-w-screen-md mx-auto">
