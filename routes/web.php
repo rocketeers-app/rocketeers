@@ -16,11 +16,8 @@ Route::get('sitemap.xml', SitemapController::class);
 
 Route::redirect('posts', 'knowledge', 301);
 
-Route::get('docs', [FeatureController::class, 'index'])->name('doc.index');
-Route::get('docs/{doc}', [DocController::class, 'show'])->name('doc.show');
-
 Route::get('features', [FeatureController::class, 'index'])->name('feature.index');
-Route::get('features/{feature}', [FeatureController::class, 'show'])->name('feature.show');
+Route::get('features/{feature}', [FeatureController::class, 'show'])->name('feature.show')->where('feature', '.*');
 
 Route::get('knowledge', [ArticleController::class, 'index'])->name('article.index');
 Route::get('{article}', [ArticleController::class, 'show'])->name('article.show')->where('article', '.*');
