@@ -4,6 +4,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="apple-mobile-web-app-title" content="Rocketeers">
+<meta property="author" content="Mark van Eijk">
 <meta name="generator" content="Rocketeers">
 <meta name="robots" content="index,follow">
 <title>{{ $title }}</title>
@@ -15,7 +16,6 @@
 <meta name="keywords" content="{{ $keywords }}">
 @endif
 <meta property="og:title" content="{{ $title }}">
-<meta property="og:author" content="Mark van Eijk">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ url()->current() }}">
 <meta property="og:image" content="{!! url()->signedRoute('open-graph-image-file', compact('title')) !!}">
