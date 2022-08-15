@@ -107,7 +107,7 @@
                     <ul class="leading-loose">
                         <li><a href="{{ route('feature.index') }}" class="text-white">Features</a></li>
                         <li><a href="{{ route('article.index') }}" class="text-white">Knowledge</a></li>
-                        <li><a href="{{ route('doc.index') }}" class="text-white">Docs</a></li>
+                        {{-- <li><a href="{{ route('doc.index') }}" class="text-white">Docs</a></li> --}}
                         <li><a href="https://rocketeers.app" class="text-white">Login</a></li>
                     </ul>
                 </div>
