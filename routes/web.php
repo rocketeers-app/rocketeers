@@ -1,5 +1,6 @@
 <?php
 
+use App\Actions\GenerateOpenGraphImage;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\HomeController;
@@ -9,6 +10,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::post('subscribe', SubscribeController::class);
+Route::get('open-graph-image', GenerateOpenGraphImage::class)->name('open-graph-image');
+Route::get('open-graph-image.jpg', GenerateOpenGraphImage::class)->name('open-graph-image-file');
 Route::get('sitemap.xml', SitemapController::class);
 
 Route::redirect('posts', 'knowledge', 301);

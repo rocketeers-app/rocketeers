@@ -3,13 +3,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', config('app.name').' - Sites management for digital agencies and developers')</title>
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    @env('production')
-        <script src="https://cdn.usefathom.com/script.js" data-site="EXPMPOZO" defer></script>
-    @endenv
+    @include('layouts.partials.meta')
 </head>
 
 <body class="bg-gray-900" x-data="{ menu: false }">
