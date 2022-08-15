@@ -21,6 +21,12 @@
 <meta property="og:image" content="{!! url()->signedRoute('open-graph-image-file', compact('title')) !!}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+@if(app()->view->getSections()['created_at'])
+<meta property="article:published_time" content="{{ app()->view->getSections()['created_at'] }}">
+@endif
+@if(app()->view->getSections()['updated_at'])
+<meta property="article:modified_time" content="{{ app()->view->getSections()['updated_at'] }}">
+@endif
 <link rel="canonical" href="{{ url()->current() }}">
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 @env('production')

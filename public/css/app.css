@@ -1398,6 +1398,12 @@ video {
 .border-t {
   border-top-width: 1px;
 }
+.border-l-\[10px\] {
+  border-left-width: 10px;
+}
+.border-b-\[16px\] {
+  border-bottom-width: 16px;
+}
 .border-gray-800 {
   --tw-border-opacity: 1;
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
