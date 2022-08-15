@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Doc;
 use App\Models\Feature;
 use Illuminate\Http\Request;
 use Spatie\Sitemap\Sitemap;
@@ -13,6 +14,7 @@ class SitemapController extends Controller
     {
         return Sitemap::create()
             ->add(Article::all())
+            ->add(Doc::all())
             ->add(Feature::all());
     }
 }

@@ -2,6 +2,7 @@
 
 use App\Actions\GenerateOpenGraphImage;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\DocController;
 use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SitemapController;
@@ -16,7 +17,7 @@ Route::get('sitemap.xml', SitemapController::class);
 
 Route::redirect('posts', 'knowledge', 301);
 
-Route::get('docs', [FeatureController::class, 'index'])->name('doc.index');
+Route::get('docs', [DocController::class, 'show'])->name('doc.index');
 Route::get('docs/{doc}', [DocController::class, 'show'])->name('doc.show');
 
 Route::get('features', [FeatureController::class, 'index'])->name('feature.index');
