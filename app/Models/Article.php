@@ -29,8 +29,6 @@ class Article extends Model implements Sitemapable
         $table->string('title');
         $table->string('slug');
         $table->text('content')->nullable();
-        $table->text('created_at');
-        $table->text('updated_at')->nullable();
     }
 
     public function getUrlAttribute()

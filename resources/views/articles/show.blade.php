@@ -11,6 +11,11 @@
         <x-markdown class="prose text-gray-200 md:prose-xl prose-invert">
             {!! $article->content !!}
         </x-markdown>
-        <p class="mt-5 text-gray-500">Published on {{ $article->date->format('F j, Y') }}</p>
+        <p class="mt-5 text-gray-500">
+            Published on {{ $article->created_at->format('F j, Y') }}
+            @if($article->updated_at)
+            <br>Updated on {{ $article->updated_at->format('F j, Y') }}
+            @endif
+        </p>
     </div>
 @endsection
