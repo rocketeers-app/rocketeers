@@ -15,7 +15,8 @@ class Article extends Model implements Sitemapable
     public $incrementing = false;
 
     protected $casts = [
-        'date' => 'date:Y-m-d',
+        'created_at' => 'date:Y-m-d',
+        'updated_at' => 'date:Y-m-d',
     ];
 
     public function getKeyName()
@@ -29,7 +30,7 @@ class Article extends Model implements Sitemapable
         $table->string('slug');
         $table->text('content')->nullable();
         $table->text('created_at');
-        $table->text('updated_at');
+        $table->text('updated_at')->nullable();
     }
 
     public function getUrlAttribute()
