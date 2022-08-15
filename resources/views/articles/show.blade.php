@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('title', $article->title. ' - '. config('app.name'))
 @section('created_at', $article?->created_at?->format('Y-m-d'))
