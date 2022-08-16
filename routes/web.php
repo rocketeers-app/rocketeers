@@ -8,7 +8,7 @@ use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\SubscribeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('subscribe', SubscribeController::class);
 Route::get('open-graph-image', GenerateOpenGraphImage::class)->name('open-graph-image');
 Route::get('open-graph-image.jpg', GenerateOpenGraphImage::class)->name('open-graph-image-file');
