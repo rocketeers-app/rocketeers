@@ -13,15 +13,11 @@ class SitemapController extends Controller
     public function __invoke(Request $request)
     {
         return Sitemap::create()
-            ->add(
-                Url::create(route('home')),
-            )
-            ->add(
-                Url::create(route('article.index')),
-            )
-            ->add(
-                Url::create(route('feature.index')),
-            )
+            ->add(Url::create(route('home')))
+            ->add(Url::create(route('article.index')))
+            // ->add(Url::create(route('doc.index')))
+            ->add(Url::create(route('feature.index')))
+            // ->add(Doc::published()->get())
             ->add(Article::published()->get())
             ->add(Feature::published()->get());
     }
