@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('templates.master')
 
 @section('title', 'Features - '.config('app.name'))
 
