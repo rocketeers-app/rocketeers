@@ -22,7 +22,7 @@ class SitemapController extends Controller
             ->add(
                 Url::create(route('feature.index')),
             )
-            ->add(Article::all())
-            ->add(Feature::all());
+            ->add(Article::published()->get())
+            ->add(Feature::published()->get());
     }
 }

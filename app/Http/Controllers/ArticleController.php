@@ -8,8 +8,8 @@ class ArticleController extends Controller
 {
     public function index()
     {
-        $articles = Article::whereNotNull('created_at')
-            ->orderByDesc('created_at')
+        $articles = Article::whereNotNull('published_at')
+            ->orderByDesc('published_at')
             ->get();
 
         return view('articles.index', compact('articles'));

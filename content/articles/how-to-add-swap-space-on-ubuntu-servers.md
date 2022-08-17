@@ -1,7 +1,7 @@
 ---
 title: How to add Swap Space on Ubuntu servers
 slug: how-to-add-swap-space-on-ubuntu-servers
-created_at: 2022-08-17
+published_at: 2022-08-17
 ---
 
 On servers with not a lot of RAM memory (< 1 GB) it's recommended to add some extra swap space in case a server needs a little bit more memory to keep everything going and to prevent it runs out of memory and can't continue processing requests.

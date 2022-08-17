@@ -15,7 +15,7 @@ class Article extends Model implements Sitemapable
     public $incrementing = false;
 
     protected $casts = [
-        'created_at' => 'date:Y-m-d',
+        'published_at' => 'date:Y-m-d',
         'updated_at' => 'date:Y-m-d',
     ];
 
@@ -29,6 +29,11 @@ class Article extends Model implements Sitemapable
         $table->string('title');
         $table->string('slug');
         $table->text('content')->nullable();
+    }
+
+    public function scopePublished($query)
+    {
+        return $query->whereNotNull('published_at');
     }
 
     public function getUrlAttribute()

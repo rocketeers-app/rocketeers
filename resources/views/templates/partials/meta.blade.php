@@ -24,8 +24,8 @@
 <meta property="og:image" content="{!! url()->signedRoute('open-graph-image-file', compact('title')) !!}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-@if(isset(app()->view->getSections()['created_at']))
-<meta property="article:published_time" content="{{ app()->view->getSections()['created_at'] }}">
+@if(isset(app()->view->getSections()['published_at']))
+<meta property="article:published_time" content="{{ app()->view->getSections()['published_at'] }}">
 @endif
 @if(isset(app()->view->getSections()['updated_at']))
 <meta property="article:modified_time" content="{{ app()->view->getSections()['updated_at'] }}">
