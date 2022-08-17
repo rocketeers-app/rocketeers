@@ -13,11 +13,11 @@ class GenerateOpenGraphImage
 
     public function handle()
     {
-        if(! app()->environment('local') && ! $request->hasValidSignature()) {
+        if(! app()->environment('local') && ! request()->hasValidSignature()) {
             abort(403);
         }
 
-        $title = $request->title ?? config('app.name');
+        $title = request('title') ?: config('app.name');
         $filename = str_slug($title).'.jpg';
 
         $html = view('social.open-graph-image', compact('title'));
