@@ -11,7 +11,7 @@ class GenerateOpenGraphImage
 {
     use AsAction;
 
-    public function handle(Request $request)
+    public function handle()
     {
         if(! app()->environment('local') && ! $request->hasValidSignature()) {
             abort(403);
@@ -23,7 +23,7 @@ class GenerateOpenGraphImage
         $html = view('social.open-graph-image', compact('title'));
 
         if(! Storage::disk('public')->exists('social/open-graph/'.$filename)) {
-            $this->saveOpenGraphImage($html, $filename);
+            $this->saveOpenGraphImage($html, $filename);r
         }
 
         return $this->getOpenGraphImageResponse($filename);
