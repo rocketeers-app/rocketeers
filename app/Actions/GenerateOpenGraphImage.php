@@ -23,7 +23,7 @@ class GenerateOpenGraphImage
         $html = view('social.open-graph-image', compact('title'));
 
         if(! Storage::disk('public')->exists('social/open-graph/'.$filename)) {
-            $this->saveOpenGraphImage($html, $filename);r
+            $this->saveOpenGraphImage($html, $filename);
         }
 
         return $this->getOpenGraphImageResponse($filename);
