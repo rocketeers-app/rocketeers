@@ -21,7 +21,7 @@
 @endif
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ url()->current() }}">
-<meta property="og:image" content="{!! url()->signedRoute('open-graph-image-file', compact('title')) !!}">
+<meta property="og:image" content="{!! url()->signedRoute('open-graph-image', compact('title')) !!}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 @if(isset(app()->view->getSections()['published_at']))
@@ -37,4 +37,4 @@
 @if(isset(app()->view->getSections()['description']))
 <meta name="twitter:description" content="{{ app()->view->getSections()['description'] }}">
 @endif
-<meta name="twitter:image" content="{!! url()->signedRoute('open-graph-image-file', compact('title')) !!}">
+<meta name="twitter:image" content="{!! url()->signedRoute('open-graph-image', compact('title')) !!}">

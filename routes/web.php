@@ -13,7 +13,6 @@ require_once('redirects.php');
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('subscribe', SubscribeController::class);
 Route::get('open-graph-image', GenerateOpenGraphImage::class)->name('open-graph-image');
-Route::get('open-graph-image.jpg', GenerateOpenGraphImage::class)->name('open-graph-image-file');
 Route::get('sitemap.xml', SitemapController::class);
 
 Route::get('features', [FeatureController::class, 'index'])->name('feature.index');
