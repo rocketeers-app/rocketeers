@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('templates.master')
 
 @section('main')
     <div class="container max-w-screen-md py-10 mx-auto">

@@ -27,6 +27,11 @@ class Feature extends Model implements Sitemapable
         $table->text('content')->nullable();
     }
 
+    public function scopePublished($query)
+    {
+        return $query->whereNotNull('published_at');
+    }
+
     public function getUrlAttribute()
     {
         return route('feature.show', $this->attributes['slug']);

@@ -1354,12 +1354,15 @@ video {
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+<<<<<<< HEAD
 .list-disc {
   list-style-type: disc;
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+=======
+>>>>>>> 2af14c329e36c743f8af3d483fda01b434e173a1
 .items-center {
   align-items: center;
 }
@@ -1588,10 +1591,13 @@ video {
 .text-\[30px\] {
   font-size: 30px;
 }
+<<<<<<< HEAD
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+=======
+>>>>>>> 2af14c329e36c743f8af3d483fda01b434e173a1
 .font-extrabold {
   font-weight: 800;
 }
