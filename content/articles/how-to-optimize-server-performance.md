@@ -1,6 +1,6 @@
 ---
-title: How to optimize for optimal server performance
-slug: how-to-optimize-for-optimal-server-performance
+title: How to optimize server performance
+slug: how-to-optimize-server-performance
 published_at: 2022-08-16
 updated_at: 2022-08-17
 ---
