@@ -1,3 +1,19 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+ol.table-of-contents {
+    padding-left: 1em;
+}
+
+ol.table-of-contents li {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.heading-permalink {
+    color: #bdc7d0 !important;
+    opacity: 0.5;
+    margin-right: 10px;
+    text-decoration: none !important;
+}

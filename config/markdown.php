@@ -1,5 +1,10 @@
 <?php
 
+use League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkExtension;
+use League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkRenderer;
+use League\CommonMark\Extension\TableOfContents\TableOfContentsExtension;
+use League\CommonMark\Normalizer\SlugNormalizer;
+
 return [
     'code_highlighting' => [
         /*
@@ -20,7 +25,7 @@ return [
     /*
      * When enabled, anchor links will be added to all titles
      */
-    'add_anchors_to_headings' => true,
+    'add_anchors_to_headings' => false,
 
     /*
      * These options will be passed to the league/commonmark package which is
@@ -28,7 +33,23 @@ return [
      *
      * More info: https://spatie.be/docs/laravel-markdown/v1/using-the-blade-component/passing-options-to-commonmark
      */
-    'commonmark_options' => [],
+    'commonmark_options' => [
+        'table_of_contents' => [
+            'html_class' => 'table-of-contents',
+            'position' => 'top',
+            'style' => 'ordered',
+            'min_heading_level' => 1,
+            'max_heading_level' => 6,
+            'normalize' => 'flat',
+            'placeholder' => null,
+        ],
+        'heading_permalink' => [
+            'html_class' => 'heading-permalink',
+            'insert' => 'before',
+            'title' => 'Permalink',
+            'symbol' => '#',
+        ],
+    ],
 
     /*
      * Rendering markdown to HTML can be resource intensive. By default
@@ -57,7 +78,8 @@ return [
      * More info: https://commonmark.thephpleague.com/2.1/extensions/overview/
      */
     'extensions' => [
-        //
+        HeadingPermalinkExtension::class,
+        TableOfContentsExtension::class,
     ],
 
     /*
