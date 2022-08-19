@@ -6,7 +6,7 @@ published_at: 2022-08-17
 
 On servers with not a lot of RAM memory (< 1 GB) it's recommended to add some extra swap space in case a server needs a little bit more memory to keep everything going and to prevent it runs out of memory and can't continue processing requests.
 
-## Choose how much memory
+## Choosing how much memory
 
 The first step is to decide how much swap space you want to add to the server. I choose mostly 1 GB or 2GB. In this case, the notiation should be 1G (GB) or 1000M (MB).
 
