@@ -3,11 +3,15 @@
 @import 'tailwindcss/utilities';
 
 ol.table-of-contents {
-    padding-left: 1em;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-position: inside;
 }
 
 ol.table-of-contents li {
+    padding-left: 0;
     margin-top: 0;
+    margin-left: 0;
     margin-bottom: 0;
 }
 
