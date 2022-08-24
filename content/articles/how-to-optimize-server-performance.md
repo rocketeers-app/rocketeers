@@ -13,6 +13,12 @@ When running PHP applications or websites it's a common mistake to keep unused P
 
 [Disable unnecessary and unused PHP versions (FPM pools)](/disable-unnecessary-and-unused-php-versions-php-fpm-pools)
 
+## Make sure enough diskspace is available
+
+When a server does not have enough (a few GB's) of diskspace available, it cannot run within optimal conditions. Because of this, as a treshold make sure there is more than 20% available of the total diskspace capacity. To make sure we have enough diskspace available, there are some commands that can help you with this.
+
+[Reclaim diskspace on Ubuntu server](/reclaim-diskspace-on-ubuntu-server)
+
 ## Add Swap Space to your server
 
 To increase performance you need to make sure your server has enough memory to make sure it can execute every task. While swap space is slower than usual RAM memory, it is recommended to add at least some (1-2GB) swap space to keep the server running optimal in every situation.
