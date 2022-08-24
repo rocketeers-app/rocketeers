@@ -1,6 +1,6 @@
 ---
-title: How to measure TTFB (Time To First Byte) using Curl
-slug: how-to-measure-ttfb-time-to-first-byte-using-curl
+title: How to measure TTFB (Time To First Byte)
+slug: how-to-measure-ttfb-time-to-first-byte
 published_at: 2022-08-24
 ---
 
