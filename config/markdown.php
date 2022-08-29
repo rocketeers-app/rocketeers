@@ -1,9 +1,7 @@
 <?php
 
 use League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkExtension;
-use League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkRenderer;
 use League\CommonMark\Extension\TableOfContents\TableOfContentsExtension;
-use League\CommonMark\Normalizer\SlugNormalizer;
 
 return [
     'code_highlighting' => [

@@ -8,7 +8,7 @@ use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\SubscribeController;
 use Illuminate\Support\Facades\Route;
 
-require_once('redirects.php');
+require_once 'redirects.php';
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('subscribe', SubscribeController::class);

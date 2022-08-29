@@ -2,7 +2,6 @@
 
 namespace App\Actions;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Lorisleiva\Actions\Concerns\AsAction;
 use Spatie\Browsershot\Browsershot;
@@ -13,7 +12,7 @@ class GenerateOpenGraphImage
 
     public function handle()
     {
-        if(! app()->environment('local') && ! request()->hasValidSignature()) {
+        if (! app()->environment('local') && ! request()->hasValidSignature()) {
             abort(403);
         }
 
@@ -22,7 +21,7 @@ class GenerateOpenGraphImage
 
         $html = view('social.open-graph-image', compact('title'));
 
-        if(! Storage::disk('public')->exists('social/open-graph/'.$filename)) {
+        if (! Storage::disk('public')->exists('social/open-graph/'.$filename)) {
             $this->saveOpenGraphImage($html, $filename);
         }
 

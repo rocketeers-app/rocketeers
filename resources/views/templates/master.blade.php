@@ -6,7 +6,7 @@
     @include('templates.partials.meta')
     @vite('resources/css/app.css')
     @env('production')
-    <script src="https://cdn.usefathom.com/script.js" data-site="EXPMPOZO" defer></script>
+    <script src="https://my.rocketee.rs/script.js" data-site="EXPMPOZO" defer></script>
     @endenv
 </head>
 
