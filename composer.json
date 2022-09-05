@@ -12,6 +12,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "lorisleiva/laravel-actions": "^2.4",
+        "mtownsend/read-time": "^2.0",
         "rocketeers-app/rocketeers-laravel": "dev-master",
         "ryangjchandler/orbit": "^1.1",
         "spatie/browsershot": "^3.57",
