@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Http\Kernel;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +24,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        if(request()->is('nova/*')) {
+            $this->app['router']->pushMiddlewareToGroup('web', \Illuminate\Session\Middleware\StartSession::class);
+            $this->app['router']->pushMiddlewareToGroup('web', \Illuminate\View\Middleware\ShareErrorsFromSession::class);
+            $this->app['router']->pushMiddlewareToGroup('web', \App\Http\Middleware\VerifyCsrfToken::class);
+        }
     }
 }

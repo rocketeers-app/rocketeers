@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Http\Kernel;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\Nova;
 use Laravel\Nova\NovaApplicationServiceProvider;
@@ -26,9 +27,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function routes()
     {
         Nova::routes()
-                ->withAuthenticationRoutes()
-                ->withPasswordResetRoutes()
-                ->register();
+            ->withAuthenticationRoutes()
+            ->register();
     }
 
     /**
@@ -40,8 +40,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      */
     protected function gate()
     {
-        Gate::define('viewNova', function ($user) {
-            return auth()->check();
+        Gate::define('viewNova', function () {
+            return app()->environment('local');
         });
     }
 
