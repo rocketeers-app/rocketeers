@@ -6,6 +6,8 @@ ol.table-of-contents {
     margin-left: 0;
     padding-left: 0;
     list-style-position: inside;
+
+    @apply bg-gray-800 py-4 px-6 rounded-md
 }
 
 ol.table-of-contents li {
