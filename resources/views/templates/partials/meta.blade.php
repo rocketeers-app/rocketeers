@@ -38,4 +38,4 @@
 @if(isset(app()->view->getSections()['description']))
 <meta name="twitter:description" content="{{ app()->view->getSections()['description'] }}">
 @endif
-<meta name="twitter:image" content="{!! url()->signedRoute('open-graph-image', compact('title')) !!}">
+<meta name="twitter:image:src" content="{!! url()->signedRoute('open-graph-image', compact('title')) !!}">
