@@ -4,11 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Collection;
 use Orbit\Concerns\Orbital;
+use Spatie\Feed\Feedable;
+use Spatie\Feed\FeedItem;
 use Spatie\Sitemap\Contracts\Sitemapable;
 use Spatie\Sitemap\Tags\Url;
 
-class Article extends Model implements Sitemapable
+class Article extends Model implements Feedable, Sitemapable
 {
     use Orbital;
 
@@ -35,6 +38,24 @@ class Article extends Model implements Sitemapable
     public function scopePublished($query)
     {
         return $query->whereNotNull('published_at');
+    }
+
+    public function toFeedItem(): FeedItem
+    {
+        return FeedItem::create()
+            ->id($this->slug)
+            ->title($this->title)
+            ->summary($this->content)
+            ->updated($this->updated_at ?? $this->published_at)
+            ->link($this->url)
+            ->authorName('Mark van Eijk');
+    }
+
+    public function getFeedItems(): Collection
+    {
+        return Article::published()
+            ->orderByDesc('published_at')
+            ->get();
     }
 
     public function getUrlAttribute()

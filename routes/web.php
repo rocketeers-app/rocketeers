@@ -19,4 +19,7 @@ Route::get('features', [FeatureController::class, 'index'])->name('feature.index
 Route::get('features/{feature}', [FeatureController::class, 'show'])->name('feature.show')->where('feature', '.*');
 
 Route::get('knowledge', [ArticleController::class, 'index'])->name('article.index');
+
+Route::feeds();
+
 Route::get('{article}', [ArticleController::class, 'show'])->name('article.show')->where('article', '.*');
