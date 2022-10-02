@@ -20,7 +20,7 @@
         "spatie/laravel-markdown": "^2.2",
         "spatie/laravel-sitemap": "^6.2",
         "vormkracht10/laravel-open-graph-image": "^0.1.0",
-        "vormkracht10/laravel-static": "v0.1.2"
+        "vormkracht10/laravel-static": "^v0.1.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
