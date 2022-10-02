@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d1bb6a159e7d7c631bc31d6186fa897",
+    "content-hash": "35454e4d4c6806f2396585838bd9edc1",
     "packages": [
         {
             "name": "brick/math",
@@ -8516,16 +8516,16 @@
         },
         {
             "name": "vormkracht10/laravel-static",
-            "version": "v0.1.0",
+            "version": "v0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vormkracht10/laravel-static.git",
-                "reference": "dfb57b247ced722084671c114f0fe15ab5c324ab"
+                "reference": "a4160dc8faf88a49d698cf864653df50600d2512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vormkracht10/laravel-static/zipball/dfb57b247ced722084671c114f0fe15ab5c324ab",
-                "reference": "dfb57b247ced722084671c114f0fe15ab5c324ab",
+                "url": "https://api.github.com/repos/vormkracht10/laravel-static/zipball/a4160dc8faf88a49d698cf864653df50600d2512",
+                "reference": "a4160dc8faf88a49d698cf864653df50600d2512",
                 "shasum": ""
             },
             "require": {
@@ -8584,9 +8584,9 @@
             ],
             "support": {
                 "issues": "https://github.com/vormkracht10/laravel-static/issues",
-                "source": "https://github.com/vormkracht10/laravel-static/tree/v0.1.0"
+                "source": "https://github.com/vormkracht10/laravel-static/tree/v0.1.2"
             },
-            "time": "2022-10-02T20:05:43+00:00"
+            "time": "2022-10-02T20:59:24+00:00"
         },
         {
             "name": "webmozart/assert",
