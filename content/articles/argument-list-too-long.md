@@ -33,5 +33,5 @@ find ./directory -type f -delete
 You can even make it more specific to only delete certain files, in this example to only delete log files:
 
 ```bash
-find ./directory -name '.log' -type f -delete
+find ./directory -name '*.log' -type f -delete
 ```
