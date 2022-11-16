@@ -20,7 +20,7 @@ return [
 
             'title' => 'Rocketeers',
             'description' => 'All published articles from Rocketeers.',
-            'language' => 'en-US',
+            'language' => 'en',
 
             /*
              * The image to display for the feed. For Atom feeds, this is displayed as
