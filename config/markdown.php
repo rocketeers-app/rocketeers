@@ -1,5 +1,6 @@
 <?php
 
+use League\CommonMark\Extension\ExternalLink\ExternalLinkExtension;
 use League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkExtension;
 use League\CommonMark\Extension\TableOfContents\TableOfContentsExtension;
 
@@ -47,6 +48,14 @@ return [
             'title' => 'Permalink',
             'symbol' => '#',
         ],
+        'external_link' => [
+            'internal_hosts' => 'rocketee.rs',
+            'open_in_new_window' => true,
+            'html_class' => 'external-link',
+            'nofollow' => '',
+            'noopener' => 'external',
+            'noreferrer' => 'external',
+        ],
     ],
 
     /*
@@ -78,6 +87,7 @@ return [
     'extensions' => [
         HeadingPermalinkExtension::class,
         TableOfContentsExtension::class,
+        ExternalLinkExtension::class,
     ],
 
     /*
