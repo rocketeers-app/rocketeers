@@ -1,5 +1,5 @@
 ---
-title: Cookieless Laravel (disable the use of cookies)
+title: Cookieless Laravel (disabling cookies in Laravel)
 slug: cookieless-laravel
 published_at: 2022-09-05
 ---
