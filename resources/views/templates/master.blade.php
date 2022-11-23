@@ -8,7 +8,6 @@
     @env('production')
     <script src="https://my.rocketee.rs/script.js" data-site="EXPMPOZO" defer></script>
     @endenv
-    <x-feed-links />
 </head>
 
 <body class="bg-gray-900" x-data="{ menu: false }">

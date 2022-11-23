@@ -19,23 +19,5 @@
 @if(isset(app()->view->getSections()['description']))
 <meta property="og:description" content="{{ app()->view->getSections()['description'] }}">
 @endif
-<meta property="og:type" content="website">
-<meta property="og:url" content="{{ url()->current() }}">
-<meta property="og:image" content="{!! url()->signedRoute('open-graph-image', compact('title')) !!}">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-@if(isset(app()->view->getSections()['published_at']))
-<meta property="article:published_time" content="{{ app()->view->getSections()['published_at'] }}">
-@endif
-@if(isset(app()->view->getSections()['updated_at']))
-<meta property="article:modified_time" content="{{ app()->view->getSections()['updated_at'] }}">
-@endif
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@rocketeersapp">
-<meta name="twitter:creator" content="@markvaneijk">
-<meta name="twitter:title" content="{{ $title }}">
-@if(isset(app()->view->getSections()['description']))
-<meta name="twitter:description" content="{{ app()->view->getSections()['description'] }}">
-@endif
-<meta name="twitter:image:src" content="{!! url()->signedRoute('open-graph-image', compact('title')) !!}">
+<x-feed-links />
+<x-open-graph-image::metatags :title="app()->view->getSections()['title']" subtitle="Rocketeers" />
