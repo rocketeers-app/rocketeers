@@ -47,7 +47,7 @@
     <body class="flex items-center min-h-screen">
         <div class="bg-gray-900 w-[1200px] h-[630px] text-white p-12 border-emerald-400 border-b-[16px] flex items-center">
             <div>
-                <h1 class="font-extrabold text-[90px] text-gray-200 leading-none">{!! explode(' - ', $subtitle)[0] !!}</h1>
+                <h1 class="font-extrabold text-[90px] text-gray-200 leading-none">{!! explode(' - ', $title)[0] !!}</h1>
                 <h2 class="mt-6 text-[50px] font-bold text-emerald-400">Rocketeers</h2>
                 <div class="inline-block px-6 py-3 mt-10 text-[30px] font-bold text-white rounded-lg bg-emerald-500">Read full article</div>
             </div>
