@@ -20,4 +20,4 @@
 <meta property="og:description" content="{{ app()->view->getSections()['description'] }}">
 @endif
 <x-feed-links />
-<x-open-graph-image::metatags :title="app()->view->getSections()['title']" subtitle="Rocketeers" />
+<x-open-graph-image::metatags :title="$title" subtitle="Rocketeers" />
