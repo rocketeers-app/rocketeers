@@ -1,6 +1,6 @@
 ---
-title: Disabling cookies in Laravel
-slug: disabling-cookies-in-laravel
+title: Disable cookies in Laravel
+slug: disable-cookies-in-laravel
 published_at: 2022-09-05
 ---
 
