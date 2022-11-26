@@ -1,6 +1,8 @@
 ---
 title: How to add Swap Space on Ubuntu servers
 slug: how-to-add-swap-space-on-ubuntu-servers
+category: Hosting
+intro: Servers with little resources can benefit greatly from adding some swap space for memory usage.
 published_at: 2022-08-17
 ---
 

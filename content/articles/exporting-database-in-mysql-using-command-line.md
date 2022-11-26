@@ -1,6 +1,8 @@
 ---
 title: Exporting database in MySQL using command line
 slug: exporting-database-in-mysql-using-command-line
+category: Databases
+intro: Exporting your entire MySQL database is a task you will need very often when working with databases.
 published_at: 2022-08-30
 ---
 

@@ -15,7 +15,7 @@ class SitemapController extends Controller
     {
         return Sitemap::create()
             ->add(Url::create(route('home')))
-            ->add(Url::create(route('article.index')))
+            ->add(Url::create('knowledge'))
             // ->add(Url::create(route('doc.index')))
             ->add(Url::create(route('feature.index')))
             // ->add(Doc::published()->get())

@@ -31,6 +31,7 @@ class Article extends Model implements Feedable, Sitemapable
     {
         $table->string('title');
         $table->string('slug');
+        $table->string('category')->nullable();
         $table->text('intro')->nullable();
         $table->text('content')->nullable();
         $table->date('published_at')->nullable();
@@ -61,7 +62,7 @@ class Article extends Model implements Feedable, Sitemapable
 
     public function getUrlAttribute()
     {
-        return route('article.show', $this->attributes['slug']);
+        return route('knowledge', ['slug' => $this->attributes['slug']]);
     }
 
     public function toSitemapTag(): Url | string | array

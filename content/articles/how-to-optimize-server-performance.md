@@ -1,6 +1,8 @@
 ---
 title: How to optimize server performance
 slug: how-to-optimize-server-performance
+category: Performance
+intro: Server performance is determinded by a lot of moving parts inside your server. Lets dig in on every aspect that can make a big difference.
 published_at: 2022-08-16
 updated_at: 2022-08-17
 ---

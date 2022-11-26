@@ -2,6 +2,7 @@
 title: "Argument list too long (Bash: /bin/rm)"
 slug: argument-list-too-long
 published_at: 2022-10-20
+category: Command Line
 ---
 
 ## The error and problem

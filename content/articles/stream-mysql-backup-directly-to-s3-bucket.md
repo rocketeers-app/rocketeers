@@ -1,6 +1,8 @@
 ---
 title: Stream MySQL backup directly to S3 bucket
 slug: stream-mysql-backup-directly-to-s3-bucket
+category: Databases
+intro: Backing up your database is very important. Creating a backup in the most efficient way is essential when you do not have unlimited disk space.
 published_at: 2022-08-24
 ---
 

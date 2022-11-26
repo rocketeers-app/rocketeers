@@ -1,6 +1,8 @@
 ---
 title: How to check Laravel version of your app
 slug: how-to-check-laravel-version-of-your-app
+category: Laravel
+intro: Know exactly which Laravel version your app has installed.
 published_at: 2022-11-16
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: Disable unnecessary and unused PHP versions (FPM pools)
 slug: disable-unnecessary-and-unused-php-versions-php-fpm-pools
+category: Hosting
+intro: Hosting your application optimally means you need to take care of the valuable server resources. PHP FPM can keep memory occupied even when not actively used.
 published_at: 2022-08-24
 ---
 

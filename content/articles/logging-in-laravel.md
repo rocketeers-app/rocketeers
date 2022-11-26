@@ -1,6 +1,8 @@
 ---
 title: Logging in Laravel
 slug: logging-in-laravel
+category: Laravel
+intro: When you have an web app running, it is important to know what it does and how it's going. To get more insight into this, using the extensive logging features of Laravel is key.
 published_at: 2022-11-16
 ---
 
