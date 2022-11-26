@@ -7,21 +7,21 @@
         @if(isset($category))
         <p class="mb-2"><a href="{{ route('knowledge') }}" class="text-gray-400">&larr; Back to knowledge</a></p>
         @endif
-        <h1 class="mb-5 font-extrabold leading-tight text-gray-200 sm:text-4xl">{{ $category ?? 'Knowledge' }}</h1>
+        <h1 class="mb-5 text-2xl font-extrabold leading-tight text-gray-200 sm:text-4xl">{{ $category ?? 'Knowledge' }}</h1>
 
         @if(!isset($category))
-        <h2 class="mt-10 mb-5 text-2xl font-extrabold text-white">Categories</h2>
+        <h2 class="mt-10 mb-5 text-lg font-extrabold text-white sm:text-2xl">Categories</h2>
         <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             @foreach($categories as $slug => $name)
-            <a href="{{ route('knowledge', ['slug' => $slug]) }}" class="block p-6 pb-5 text-white border border-gray-800 rounded-md group hover:bg-gray-800">
-                <h2 class="inline-block mb-2 text-lg font-bold underline md:text-xl text-emerald-400 group-hover:text-emerald-200 decoration-2 underline-offset-4">{{ $name }}</h2>
+            <a href="{{ route('knowledge', ['slug' => $slug]) }}" class="block p-3 pb-2 text-white border border-gray-800 rounded-md sm:p-6 sm:pb-5 group hover:bg-gray-800">
+                <h2 class="inline-block mb-2 font-bold underline sm:text-lg md:text-xl text-emerald-400 group-hover:text-emerald-200 decoration-2 underline-offset-4">{{ $name }}</h2>
             </a>
             @endforeach
         </div>
         @endif
 
         @if(!isset($category))
-        <h2 class="mt-10 text-2xl font-extrabold text-white">Latest articles</h2>
+        <h2 class="mt-10 text-lg font-extrabold text-white sm:text-2xl">Latest articles</h2>
         @endif
         @php($previousDate = null)
         @foreach($articles as $article)
