@@ -2,6 +2,7 @@
 title: How to run PHP files
 slug: how-to-run-php-files
 published_at: 2022-11-16
+intro: You cannot execute PHP files directly on your computer without any additional tools. You need a (local) webserver that can run the PHP files.
 ---
 
 ## PHP is a Server-side Language

@@ -2,6 +2,7 @@
 title: Disable cookies in Laravel
 slug: disable-cookies-in-laravel
 published_at: 2022-09-05
+intro: When you don't need cookies, it's a good practice to prevent your app from creating them in the first place.
 ---
 
 When you have a Laravel project that doesn't need cookies in any way, it's great to know how to completely prevent the usage of cookies. It makes your application cookieless and stateless. In Laravel they are send down the line by default and you may not need them or don't want them (in case of GDPR compliance for example).

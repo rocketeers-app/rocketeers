@@ -1,6 +1,5 @@
 <?php
 
-use App\Actions\GenerateOpenGraphImage;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\HomeController;
@@ -8,7 +7,7 @@ use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\SubscribeController;
 use Illuminate\Support\Facades\Route;
 
-require_once 'redirects.php';
+require 'redirects.php';
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('subscribe', SubscribeController::class);

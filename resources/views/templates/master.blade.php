@@ -97,8 +97,8 @@
     </main>
     <footer class="pb-8 bg-gray-800 md:pb-16">
         <div class="container max-w-screen-xl px-8 py-16 mx-auto border-b border-gray-700">
-            <div class="grid gap-8 lg:gap-6 lg:grid-cols-3">
-                <div>
+            <div class="grid gap-8 lg:gap-6 lg:grid-cols-2">
+                <div class="border-r border-gray-700">
                     <h2 class="mb-4 text-sm tracking-wide text-gray-500 uppercase">Features</h2>
                     <ul class="leading-loose">
                         @foreach($features as $feature)
@@ -113,9 +113,7 @@
                         <li><a href="{{ route('article.index') }}" class="text-white">Knowledge</a></li>
                         {{-- <li><a href="{{ route('doc.index') }}" class="text-white">Docs</a></li> --}}
                     </ul>
-                </div>
-                <div>
-                    <h2 class="mb-4 text-sm tracking-wide text-gray-500 uppercase">Rocketeers</h2>
+                    <h2 class="my-4 text-sm tracking-wide text-gray-500 uppercase">Rocketeers</h2>
                     <ul class="leading-loose">
                         <li><a href="https://rocketeers.app" class="text-white">Login</a></li>
                     </ul>

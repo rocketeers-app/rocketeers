@@ -31,6 +31,7 @@ class Article extends Model implements Feedable, Sitemapable
     {
         $table->string('title');
         $table->string('slug');
+        $table->text('intro')->nullable();
         $table->text('content')->nullable();
         $table->date('published_at')->nullable();
     }
