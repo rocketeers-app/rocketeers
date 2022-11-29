@@ -3,7 +3,7 @@ title: Change casing of file or directory in Git
 slug: change-casing-of-file-or-directory-in-git
 category: Git
 intro: Renaming already commited files or directories only for casing in Git will be ignored and will not show up as a change you can commit.
-published_at: 2022-12-29
+published_at: 2022-11-29
 ---
 
 ## The problem
