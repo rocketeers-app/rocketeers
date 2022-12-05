@@ -31,6 +31,8 @@ class ArticleController extends Controller
             ->where('slug', $slug)
             ->first();
 
+        abort_unless($article, 404);
+
         return view('articles.show', compact('article'));
     }
 }
