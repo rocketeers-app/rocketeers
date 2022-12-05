@@ -15,7 +15,6 @@
 <meta property="author" content="Mark van Eijk">
 <meta name="generator" content="Rocketeers">
 <meta name="robots" content="index,follow">
-<meta property="og:title" content="{{ $title }}">
 @if(isset(app()->view->getSections()['description']))
 <meta property="og:description" content="{{ app()->view->getSections()['description'] }}">
 @endif
