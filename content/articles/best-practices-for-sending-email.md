@@ -1,6 +1,6 @@
 ---
-title: Best practices when sending email
-slug: best-practices-when-sending-email
+title: Best practices for sending email
+slug: best-practices-for-sending-email
 category: Email
 intro: Improve the emails you're sending from your website or web app by following these best practices.
 published_at: 2022-12-06
@@ -12,7 +12,7 @@ First things first, make sure your [sending email technically correct following 
 
 ## Keep your design simple
 
-Compatibility with email clients is one of the most anoying things when sending email. It's the worst when you are designing a beautiful email or newsletter and seeing it destroyed by that corporately required Microsoft Outlook 2010 version.
+Compatibility with email clients is one of the most anoying things for sending email. It's the worst when you are designing a beautiful email or newsletter and seeing it destroyed by that corporately required Microsoft Outlook 2010 version.
 
 One way or another, designing emails is a pain. It still is possible, but brace yourself. So advice is, don't make it too difficult and keep emails calm and easy.
 
