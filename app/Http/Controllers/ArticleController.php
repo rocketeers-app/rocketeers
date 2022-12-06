@@ -11,6 +11,7 @@ class ArticleController extends Controller
         $categories = Article::pluck('category')
             ->unique()
             ->sort()
+            ->filter()
             ->mapWithKeys(function($category) {
                 return [str_slug($category) => $category];
             });
