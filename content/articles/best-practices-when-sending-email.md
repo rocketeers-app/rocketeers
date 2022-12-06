@@ -8,7 +8,7 @@ published_at: 2022-12-06
 
 ## First: Optimize deliverability
 
-First things first, make sure your [sending email technically correct following these tips](requirements-to-optimize-email-deliverability). This way you'll make sure email is sent the right way your hard work on writing these emails isn't for nothing.
+First things first, make sure your [sending email technically correct following these tips](improving-email-deliverability). This way you'll make sure email is sent the right way your hard work on writing these emails isn't for nothing.
 
 ## Keep your design simple
 
