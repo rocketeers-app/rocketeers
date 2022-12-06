@@ -68,7 +68,7 @@ What you can do to prevent hard bounces:
 
 If you don't want to send your emails straight to the junk folder of your users, be thoughtful with what you put in the subject line of your emails. If you use sketchy phrases like _free_, _buy_ or _now !!!_ than you will end up in the spam because this is what spammers also use to trigger the attention of people.
 
-## Add an unsubscribe link (when sending more than once)
+## Add an unsubscribe link
 
 If your sending email more than once, make sure you add a link for the recipient to unsubscribe from your emails. Because nobody that wants to receive your email, should receive your email and it's better to not have them on your list anymore. Big numbers aren't everything and you probably get more reliably sending statistics and better open rates because of this.
 

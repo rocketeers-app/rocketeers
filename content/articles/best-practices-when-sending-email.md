@@ -50,6 +50,6 @@ Using this snippet of HTML, you can add the intro text carefully inside the `<di
 </div>
 ```
 
-## Add an unsubscribe link (when sending more than once)
+## Add an unsubscribe link
 
 If your sending email more than once, make sure you add a link for the recipient to unsubscribe from your emails. Because nobody that wants to receive your email, should receive your email and it's better to not have them on your list anymore. Big numbers aren't everything and you probably get more reliably sending statistics and better open rates because of this.
