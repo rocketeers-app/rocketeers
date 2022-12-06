@@ -1,6 +1,6 @@
 ---
-title: Requirements to optimize email deliverabilty
-slug: requirements-to-optimize-email-deliverability
+title: Improving email deliverabilty
+slug: improving-email-deliverability
 category: Email
 intro: How to prevent emails going to spam and improve the overall deliverability of your email domain.
 published_at: 2022-12-06
