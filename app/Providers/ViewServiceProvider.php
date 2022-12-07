@@ -2,18 +2,24 @@
 
 namespace App\Providers;
 
-use App\Models\Feature;
+use App\Models\Article;
 use Illuminate\Support\ServiceProvider;
 
 class ViewServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $features = Feature::whereNotNull('description')->get();
+        $categories = Article::pluck('category')
+            ->unique()
+            ->sort()
+            ->filter()
+            ->mapWithKeys(function($category) {
+                return [str_slug($category) => $category];
+            });
 
         view()->share(
             compact(
-                'features'
+                'categories'
             )
         );
     }

@@ -39,6 +39,7 @@
                 </div>
                 <div class="hidden text-base font-medium text-white md:flex md:items-center md:space-x-6">
                     <a href="{{ route('feature.index') }}" class="hover:text-gray-300">Features</a> <span class="mr-2 text-gray-800">|</span>
+                    <a href="{{ route('pricing') }}" class="hover:text-gray-300">Pricing</a> <span class="mr-2 text-gray-800">|</span>
                     <a href="{{ route('knowledge') }}" class="hover:text-gray-300">Knowledge</a> <span class="mr-2 text-gray-800">|</span>
                     {{-- <a href="{{ route('doc.index') }}" class="hover:text-gray-300">Docs</a> <span class="mr-2 text-gray-800">|</span> --}}
                     <a href="https://rocketeers.app" class="hover:text-gray-300">
@@ -84,6 +85,7 @@
                 <div class="p-3 pb-8">
                     <div class="px-2">
                         <a href="{{ route('feature.index') }}" class="block px-4 py-3 text-base font-medium text-gray-200 border-t border-gray-700 rounded-md hover:bg-gray-700">Features</a>
+                        <a href="{{ route('pricing') }}" class="block px-4 py-3 text-base font-medium text-gray-200 border-t border-gray-700 rounded-md hover:bg-gray-700">Pricing</a>
                         <a href="{{ route('knowledge') }}" class="block px-4 py-3 text-base font-medium text-gray-200 border-t border-gray-700 rounded-md hover:bg-gray-700">Knowledge</a>
                         {{-- <a href="{{ route('doc.index') }}" class="hover:text-gray-300">Docs</a> <span class="mr-2">|</span> --}}
                         <a href="https://rocketeers.app" class="block w-full px-4 py-3 font-medium text-white rounded-md shadow bg-emerald-400 hover:bg-emerald-300">Login&nbsp;&nbsp;<span class="px-2 py-1 text-sm rounded bg-emerald-600">BETA</span></a>
@@ -99,10 +101,10 @@
         <div class="container max-w-screen-xl px-6 py-16 mx-auto border-b border-gray-800 md:px-8">
             <div class="grid gap-8 lg:gap-6 lg:grid-cols-2">
                 <div class="border-r border-gray-800">
-                    <h2 class="mb-4 text-sm tracking-wide text-gray-500 uppercase">Features</h2>
+                    <h2 class="mb-4 text-sm tracking-wide text-gray-500 uppercase">Knowledge</h2>
                     <ul class="leading-loose">
-                        @foreach($features as $feature)
-                        <li><a href="{{ route('feature.show', $feature) }}" class="text-white">{{ $feature->title }}</a></li>
+                        @foreach($categories as $category)
+                        <li><a href="{{ route('knowledge', ['slug' => str_slug($category)]) }}" class="text-white">{{ $category }}</a></li>
                         @endforeach
                     </ul>
                 </div>
@@ -112,6 +114,7 @@
                         <li><a href="{{ route('feature.index') }}" class="text-white">Features</a></li>
                         <li><a href="{{ route('knowledge') }}" class="text-white">Knowledge</a></li>
                         {{-- <li><a href="{{ route('doc.index') }}" class="text-white">Docs</a></li> --}}
+                        <li><a href="{{ route('contact') }}" class="text-white">Contact</a></li>
                     </ul>
                     <h2 class="my-4 text-sm tracking-wide text-gray-500 uppercase">Rocketeers</h2>
                     <ul class="leading-loose">

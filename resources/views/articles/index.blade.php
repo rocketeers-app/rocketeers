@@ -10,7 +10,7 @@
         <h1 class="mb-5 text-2xl font-extrabold leading-tight text-gray-200 sm:text-4xl">{{ $category ?? 'Knowledge' }}</h1>
 
         @if(!isset($category))
-        <h2 class="mt-10 mb-5 text-lg font-extrabold text-white sm:text-2xl">Categories</h2>
+        <h2 class="mt-10 mb-5 text-lg font-extrabold text-gray-200 sm:text-2xl">Categories</h2>
         <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             @foreach($categories as $slug => $name)
             <a href="{{ route('knowledge', ['slug' => $slug]) }}" class="block p-3 pb-2 text-white border border-gray-800 rounded-md sm:p-6 sm:pb-5 group hover:bg-gray-800">
@@ -21,7 +21,7 @@
         @endif
 
         @if(!isset($category))
-        <h2 class="mt-10 text-lg font-extrabold text-white sm:text-2xl">Latest articles</h2>
+        <h2 class="mt-10 text-lg font-extrabold text-gray-200 sm:text-2xl">Latest articles</h2>
         @endif
         @php($previousDate = null)
         @foreach($articles as $article)

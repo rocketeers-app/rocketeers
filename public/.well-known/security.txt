@@ -1,0 +1,4 @@
+Contact: https://rocketee.rs/contact
+Expires: 2030-01-31T23:59:59.000Z
+Preferred-Languages: en, nl
+Canonical: https://rocketee.rs/.well-known/security.txt

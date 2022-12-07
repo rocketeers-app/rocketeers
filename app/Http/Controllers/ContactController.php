@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-class HomeController extends Controller
+class ContactController extends Controller
 {
     public function __invoke()
     {
-        return view('pages.home');
+        return view('pages.contact');
     }
 }

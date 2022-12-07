@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-class HomeController extends Controller
+class PricingController extends Controller
 {
     public function __invoke()
     {
-        return view('pages.home');
+        return view('pages.pricing');
     }
 }
