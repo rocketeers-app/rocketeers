@@ -1,5 +1,5 @@
 ---
-title: Improving email deliverabilty
+title: Improving email deliverability
 slug: improving-email-deliverability
 category: Email
 intro: How to prevent emails going to spam and improve the overall deliverability of your email domain.
