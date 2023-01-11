@@ -13,7 +13,7 @@ class ViewServiceProvider extends ServiceProvider
             ->unique()
             ->sort()
             ->filter()
-            ->mapWithKeys(function($category) {
+            ->mapWithKeys(function ($category) {
                 return [str_slug($category) => $category];
             });
 

@@ -31,7 +31,7 @@
                 {{ session('message') }}
             </div>
         @else
-            <div class="p-10 text-center bg-gray-800 rounded-md mt-14">
+            <div class="p-16 text-center border-gray-800 border-y-4 mt-14">
                 <h3 class="mb-5 text-xl font-extrabold text-white sm:text-2xl">Subscribe to our newsletter</h3>
                 <p class="max-w-md mx-auto mb-8 leading-relaxed text-gray-300 sm:text-lg">Do you want to receive regular updates with fresh and exclusive content to learn more about web development, hosting, security and performance? Subscribe now!</p>
                 <form action="/subscribe" method="post" class="relative max-w-lg mx-auto mt-1 md:mt-4">
@@ -42,5 +42,16 @@
                 </form>
             </div>
         @endif
+
+        <h1 class="mt-10 mb-10 text-2xl font-extrabold leading-tight text-gray-200 md:mt-20 sm:text-4xl">Related articles</h1>
+        <div class="grid gap-10 md:grid-cols-2">
+            @foreach($relatedArticles as $relatedArticle)
+            <div>
+                <h2><a href="{{ $relatedArticle->url }}" class="text-lg underline md:text-xl text-emerald-400 hover:text-emerald-200 decoration-2 underline-offset-4">{{ $relatedArticle->title }}</a></h2>
+                <p class="my-2.5 md:my-5 text-base leading-relaxed text-gray-200">{{ $article->intro }}</p>
+                <p><a href="{{ $relatedArticle->url }}" class="text-emerald-400 hover:text-emerald-200 decoration-2 underline-offset-4">Read more &rarr;</a></p>
+            </div>
+            @endforeach
+        </div>
     </div>
 @endsection

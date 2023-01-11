@@ -37,7 +37,7 @@ class Feature extends Model implements Sitemapable
         return route('feature.show', $this->attributes['slug']);
     }
 
-    public function toSitemapTag(): Url | string | array
+    public function toSitemapTag(): Url|string|array
     {
         return $this->url;
     }

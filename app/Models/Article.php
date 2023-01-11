@@ -65,7 +65,7 @@ class Article extends Model implements Feedable, Sitemapable
         return route('knowledge', ['slug' => $this->attributes['slug']]);
     }
 
-    public function toSitemapTag(): Url | string | array
+    public function toSitemapTag(): Url|string|array
     {
         return $this->url;
     }
