@@ -6,7 +6,7 @@ intro: Learn how to safely upgrade your database server from MySQL 5.7 to MySQL 
 published_at: 2023-01-12
 ---
 
-## Backup existing databases (don't skip)
+### Backup existing databases (don't skip)
 
 Don't skip this part, it can save you a lot of trouble when something goes wrong!
 
