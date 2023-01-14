@@ -48,7 +48,7 @@ class ArticleController extends Controller
         }
 
         if($relatedArticles->count() < 2) {
-            $relatedArticles = $relatedArticles->merge($relatedArticlesList->take(2 - $relatedArticles->count());
+            $relatedArticles = $relatedArticles->merge($relatedArticlesList->take(2 - $relatedArticles->count()));
         }
 
         return view('articles.show', compact('article', 'relatedArticles'));
