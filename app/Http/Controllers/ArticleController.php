@@ -23,9 +23,11 @@ class ArticleController extends Controller
             ->orderByDesc('published_at')
             ->get();
 
-        if (! is_null($category) || $slug == 'knowledge') {
+        if(is_null($category)) {
             $articles = $articles->take(5);
+        }
 
+        if (! is_null($category) || $slug == 'knowledge') {
             return view('articles.index', compact('category', 'categories', 'articles'));
         }
 
