@@ -21,10 +21,11 @@ class ArticleController extends Controller
                 $query->where('category', $category);
             })
             ->orderByDesc('published_at')
-            ->take(5)
             ->get();
 
         if (! is_null($category) || $slug == 'knowledge') {
+            $articles = $articles->take(5);
+
             return view('articles.index', compact('category', 'categories', 'articles'));
         }
 
