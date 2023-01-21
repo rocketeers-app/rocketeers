@@ -8707,16 +8707,16 @@
         },
         {
             "name": "vormkracht10/laravel-open-graph-image",
-            "version": "v0.2.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vormkracht10/laravel-open-graph-image.git",
-                "reference": "9c6c802f84ac673012d50fe7ecddbc2eaa0a640b"
+                "reference": "9a4af4fa8e5d00ea3903417fd48bc42c29262685"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vormkracht10/laravel-open-graph-image/zipball/9c6c802f84ac673012d50fe7ecddbc2eaa0a640b",
-                "reference": "9c6c802f84ac673012d50fe7ecddbc2eaa0a640b",
+                "url": "https://api.github.com/repos/vormkracht10/laravel-open-graph-image/zipball/9a4af4fa8e5d00ea3903417fd48bc42c29262685",
+                "reference": "9a4af4fa8e5d00ea3903417fd48bc42c29262685",
                 "shasum": ""
             },
             "require": {
@@ -8779,9 +8779,9 @@
             ],
             "support": {
                 "issues": "https://github.com/vormkracht10/laravel-open-graph-image/issues",
-                "source": "https://github.com/vormkracht10/laravel-open-graph-image/tree/v0.2.0"
+                "source": "https://github.com/vormkracht10/laravel-open-graph-image/tree/v0.2.1"
             },
-            "time": "2023-01-21T12:39:06+00:00"
+            "time": "2023-01-21T13:05:20+00:00"
         },
         {
             "name": "vormkracht10/laravel-seo-scanner",
