@@ -21,8 +21,11 @@ class ArticleController extends Controller
                 $query->where('category', $category);
             })
             ->orderByDesc('published_at')
-            ->take(5)
             ->get();
+
+        if(is_null($category)) {
+            $articles = $articles->take(5);
+        }
 
         if (! is_null($category) || $slug == 'knowledge') {
             return view('articles.index', compact('category', 'categories', 'articles'));
@@ -32,14 +35,24 @@ class ArticleController extends Controller
             ->where('slug', $slug)
             ->firstOrFail();
 
-        $relatedArticles = Article::published()
+        $relatedArticlesList = Article::published()
             ->where('category', $article->category)
             ->where('slug', '!=', $article->slug)
-            ->get()
-            ->filter(function ($relatedArticle) use ($article) {
+            ->orderBy('published_at')
+            ->get();
+
+        $relatedArticles = collect();
+
+        if($relatedArticlesList->count() > 2) {
+            $relatedArticles = $relatedArticlesList->filter(function($relatedArticle) use ($article) {
                 return $relatedArticle->published_at <= $article->published_at;
             })
             ->take(2);
+        }
+
+        if($relatedArticles->count() < 2) {
+            $relatedArticles = $relatedArticles->merge($relatedArticlesList->take(2 - $relatedArticles->count()));
+        }
 
         return view('articles.show', compact('article', 'relatedArticles'));
     }
