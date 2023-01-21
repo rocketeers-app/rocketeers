@@ -23,7 +23,7 @@ class ArticleController extends Controller
             ->orderByDesc('published_at')
             ->get();
 
-        if(is_null($category)) {
+        if (is_null($category)) {
             $articles = $articles->take(5);
         }
 
@@ -43,14 +43,14 @@ class ArticleController extends Controller
 
         $relatedArticles = collect();
 
-        if($relatedArticlesList->count() > 2) {
-            $relatedArticles = $relatedArticlesList->filter(function($relatedArticle) use ($article) {
+        if ($relatedArticlesList->count() > 2) {
+            $relatedArticles = $relatedArticlesList->filter(function ($relatedArticle) use ($article) {
                 return $relatedArticle->published_at <= $article->published_at;
             })
             ->take(2);
         }
 
-        if($relatedArticles->count() < 2) {
+        if ($relatedArticles->count() < 2) {
             $relatedArticles = $relatedArticles->merge($relatedArticlesList->take(2 - $relatedArticles->count()));
         }
 
