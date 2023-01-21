@@ -36,7 +36,7 @@ class ArticleController extends Controller
             ->where('category', $article->category)
             ->where('slug', '!=', $article->slug)
             ->get()
-            ->filter(function($relatedArticle) use ($article) {
+            ->filter(function ($relatedArticle) use ($article) {
                 return $relatedArticle->published_at <= $article->published_at;
             })
             ->take(2);
