@@ -18,7 +18,7 @@ Here we go, this helper can be added to any file your keeping your little helper
 if (! function_exists('encrypted_cookie_value')) {
     function encrypted_cookie_value(string $name, string $value): string
     {
-        return app(Illuminate\Encryption\Encrypter::class)->encrypt(
+        return app('Illuminate\Encryption\Encrypter')->encrypt(
             CookieValuePrefix::create($name, $encrypter->getKey()).$value,
             false
         );
