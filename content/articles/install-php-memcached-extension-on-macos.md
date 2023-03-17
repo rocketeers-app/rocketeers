@@ -29,13 +29,15 @@ zlib directory [no] :
 
 This path depends on the processor of your Mac, there's a difference between Apple silicon machines on Mac Intel. The path is per type of machine:
 
-## ZLIB path for Apple silicon
+## ZLIB path
+
+### Apple silicon
 
 ```bash
 /opt/homebrew/opt/zlib
 ```
 
-## ZLIB path for Mac Intel
+## Mac Intel
 
 ```bash
 /usr/local/zlib
