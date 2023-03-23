@@ -31,15 +31,11 @@ This path depends on the processor of your Mac, there's a difference between App
 
 ## ZLIB path
 
-### Apple silicon
-
 ```bash
+# On Apple Silicon
 /opt/homebrew/opt/zlib
-```
 
-## Mac Intel
-
-```bash
+# On Mac Intel
 /usr/local/zlib
 ```
 
