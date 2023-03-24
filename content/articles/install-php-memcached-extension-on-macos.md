@@ -36,7 +36,7 @@ This path depends on the processor of your Mac, there's a difference between App
 /opt/homebrew/opt/zlib
 
 # On Mac Intel
-/usr/local/zlib
+/usr/local/opt/zlib
 ```
 
 When given this path, the `pecl` install should complete successfully.
