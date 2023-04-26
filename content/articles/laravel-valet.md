@@ -2,7 +2,7 @@
 title: Laravel Valet
 slug: laravel-valet
 category: Laravel
-intro: For Mac users Laravel Valet is an execellent tool to develop your Laravel apps locally.
+intro: For Mac users Laravel Valet is an execellent tool to develop all your PHP projects locally.
 published_at: 2023-04-26
 ---
 
@@ -65,6 +65,16 @@ valet install
 ```
 
 After that, you can use any \*.test domain to use locally on your projects.
+
+## How does it work
+
+Laravel Valet uses a simple paradigm: every domain is a folder inside "parked" directory. So when you want to use the Mac folder `~/Sites` to clone all your projects on your computer in, you can `park` inside this directory to make all folders available as a `[folder].test` domain.
+
+```bash
+cd ~/Sites
+
+valet park
+```
 
 ## Using different PHP versions
 
