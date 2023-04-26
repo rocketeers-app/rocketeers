@@ -100,6 +100,8 @@ valet isolate php@8.3 # execute this inside the correct ~/Sites/[site] folder
 
 You can also set a specific version for Laravel Valet to use, when using the `valet use` (without a PHP version) command. The PHP version can be determined from a `.valetrc` file in the root of the project:
 
-`php=php@8.3`
+```bash
+php=php@8.3
+```
 
 After adding this file, you can execute `valet use` to always use the specified PHP version with Laravel Valet.
