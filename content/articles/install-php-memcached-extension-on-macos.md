@@ -12,7 +12,7 @@ If you have PHP installed using [Homebrew](https://brew.sh), you previously coul
 When you need to install `memcached`, you need to install this including the dependencies `zlib` and `libmemcached`:
 
 ```bash
-brew install memcached libmemcached zlib
+brew install memcached libmemcached zlib pkg-config
 ```
 
 Then you can initiate the install via `pecl`:
