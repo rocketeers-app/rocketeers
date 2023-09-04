@@ -22,25 +22,25 @@ Here's to install the latest `curl` version (v8.2.1) at the time of writing this
 
 ```bash
 # Remove installed curl version
-sudo apt remove curl -y
-sudo apt purge curl -y
+apt remove curl -y
+apt purge curl -y
 
 # Install libs and compile tooling
-sudo apt-get update
-sudo apt-get install -y libssl-dev autoconf libtool makez
+apt-get update
+apt-get install -y libssl-dev autoconf libtool makez
 
 # Download new curl version, unzip, configure and compile build
-cd /usr/local/src && wget https://curl.haxx.se/download/curl-8.2.1.zip
-sudo rm -Rf /usr/local/src/curl-8.2.1
-cd /usr/local/src && sudo unzip curl-8.2.1.zip
-cd /usr/local/src/curl-8.2.1 && sudo autoreconf -fi
-cd /usr/local/src/curl-8.2.1 && ./configure --with-ssl
-cd /usr/local/src/curl-8.2.1 && sudo make
-cd /usr/local/src/curl-8.2.1 && sudo make install
+cd /usr/local/src
+wget https://curl.haxx.se/download/curl-8.2.1.zip
+unzip curl-8.2.1.zip
+cd /usr/local/src/curl-8.2.1
+autoreconf -fi
+./configure --with-ssl
+make
+make install
 
 # Install curl globally
-sudo mv /usr/local/src/curl-8.2.1/src/.libs/curl /usr/local/bin/curl
-sudo chown -R root:root /usr/local/bin/curl
+mv /usr/local/src/curl-8.2.1/src/.libs/curl /usr/local/bin/curl
 sudo ldconfig
 ```
 
