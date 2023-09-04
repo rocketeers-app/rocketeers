@@ -21,12 +21,12 @@ So the solution was to upgrade `curl` to the newest possible version. Because th
 Here's to install the latest `curl` version (v8.2.1) at the time of writing this article.
 
 ```bash
-# Remove current installed curl version
+# Remove installed curl version
 sudo apt remove curl -y
 sudo apt purge curl -y
-sudo apt-get update
 
 # Install libs and compile tooling
+sudo apt-get update
 sudo apt-get install -y libssl-dev autoconf libtool makez
 
 # Download new curl version, unzip, configure and compile build
