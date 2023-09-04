@@ -6,7 +6,7 @@ intro: Once in a while I got this error when connecting to an external service o
 published_at: 2023-09-04
 ---
 
-## Description of the error
+## Root cause of the error
 
 We have a lot of servers running on [Digitalocean](https://m.do.co/c/0801ad4bd810) that sends email using an email service provider like Postmark or Mailgun. And once in every 4-5 emails that were send, I got this error message stating the error "Error in the HTTP2 framing layer solution" following the URL of the API it was connecting to.
 
@@ -14,7 +14,9 @@ At first I thought the problem was on the API service I was using, because of a 
 
 But after some research online, it wasn't a third party problem. But a problem on the server itself, and specifically a bug in the version of `curl` available in the APT repositories of Ubuntu.
 
-So the solution was to upgrade `curl` to the newest possible version. Because this new version is not offered through APT, we need to do it manually.
+## Solution
+
+The solution was to upgrade `curl` to the newest possible version. Because this new version is not offered through APT, we need to do it manually.
 
 ## How to upgrade curl manually
 
