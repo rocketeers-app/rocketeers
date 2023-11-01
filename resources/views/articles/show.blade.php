@@ -15,7 +15,7 @@
                 <p class="my-10 text-xl leading-relaxed text-gray-200">{{ $article->intro }}</p>
                 @endif
                 <p class="text-gray-500">
-                    Published on {{ $article->published_at->format('F j, Y') }}
+                    Published by <x-link href="https://twitter.com/markvaneijk">Mark van Eijk</x-link> on {{ $article->published_at->format('F j, Y') }}
                     @if($article->updated_at)
                     <br>Updated on {{ $article->updated_at->format('F j, Y') }}
                     @endif
@@ -23,7 +23,7 @@
                 </p>
             </div>
         </div>
-        <x-markdown class="prose text-gray-200 prose-h2:mb-3 prose-h2:text-lg md:prose-pre:-mx-10 lg:prose-pre:-mx-24 xl:prose-pre:-mx-32 prose-pre:-mx-4 md:prose-pre:p-10 prose-pre:py-10 md:prose-h2:mb-4 md:prose-xl prose-invert prose-a:underline prose-a:text-emerald-400 hover:prose-a:text-emerald-200 prose-a:decoration-2 prose-a:underline-offset-4">
+        <x-markdown class="prose text-gray-200 prose-h2:mb-3 prose-h2:text-lg prose-h3:text-sm md:prose-pre:-mx-10 lg:prose-pre:-mx-24 xl:prose-pre:-mx-32 prose-pre:-mx-4 md:prose-pre:p-10 prose-pre:py-10 md:prose-h2:mb-4 md:prose-xl prose-invert prose-a:underline prose-a:text-emerald-400 hover:prose-a:text-emerald-200 prose-a:decoration-2 prose-a:underline-offset-4">
             {!! $article->content !!}
         </x-markdown>
         @if(session('message'))
