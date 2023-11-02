@@ -15,7 +15,7 @@ return [
          * Clear static files before building static cache.
          * When disabled, the cache is warmed up rather by updating and overwriting files instead of starting without an existing cache.
          */
-        'clear_before_start' => true,
+        'clear_before_start' => false,
 
         /**
          * Number of concurrent http requests to build static cache.
@@ -55,7 +55,7 @@ return [
         /**
          * The filesystem disk that will be used to cache your pages.
          */
-        'disk' => env('STATIC_FILESYSTEM_DISK', 'public'),
+        'disk' => env('STATIC_FILESYSTEM_DISK', 'static'),
 
         /**
          * Different caches per domain.
