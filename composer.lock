@@ -9129,12 +9129,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vormkracht10/laravel-static.git",
-                "reference": "832ca6bd283ceed39acba13add95c73756375ee4"
+                "reference": "f400217d99b11b0da74d1554a07d2100caeee7de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vormkracht10/laravel-static/zipball/832ca6bd283ceed39acba13add95c73756375ee4",
-                "reference": "832ca6bd283ceed39acba13add95c73756375ee4",
+                "url": "https://api.github.com/repos/vormkracht10/laravel-static/zipball/f400217d99b11b0da74d1554a07d2100caeee7de",
+                "reference": "f400217d99b11b0da74d1554a07d2100caeee7de",
                 "shasum": ""
             },
             "require": {
@@ -9196,7 +9196,7 @@
                 "issues": "https://github.com/vormkracht10/laravel-static/issues",
                 "source": "https://github.com/vormkracht10/laravel-static/tree/main"
             },
-            "time": "2023-11-01T10:10:03+00:00"
+            "time": "2023-11-02T21:28:03+00:00"
         },
         {
             "name": "webmozart/assert",
