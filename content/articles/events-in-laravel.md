@@ -10,7 +10,7 @@ Out of the box Laravel has a wide variety of events that are fired inside your a
 
 These events can help you with hooking into functionality and listen for when things are happening. This makes Laravel easily extensible without much effort.
 
-# How to list events in your Laravel app
+## How to list events in your Laravel app
 
 If you would like to quickly overview all Laravel events inside your own app, including listeners. Execute the following artisan command:
 
@@ -18,11 +18,9 @@ If you would like to quickly overview all Laravel events inside your own app, in
 php artisan event:list
 ```
 
-# Complete list of events in Laravel
+## Complete list of events in Laravel
 
 Here is an up-to-date overview per section of the latest Laravel version 10.x and official packages, with events per module.
-
-# Default Laravel app
 
 ## Laravel Auth events
 
