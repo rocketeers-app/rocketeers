@@ -1,6 +1,6 @@
 ---
-title: List of all events in Laravel
-slug: list-of-all-events-in-laravel
+title: List of events in Laravel
+slug: list-of-events-in-laravel
 category: Laravel
 intro: Laravel provides quite a lot of events that are fired by default, which makes it easy to hook into using listeners.
 published_at: 2023-10-10
@@ -10,7 +10,7 @@ Out of the box Laravel has a wide variety of events that are fired inside your a
 
 These events can help you with hooking into functionality and listen for when things are happening. This makes Laravel easily extensible without much effort.
 
-# How to list all events in your Laravel app
+# How to list events in your Laravel app
 
 If you would like to quickly overview all Laravel events inside your own app, including listeners. Execute the following artisan command:
 
@@ -18,9 +18,9 @@ If you would like to quickly overview all Laravel events inside your own app, in
 php artisan event:list
 ```
 
-# Complete list of all events in Laravel
+# Complete list of events in Laravel
 
-Here is an up-to-date overview per section of the latest Laravel version 10.x and official packages, with all events per module.
+Here is an up-to-date overview per section of the latest Laravel version 10.x and official packages, with events per module.
 
 # Default Laravel app
 
