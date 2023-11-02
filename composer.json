@@ -7,13 +7,13 @@
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.0",
         "laravel/helpers": "^1.5",
-        "laravel/nova": "~4.0",
+        "laravel/nova": "4.22.2",
         "laravel/octane": "^1.3",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "lorisleiva/laravel-actions": "^2.4",
         "mtownsend/read-time": "^2.0",
-        "rocketeers-app/rocketeers-laravel": "dev-master",
+        "rocketeers-app/rocketeers-laravel": "^1.0",
         "ryangjchandler/orbit": "^1.1",
         "spatie/browsershot": "^3.57",
         "spatie/laravel-feed": "^4.1",
@@ -21,7 +21,7 @@
         "spatie/laravel-sitemap": "^6.2",
         "vormkracht10/laravel-open-graph-image": "^0.2.0",
         "vormkracht10/laravel-seo-scanner": "v1.1.1",
-        "vormkracht10/laravel-static": "^v0.1.3"
+        "vormkracht10/laravel-static": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
