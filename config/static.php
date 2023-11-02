@@ -20,7 +20,7 @@ return [
         /**
          * Number of concurrent http requests to build static cache.
          */
-        'concurrency' => 5,
+        'concurrency' => 1,
 
         /**
          * Whether to follow links on pages.
