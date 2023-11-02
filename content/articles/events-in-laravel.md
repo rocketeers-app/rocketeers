@@ -47,7 +47,7 @@ Illuminate\Console\Events\ArtisanStarting::class
 Illuminate\Console\Events\CommandFinished::class
 ```
 
-## Laravel Databaase events
+## Laravel Database events
 
 ```php
 Illuminate\Database\Events\QueryExecuted::class
