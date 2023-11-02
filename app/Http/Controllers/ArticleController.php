@@ -47,7 +47,7 @@ class ArticleController extends Controller
             $relatedArticles = $relatedArticlesList->filter(function ($relatedArticle) use ($article) {
                 return $relatedArticle->published_at <= $article->published_at;
             })
-            ->take(2);
+                ->take(2);
         }
 
         if ($relatedArticles->count() < 2) {
