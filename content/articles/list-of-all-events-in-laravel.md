@@ -1,6 +1,6 @@
 ---
-title: List of events in Laravel
-slug: list-of-events-in-laravel
+title: Events in Laravel
+slug: events-in-laravel
 category: Laravel
 intro: Laravel provides quite a lot of events that are fired by default, which makes it easy to hook into using listeners.
 published_at: 2023-10-10
