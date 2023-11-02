@@ -15,7 +15,7 @@ return [
          * Clear static files before building static cache.
          * When disabled, the cache is warmed up rather by updating and overwriting files instead of starting without an existing cache.
          */
-        'clear_before_start' => false,
+        'clear_before_start' => true,
 
         /**
          * Number of concurrent http requests to build static cache.
