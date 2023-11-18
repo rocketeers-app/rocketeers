@@ -35,8 +35,7 @@ package() {
         exit 1
     fi
 
-    DEFAULT_VENDOR="vormkracht10"
-    VENDOR="${2:-$DEFAULT_VENDOR}"
+    VENDOR="${2:-vormkracht10}"
 
     composer config repositories.$1 '{"type": "path", "url": "../'$1'", "options": {"symlink": true}}' --file composer.json
 
