@@ -27,7 +27,7 @@ Bottom line, it takes the pain away of setting it all up manually!
 
 The function checks for an existing composer.json, leverages the composer binary to change the configuration of the composer.json, removes the current vendor and composer.lock to discard any conflicting situations, requires the package to install it using the configured symlink and finally removes the changes made from the Git repository like it's never been changed. But by still keeping the `vendor` folder in tact, the package will be symlinked locally.
 
-````
+```bash
 package() {
 
     if [[ ! -f "composer.json" ]]; then
@@ -47,8 +47,8 @@ package() {
 
     git checkout -- composer.json
     git checkout -- composer.lock
-}```
-````
+}
+```
 
 ## Usage
 
@@ -64,4 +64,8 @@ If you do need to overwrite the vendor, you can do this by setting the second pa
 
 ```bash
 package [package-name] [vendor] # e.g. package laravel-ok vormkracht10
+```
+
+```
+
 ```
