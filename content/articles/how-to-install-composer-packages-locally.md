@@ -65,7 +65,3 @@ If you do need to overwrite the vendor, you can do this by setting the second pa
 ```bash
 package [package-name] [vendor] # e.g. package laravel-ok vormkracht10
 ```
-
-```
-
-```
