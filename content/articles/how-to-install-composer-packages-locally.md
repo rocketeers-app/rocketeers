@@ -53,7 +53,7 @@ package() {
 
 You can use the Bash function in two ways:
 
-You can change the "vormkracht10" string to the vendor or organization of your preference. When you're needing packages mostly from this vendor, it keeps the command nice and short:
+You can change the `vormkracht10` string to the vendor or organization of your preference. When you're needing packages mostly from this vendor, it keeps the command nice and short:
 
 ```bash
 package [package-name] # e.g. package laravel-ok
