@@ -22,7 +22,7 @@ php artisan event:list
 
 Here is an up-to-date overview per section of the latest Laravel version 10.x and official packages, with events per module.
 
-## Laravel Auth events
+### Laravel Auth events
 
 ```php
 Illuminate\Auth\Events\Failed::class
@@ -31,7 +31,7 @@ Illuminate\Auth\Events\Login::class
 Illuminate\Auth\Events\Logout::class
 ```
 
-## Laravel Cache events
+### Laravel Cache events
 
 ```php
 Illuminate\Cache\Events\CacheHit::class
@@ -40,47 +40,47 @@ Illuminate\Cache\Events\KeyForgotten::class
 Illuminate\Cache\Events\KeyWritten::class
 ```
 
-## Laravel Console events
+### Laravel Console events
 
 ```php
 Illuminate\Console\Events\ArtisanStarting::class
 Illuminate\Console\Events\CommandFinished::class
 ```
 
-## Laravel Database events
+### Laravel Database events
 
 ```php
 Illuminate\Database\Events\QueryExecuted::class
 ```
 
-## Laravel Foundation events
+### Laravel Foundation events
 
 ```php
 Illuminate\Foundation\Events\LocaleUpdated::class
 Illuminate\Foundation\Http\Events\RequestHandled::class
 ```
 
-## Laravel HTTP client events
+### Laravel HTTP client events
 
 ```php
 Illuminate\Http\Client\Events\RequestSending::class
 Illuminate\Http\Client\Events\ResponseReceived::class
 ```
 
-## Laravel Log events
+### Laravel Log events
 
 ```php
 Illuminate\Log\Events\MessageLogged::class
 ```
 
-## Laravel Mail events
+### Laravel Mail events
 
 ```php
 Illuminate\Mail\Events\MessageSending::class
 Illuminate\Mail\Events\MessageSent::class
 ```
 
-## Laravel Auth events
+### Laravel Auth events
 
 ```php
 Illuminate\Queue\Events\JobExceptionOccurred::class
@@ -90,7 +90,7 @@ Illuminate\Queue\Events\JobProcessing::class
 Illuminate\Queue\Events\JobQueued::class
 ```
 
-## Laravel Eloquent events
+### Laravel Eloquent events
 
 Laravel Eloquent uses keys instead of FQDN.
 
@@ -110,7 +110,7 @@ eloquent.updating
 
 ## Official Laravel packages
 
-## Laravel Horizon events
+### Laravel Horizon events
 
 ```php
 Laravel\Horizon\Events\JobDeleted::class
@@ -124,7 +124,7 @@ Laravel\Horizon\Events\MasterSupervisorLooped::class
 Laravel\Horizon\Events\SupervisorLooped::class
 ```
 
-## Laravel Octane events
+### Laravel Octane events
 
 ```php
 Laravel\Octane\Contracts\OperationTerminated::class
@@ -135,7 +135,7 @@ Laravel\Octane\Events\WorkerErrorOccurred::class
 Laravel\Octane\Events\WorkerStarting::class
 ```
 
-## Laravel Scout events
+### Laravel Scout events
 
 ```php
 Laravel\Scout\Events\ModelsImported::class
