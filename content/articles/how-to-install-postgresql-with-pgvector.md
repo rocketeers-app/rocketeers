@@ -34,7 +34,7 @@ sudo -u postgres psql # run as postgres user
 CREATE EXTENSION vector; # create the vector extension
 ```
 
-## Optional: Start PostgreSQL automatically
+## Start PostgreSQL automatically (optional)
 
 Configure PostgreSQL to start automatically after booting your server:
 
