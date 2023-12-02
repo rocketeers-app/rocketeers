@@ -3,7 +3,7 @@ title: How to install PostgreSQL with pgvector on Ubuntu 22
 slug: how-to-install-postgresql-with-pgvector-on-ubuntu-22
 category: Databases
 intro: Turn PostgreSQL in a vector database using the pgvector extension on Ubuntu 22.
-published_at: 2023-01-12
+published_at: 2023-12-02
 ---
 
 We assume you already have provisioned a Ubuntu 22.x server, ready to get going.
