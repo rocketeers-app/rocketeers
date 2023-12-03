@@ -31,6 +31,9 @@ The last step to turn PostgreSQL in a vector database, run the following query a
 
 ```bash
 sudo -u postgres psql # run as postgres user
+```
+
+```sql
 CREATE EXTENSION vector; # create the vector extension
 ```
 
