@@ -1,7 +1,7 @@
 ---
 title: How to get processes with highest memory usage
 slug: how-to-get-processes-with-highest-memory-usage
-category: Performance
+category: Hosting
 intro: This command shows you which processes are eating all of your server memory.
 published_at: 2022-08-12
 ---

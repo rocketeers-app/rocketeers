@@ -125,6 +125,11 @@
         </div>
         <p class="mt-8 text-base text-center text-gray-500">
             &copy; {{ date('Y') }} Mark van Eijk - All rights reserved.
+
+            @if(isset($sourceUrl))
+            <a href="{{ $sourceUrl }}" target="_blank" rel="noopener" class="underline">View source of this page</a>
+            @endif
+
             Hosted by <a href="https://m.do.co/c/0801ad4bd810" target="_blank" rel="noopener" class="underline">DigitalOcean</a> - analytics by <a href="https://usefathom.com/ref/WCCANW" target="_blank" rel="noopener" class="underline">Fathom</a></p>
         </p>
     </footer>
