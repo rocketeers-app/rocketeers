@@ -65,7 +65,7 @@ sudo curl -L https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
 sudo apt-get update
 ```
 
-### 2. Install nginx and nginx-extras
+### 2. Install nginx using nginx-full
 
 ```bash
 sudo apt install -y nginx-full
