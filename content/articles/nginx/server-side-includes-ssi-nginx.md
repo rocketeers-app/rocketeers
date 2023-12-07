@@ -56,7 +56,7 @@ While including files into another file is a typical task for dynamic scripting 
 
 ## How to enable SSI in Nginx
 
-### 1. Add nginx apt repository
+### Add nginx apt repository
 
 ```bash
 echo "deb http://nginx.org/packages/ubuntu/ $(lsb_release -sc) nginx
@@ -65,13 +65,13 @@ sudo curl -L https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
 sudo apt-get update
 ```
 
-### 2. Install nginx using nginx-full
+### Install nginx using nginx-full
 
 ```bash
 sudo apt install -y nginx-full
 ```
 
-### 3. Configure SSI
+### Configure SSI
 
 Add in the location block that needs to use SSI, the following rule:
 
@@ -83,7 +83,7 @@ location / {
 }
 ```
 
-### 4. Reload Nginx service
+### Reload Nginx service
 
 Reload the Nginx service to apply the configuration changes without downtime:
 
