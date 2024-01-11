@@ -1,81 +1,66 @@
 {
-    "name": "rocketeers-app/rocketeers",
-    "type": "project",
-    "license": "MIT",
-    "require": {
-        "php": "^8.1",
-        "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^9.0",
-        "laravel/helpers": "^1.5",
-        "laravel/nova": "4.22.2",
-        "laravel/octane": "^1.3",
-        "laravel/sanctum": "^3.0",
-        "laravel/tinker": "^2.7",
-        "lorisleiva/laravel-actions": "^2.4",
-        "mtownsend/read-time": "^2.0",
-        "rocketeers-app/rocketeers-laravel": "^1.0",
-        "ryangjchandler/orbit": "^1.1",
-        "spatie/browsershot": "^3.57",
-        "spatie/laravel-feed": "^4.1",
-        "spatie/laravel-markdown": "^2.2",
-        "spatie/laravel-sitemap": "^6.2",
-        "vormkracht10/laravel-open-graph-image": "^0.2.0",
-        "vormkracht10/laravel-seo-scanner": "v1.1.1",
-        "vormkracht10/laravel-static": "dev-main"
+  "name": "rocketeers-app/rocketeers",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": "^8.1",
+    "guzzlehttp/guzzle": "^7.2",
+    "laravel/framework": "^10.0",
+    "laravel/helpers": "^1.6",
+    "laravel/octane": "^2.2",
+    "laravel/tinker": "^2.9",
+    "lorisleiva/laravel-actions": "^2.7",
+    "mtownsend/read-time": "^2.0",
+    "rocketeers-app/rocketeers-laravel": "^2.0",
+    "ryangjchandler/orbit": "^1.1",
+    "spatie/browsershot": "^3.57",
+    "spatie/laravel-feed": "^4.1",
+    "spatie/laravel-markdown": "^2.2",
+    "spatie/laravel-sitemap": "^6.2",
+    "vormkracht10/laravel-open-graph-image": "^0.4.1",
+    "vormkracht10/laravel-seo-scanner": "v3.5.6",
+    "vormkracht10/laravel-static": "dev-main"
+  },
+  "require-dev": {
+    "fakerphp/faker": "^1.9.1",
+    "laravel/pint": "^1.0",
+    "mockery/mockery": "^1.4.4",
+    "nunomaduro/collision": "^7.0",
+    "phpunit/phpunit": "^10.0",
+    "spatie/laravel-ignition": "^2.0"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": []
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
     },
-    "require-dev": {
-        "fakerphp/faker": "^1.9.1",
-        "laravel/pint": "^1.0",
-        "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^6.1",
-        "phpunit/phpunit": "^9.5.10",
-        "spatie/laravel-ignition": "^1.3"
-    },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "dont-discover": []
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/"
-        },
-        "classmap": [
-            "database/seeders",
-            "database/factories"
-        ],
-        "files": [
-            "app/helpers.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
-        ],
-        "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "@php artisan key:generate --ansi"
-        ]
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://nova.laravel.com"
-        }
-    ]
+    "classmap": ["database/seeders", "database/factories"],
+    "files": ["app/helpers.php"]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover --ansi"
+    ],
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": ["@php artisan key:generate --ansi"]
+  }
 }
