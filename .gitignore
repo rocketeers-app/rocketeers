@@ -4,6 +4,7 @@
 /public/storage
 /storage/*.key
 /vendor
+.cache
 .DS_Store
 .env
 .env.backup

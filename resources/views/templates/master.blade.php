@@ -20,15 +20,11 @@
                             Rocketeers
                         </a>
                         <div class="flex items-center md:hidden">
-                            <button type="button"
-                                class="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
-                                aria-expanded="false" @click="menu = true">
+                            <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false" @click="menu = true">
                                 <span class="sr-only">Open main menu</span>
                                 <!-- Heroicon name: outline/menu -->
-                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h16M4 18h16" />
+                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
                             </button>
                         </div>
@@ -44,8 +40,7 @@
                     {{-- <a href="{{ route('doc.index') }}" class="hover:text-gray-300">Docs</a> <span class="mr-2 text-gray-800">|</span> --}}
                     <a href="https://rocketeers.app" class="hover:text-gray-300">
                         Login
-                        <span
-                            class="inline-flex items-center px-2 py-1 ml-2 text-xs font-medium text-white bg-gray-600 border border-transparent rounded-md hover:bg-gray-700">
+                        <span class="inline-flex items-center px-2 py-1 ml-2 text-xs font-medium text-white bg-gray-600 border border-transparent rounded-md hover:bg-gray-700">
                             BETA
                         </span>
                     </a>
@@ -63,22 +58,17 @@
             From: "opacity-100 scale-100"
             To: "opacity-0 scale-95"
         -->
-        <div class="absolute inset-x-0 top-0 z-10 p-2 transition origin-top transform md:hidden" x-show="menu"
-            style="display: none">
+        <div class="absolute inset-x-0 top-0 z-10 p-2 transition origin-top transform md:hidden" x-show="menu" style="display: none">
             <div class="overflow-hidden bg-gray-800 rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
                 <div class="flex items-center justify-between px-5 pt-4">
                     <div class="text-2xl font-extrabold text-white">
                         <a href="/">Rocketeers</a>
                     </div>
-                    <button type="button"
-                        class="inline-flex items-center justify-center p-2 text-gray-800 bg-gray-600 rounded-md hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-600"
-                        @click="menu = false">
+                    <button type="button" class="inline-flex items-center justify-center p-2 text-gray-800 bg-gray-600 rounded-md hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-600" @click="menu = false">
                         <span class="sr-only">Close menu</span>
                         <!-- Heroicon name: outline/x -->
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
@@ -134,8 +124,7 @@
         </p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
-
-    <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z" defer></script>
+    @vite('resources/js/app.js')
 </body>
+
 </html>

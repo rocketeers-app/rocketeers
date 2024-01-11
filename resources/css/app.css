@@ -1,13 +1,13 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 ol.table-of-contents {
     margin-left: 0;
     padding-left: 0;
     list-style-position: inside;
 
-    @apply bg-gray-800 py-4 px-6 rounded-md
+    @apply rounded-md bg-gray-800 px-6 py-4;
 }
 
 ol.table-of-contents li {

@@ -3,11 +3,11 @@ name: phpunit
 on:
   push:
     paths:
-      - '.github/workflows/*.yml'
+      - ".github/workflows/*.yml"
   pull_request:
     branches:
-    - master
-    - develop
+      - master
+      - develop
 
 jobs:
   phpunit:
@@ -26,57 +26,56 @@ jobs:
 
     strategy:
       matrix:
-        php-versions: ['7.4']
+        php-versions: ["7.4"]
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 1
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
 
-    - uses: shivammathur/setup-php@v2 #https://github.com/shivammathur/setup-php
-      with:
-        php-version: ${{ matrix.php-versions }}
-        extensions: mbstring, imagick, dom, fileinfo, mysql
+      - uses: shivammathur/setup-php@v2 #https://github.com/shivammathur/setup-php
+        with:
+          php-version: ${{ matrix.php-versions }}
+          extensions: mbstring, imagick, dom, fileinfo, mysql
 
-    - name: Get composer cache directory
-      id: composer-cache
-      run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
 
-    - name: Cache composer dependencies
-      uses: actions/cache@v2
-      with:
-        path: ${{ steps.composer-cache.outputs.dir }}
-        key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-composer-${{ env.cache-name }}-
-          ${{ runner.os }}-composer-
-          ${{ runner.os }}-
-            
-    - name: Install Composer dependencies
-      run: |
-        composer config "http-basic.nova.laravel.com" "${{ secrets.NOVA_USERNAME }}" "${{ secrets.NOVA_PASSWORD }}"
-        composer install --no-progress --prefer-dist --optimize-autoloader
+      - name: Cache composer dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-composer-${{ env.cache-name }}-
+            ${{ runner.os }}-composer-
+            ${{ runner.os }}-
 
-    - name: Prepare Laravel Application
-      run: |
-        cp .env.ci .env
-        php artisan key:generate
-        php artisan migrate
+      - name: Install Composer dependencies
+        run: |
+          composer install --no-progress --prefer-dist --optimize-autoloader
 
-    - name: Cache node modules
-      uses: actions/cache@v1
-      with:
-        path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name }}-
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
+      - name: Prepare Laravel Application
+        run: |
+          cp .env.ci .env
+          php artisan key:generate
+          php artisan migrate
 
-    - name: Install Dependencies (Npm modules)
-      run: npm install && npm run prod
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
 
-    - name: Run tests
-      run: vendor/bin/phpunit
-      env:
-        DB_PORT: ${{ job.services.mysql.ports[3306] }}
+      - name: Install Dependencies (Npm modules)
+        run: npm install && npm run prod
+
+      - name: Run tests
+        run: vendor/bin/phpunit
+        env:
+          DB_PORT: ${{ job.services.mysql.ports[3306] }}
