@@ -6,7 +6,7 @@ intro: Server Side Includes can be a very handy feature when dealing with cachin
 published_at: 2023-12-07
 ---
 
-## What are Server Side Includes (SSI)?
+## What are Server Side Includes (SSI)
 
 Server Side Includes (SSI) is a simple scripting language used on web servers to include content dynamically in web pages. SSI directives are embedded within HTML pages and are processed by the web server before the page is sent to the client's browser. The server executes the directives and includes the specified content in the final HTML document that is delivered to the user.
 
