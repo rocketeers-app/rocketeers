@@ -1,6 +1,6 @@
 ---
-title: Content Security Policy (CSP) with nonce in Nginx
-slug: csp-nonce-nginx
+title: Content Security Policy with nonce using Nginx
+slug: content-security-policy
 category: Nginx
 intro: How to configure Content Security Policy (CSP) with dynamic nonces in Nginx.
 published_at: 2024-01-21
