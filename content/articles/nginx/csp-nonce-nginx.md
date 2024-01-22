@@ -60,10 +60,9 @@ Here we use `NGINX_CSP_NONCE` as the placeholder for the nonce. This placeholder
 
 ```html
 <script nonce="NGINX_CSP_NONCE">
-/* your
-  inline
-  script
-*/
+/**
+ * Your inline script
+ */
 </script>
 ```
 
