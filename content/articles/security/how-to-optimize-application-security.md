@@ -34,9 +34,9 @@ Domain Name System Security Extensions (DNSSEC) is a protection layer on top of 
 
 DNS-based Authentication of Named Entities (DANE) is a protocol that only works when DNSSEC is activated.
 
-<!-- ## CSP
+## CSP
 
-... -->
+[Content Security Policy (CSP)](/content-security-policy) is a protection layer configured in your web server or web application using an HTTP-header that defines what resources are allowed to be loaded by the browser. This can be used to prevent loading resources from external domains or to prevent loading resources that are not using HTTPS.
 
 ## Nonce
 
