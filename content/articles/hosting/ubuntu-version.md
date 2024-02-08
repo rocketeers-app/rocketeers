@@ -21,7 +21,7 @@ lsb_release -r # Outputs: "Release: 18.04"
 lsb_release -c # Outputs: "Codename: bionic"
 ```
 
-If you only want the value and not the label of the output, add a the `s` parameter to the command:
+If you only want the value and not the label of the output, add the `s` parameter to the command:
 
 ```bash
 lsb_release -is # Outputs: "Ubuntu"
