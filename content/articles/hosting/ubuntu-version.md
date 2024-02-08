@@ -2,7 +2,7 @@
 title: How to check Ubuntu version
 slug: ubuntu-version
 category: Hosting
-intro: This command shows you which processes are eating all of your server memory.
+intro: Learn how to quickly get the Ubuntu version you're running using the command line.
 published_at: 2024-02-08
 ---
 
