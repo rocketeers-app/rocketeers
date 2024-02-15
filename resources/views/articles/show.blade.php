@@ -12,7 +12,7 @@
             <h3 class="mb-4"><a href="{{ route('knowledge', ['slug' => str_slug($article->category)]) }}" class="text-xl font-extrabold text-gray-600 md:text-2xl">#{{ str_replace(' ', '', $article->category) }}</a></h3>
             <div class="mb-10">
                 @if($article->intro)
-                <p class="my-10 text-xl leading-relaxed text-gray-200">{{ $article->intro }}</p>
+                <p class="my-10 text-2xl leading-relaxed text-gray-200">{{ $article->intro }}</p>
                 @endif
                 <p class="text-gray-500">
                     Published by <x-link href="https://twitter.com/markvaneijk">Mark van Eijk</x-link> on {{ $article->published_at->format('F j, Y') }}
