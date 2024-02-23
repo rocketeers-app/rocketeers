@@ -1,5 +1,5 @@
 ---
-title: How to fix 419 Page Expired error in Laravel
+title: 419 Page Expired error in Laravel
 slug: 419-page-expired-laravel
 category: Laravel
 intro: When working with Laravel you will encounter this error from time to time. Here's how you can fix this error.

@@ -1,6 +1,6 @@
 @php($title = app()->view->getSections()['title'] ?? config('app.name').' - Sites management for digital agencies and developers')
 
-<title>{{ $title }}</title>
+<title>{!! html_entity_decode($title) !!}</title>
 <link rel="canonical" href="{{ url()->current() }}">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
