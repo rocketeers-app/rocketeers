@@ -42,6 +42,6 @@ $.ajaxSetup({
 });
 ```
 
-Another option - depending on your use case - is to [disable the verification of the CSRF token](/how-to-disable-csrf-in-laravel) for all or specific routes in your application.
+Another option - depending on your use case - is to [disable the verification of the CSRF token](/disable-csrf-in-laravel) for all or specific routes in your application.
 
 In case of stateless requests like API or webhooks this makes sense and is the use of API tokens or signed routes more suitable.
