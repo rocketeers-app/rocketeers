@@ -24,7 +24,7 @@ Route::redirect('how-to-optimize-for-optimal-server-performance', 'optimize-serv
 Route::redirect('how-to-optimize-server-performance', 'optimize-server-performance', 301);
 Route::redirect('how-to-optimize-website-performance', 'optimize-website-performance', 301);
 Route::redirect('how-to-run-php-files', 'run-php-files', 301);
-Route::redirect('how-to-upgrade-mysql-5.7-to-8.0-on-ubuntu.md', 'upgrade-mysql-5-7-to-8-0-ubuntu', 301);
+Route::redirect('how-to-upgrade-mysql-5-7-to-8-0-on-ubuntu', 'upgrade-mysql-5-7-to-8-0-ubuntu', 301);
 Route::redirect('how-to-use-different-php-versions-with-laravel-valet', 'different-php-versions-laravel-valet', 301);
 Route::redirect('importing-database-in-mysql-using-command-line', 'import-database-mysql-command-line', 301);
 Route::redirect('laravel-logging', 'logging-in-laravel', 301);
