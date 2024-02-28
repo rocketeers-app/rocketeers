@@ -27,7 +27,7 @@ Route::redirect('how-to-run-php-files', 'run-php-files', 301);
 Route::redirect('how-to-upgrade-mysql-5-7-to-8-0-on-ubuntu', 'upgrade-mysql-5-7-to-8-0-ubuntu', 301);
 Route::redirect('how-to-use-different-php-versions-with-laravel-valet', 'different-php-versions-laravel-valet', 301);
 Route::redirect('importing-database-in-mysql-using-command-line', 'import-database-mysql-command-line', 301);
-Route::redirect('laravel-logging', 'logging-in-laravel', 301);
+Route::redirect('logging-in-laravel', 'laravel-logging', 301);
 Route::redirect('reclaim-diskspace-on-ubuntu-server', 'reclaim-diskspace-on-ubuntu', 301);
 Route::redirect('removing-tracked-files-in-git-that-should-have-been-ignored', 'removing-tracked-files-git', 301);
 Route::redirect('stream-mysql-backup-directly-to-s3-bucket', 'stream-mysql-backup-s3-bucket', 301);
