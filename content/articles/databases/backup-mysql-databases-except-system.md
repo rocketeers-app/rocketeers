@@ -1,6 +1,6 @@
 ---
 title: Backup MySQL databases except system databases in a single file
-slug: backup-mysql-databases-except-system-databases-in-single-file
+slug: backup-mysql-databases-except-system
 category: Databases
 intro: How to dump all MySQL databases on a server in a single file with the exception of certain (system) databases.
 published_at: 2023-01-12

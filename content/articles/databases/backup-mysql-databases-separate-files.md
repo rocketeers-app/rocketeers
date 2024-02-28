@@ -1,6 +1,6 @@
 ---
 title: Backup MySQL databases in separate files
-slug: backup-mysql-databases-in-separate-files
+slug: backup-mysql-databases-separate-files
 category: Databases
 intro: How to dump existing MySQL databases on a server in separate backup files.
 published_at: 2023-01-12

@@ -1,6 +1,6 @@
 ---
 title: Importing database in MySQL using command line
-slug: importing-database-in-mysql-using-command-line
+slug: import-database-mysql-command-line
 category: Databases
 intro: Importing a database in MySQL is quick & easy using the command line.
 published_at: 2022-08-30

@@ -1,6 +1,6 @@
 ---
 title: Backup MySQL databases in single file
-slug: backup-mysql-databases-in-single-file
+slug: backup-mysql-databases-single-file
 category: Databases
 intro: How to dump existing MySQL databases on a server in a single file.
 published_at: 2023-01-12

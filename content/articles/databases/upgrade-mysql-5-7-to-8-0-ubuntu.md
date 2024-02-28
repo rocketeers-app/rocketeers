@@ -1,6 +1,6 @@
 ---
 title: How to upgrade MySQL 5.7 to 8.0 on Ubuntu
-slug: how-to-upgrade-mysql-5-7-to-8-0-on-ubuntu
+slug: upgrade-mysql-5-7-to-8-0-ubuntu
 category: Databases
 intro: Learn how to safely upgrade your database server from MySQL 5.7 to MySQL 8.0 on Ubuntu.
 published_at: 2023-01-12

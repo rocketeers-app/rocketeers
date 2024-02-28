@@ -1,6 +1,6 @@
 ---
 title: How to install Composer packages locally
-slug: how-to-install-composer-packages-locally
+slug: install-composer-packages-locally
 published_at: 2023-11-18
 category: Command Line
 ---

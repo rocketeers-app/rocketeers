@@ -1,6 +1,6 @@
 ---
 title: Removing tracked files in Git that should have been ignored
-slug: removing-tracked-files-in-git-that-should-have-been-ignored
+slug: removing-tracked-files-git
 category: Git
 intro: Removing files that has been committed earlier in your repository is something you encouter once in a while. Read here how you can do this.
 published_at: 2022-09-27

@@ -1,6 +1,6 @@
 ---
-title: How to get processes with highest CPU usage
-slug: how-to-get-processes-with-highest-cpu-usage
+title: How to get top processes with highest CPU usage
+slug: top-processes-cpu
 category: Hosting
 intro: Want to know what's causing your server to slow down or what's keeping all these resources for itself. This command shows you which processes take it all.
 published_at: 2022-08-12

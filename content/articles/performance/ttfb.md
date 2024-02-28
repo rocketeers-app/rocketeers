@@ -1,6 +1,6 @@
 ---
 title: How to measure TTFB (Time To First Byte)
-slug: how-to-measure-ttfb-time-to-first-byte
+slug: ttfb
 category: Performance
 intro: TTFB is one of the most important metrics to measure your website or webapp performance. Because only after the first byte the browser can begin to render it.
 published_at: 2022-08-24

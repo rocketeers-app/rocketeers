@@ -1,6 +1,6 @@
 ---
 title: Reclaim disk space on Ubuntu server
-slug: reclaim-diskspace-on-ubuntu-server
+slug: reclaim-diskspace-on-ubuntu
 category: Hosting
 intro: Your server disk space can clog up very quickly with a lot of unneeded files. Let's find out how to reclaim your precious disk space back.
 published_at: 2022-08-24

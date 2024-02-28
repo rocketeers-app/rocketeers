@@ -1,6 +1,6 @@
 ---
 title: Best practices for sending email
-slug: best-practices-for-sending-email
+slug: best-practices-sending-email
 category: Email
 intro: Improve the emails you're sending from your website or web app by following these best practices.
 published_at: 2022-12-06
