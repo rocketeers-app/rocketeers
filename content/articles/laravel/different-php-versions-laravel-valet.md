@@ -1,7 +1,7 @@
 ---
 title: How to use different PHP versions with Laravel Valet
 slug: different-php-versions-laravel-valet
-category: PHP
+category: Laravel
 intro: Laravel Valet is an awesome tool to quickly setup an development environment on your Mac. Here's how you can switch between different PHP versions while developing multiple projects.
 published_at: 2022-08-19
 ---

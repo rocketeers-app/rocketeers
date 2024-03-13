@@ -13,7 +13,9 @@ Route::redirect('exporting-database-in-mysql-using-command-line', 'export-databa
 Route::redirect('how-to-add-swap-space-on-ubuntu-servers', 'add-swap-space-on-ubuntu', 301);
 Route::redirect('how-to-check-laravel-version-of-your-app', 'check-laravel-version', 301);
 Route::redirect('how-to-disable-csrf-protection-in-laravel', 'disable-csrf-in-laravel', 301);
+Route::redirect('how-to-extract-certificate-from-pfx-file', 'extract-certificate-from-pfx-file', 301);
 Route::redirect('how-to-extract-certificate-from-pfx-file-on-macos', 'how-to-extract-certificate-from-pfx-file', 301);
+Route::redirect('how-to-extract-private-key-from-pfx-file', 'extract-private-key-from-pfx-file', 301);
 Route::redirect('how-to-extract-private-key-from-pfx-file-on-macos', 'how-to-extract-private-key-from-pfx-file', 301);
 Route::redirect('how-to-get-processes-with-highest-cpu-usage', 'top-processes-cpu', 301);
 Route::redirect('how-to-get-processes-with-highest-memory-usage', 'top-processes-memory', 301);
@@ -22,6 +24,7 @@ Route::redirect('how-to-install-postgresql-with-pgvector-on-ubuntu-22', 'install
 Route::redirect('how-to-measure-ttfb-time-to-first-byte', 'ttfb', 301);
 Route::redirect('how-to-optimize-for-optimal-server-performance', 'optimize-server-performance', 301);
 Route::redirect('how-to-optimize-server-performance', 'optimize-server-performance', 301);
+Route::redirect('how-to-optimize-web-application-security', 'optimize-web-application-security', 301);
 Route::redirect('how-to-optimize-website-performance', 'optimize-website-performance', 301);
 Route::redirect('how-to-run-php-files', 'run-php-files', 301);
 Route::redirect('how-to-upgrade-mysql-5-7-to-8-0-on-ubuntu', 'upgrade-mysql-5-7-to-8-0-ubuntu', 301);
