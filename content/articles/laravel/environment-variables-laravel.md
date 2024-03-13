@@ -8,13 +8,13 @@ published_at: 2024-03-13
 
 ## What is an environment variable
 
-Laravel has a `config` folder that has all config files in one place, to change a configuration you could change the value in the code, or change it inside the `.env` when it has an environment variable as the default value (with a fallback).
-
-## Typically used for secrets
+Laravel has a `config` folder that contains all configuration files in one place, to change a configuration you could change the value in the code, or change it inside the `.env` when it has an environment variable as the default value (with a fallback).
 
 Using the `.env` file has the advantage that every environment (typically local, staging or production) can have its own configuration based on the (yes) environment it runs in.
 
 The advantage of using the config files without the `env()` helper has the advantage that other developers on the same project can't forget to set important configurations to certain required values.
+
+## Typically used for secrets
 
 But beware, everything that's a secret, should only be present in the `.env` file and never in your code or version control (like git).
 
