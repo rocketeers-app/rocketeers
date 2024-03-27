@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "045447897661c8d94b0a631b8690d2b2",
+    "content-hash": "241f9e9f02d79cb626a48f2c5538d664",
     "packages": [
         {
             "name": "brick/math",
@@ -7329,60 +7329,6 @@
             "time": "2024-01-23T15:02:46+00:00"
         },
         {
-            "name": "tempest/highlight",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tempestphp/highlight.git",
-                "reference": "b9739ac88a6ece1e2ef832370e3c1ccbd6da9100"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tempestphp/highlight/zipball/b9739ac88a6ece1e2ef832370e3c1ccbd6da9100",
-                "reference": "b9739ac88a6ece1e2ef832370e3c1ccbd6da9100",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.3"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.21",
-                "larapack/dd": "^1.1",
-                "league/commonmark": "^2.4",
-                "phpstan/phpstan": "^1.10.0",
-                "phpunit/phpunit": "^10.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Tempest\\Highlight\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brent Roose",
-                    "email": "brendt@stitcher.io"
-                }
-            ],
-            "description": "Fast, extensible, server-side code highlighting",
-            "support": {
-                "issues": "https://github.com/tempestphp/highlight/issues",
-                "source": "https://github.com/tempestphp/highlight/tree/main"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/brendt",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-03-27T10:49:46+00:00"
-        },
-        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "v2.2.7",
             "source": {
@@ -8048,12 +7994,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vormkracht10/laravel-static.git",
-                "reference": "4fd16195e00751298a8fd6b83623f721f5fab533"
+                "reference": "c3f2a71b79060ecd7d02c068dad488a68294cb22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vormkracht10/laravel-static/zipball/4fd16195e00751298a8fd6b83623f721f5fab533",
-                "reference": "4fd16195e00751298a8fd6b83623f721f5fab533",
+                "url": "https://api.github.com/repos/vormkracht10/laravel-static/zipball/c3f2a71b79060ecd7d02c068dad488a68294cb22",
+                "reference": "c3f2a71b79060ecd7d02c068dad488a68294cb22",
                 "shasum": ""
             },
             "require": {
@@ -8121,7 +8067,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-27T20:53:01+00:00"
+            "time": "2024-03-27T20:58:33+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -10488,7 +10434,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "tempest/highlight": 20,
         "vormkracht10/laravel-static": 20
     },
     "prefer-stable": true,
