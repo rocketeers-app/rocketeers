@@ -7994,12 +7994,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vormkracht10/laravel-static.git",
-                "reference": "c3f2a71b79060ecd7d02c068dad488a68294cb22"
+                "reference": "e2f25d4ad43d8a1095d57be6e8cb4e2ee928d72b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vormkracht10/laravel-static/zipball/c3f2a71b79060ecd7d02c068dad488a68294cb22",
-                "reference": "c3f2a71b79060ecd7d02c068dad488a68294cb22",
+                "url": "https://api.github.com/repos/vormkracht10/laravel-static/zipball/e2f25d4ad43d8a1095d57be6e8cb4e2ee928d72b",
+                "reference": "e2f25d4ad43d8a1095d57be6e8cb4e2ee928d72b",
                 "shasum": ""
             },
             "require": {
@@ -8067,7 +8067,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-27T20:58:33+00:00"
+            "time": "2024-03-27T21:02:00+00:00"
         },
         {
             "name": "webmozart/assert",
