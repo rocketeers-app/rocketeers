@@ -1,8 +1,12 @@
 <?php
 
+use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
+use League\CommonMark\Extension\CommonMark\Node\Inline\Code;
 use League\CommonMark\Extension\ExternalLink\ExternalLinkExtension;
 use League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkExtension;
 use League\CommonMark\Extension\TableOfContents\TableOfContentsExtension;
+use Tempest\Highlight\CommonMark\CodeBlockRenderer;
+use Tempest\Highlight\CommonMark\InlineCodeBlockRenderer;
 
 return [
     'code_highlighting' => [
@@ -11,7 +15,7 @@ return [
          *
          * More info: https://spatie.be/docs/laravel-markdown/v1/installation-setup
          */
-        'enabled' => true,
+        'enabled' => false,
 
         /*
          * The name of or path to a Shiki theme
