@@ -8,7 +8,7 @@ published_at: 2023-09-04
 
 ## Root cause of the error
 
-We have a lot of servers running on [Digitalocean](https://m.do.co/c/0801ad4bd810) that sends email using an email service provider like Postmark or Mailgun. And once in every 4-5 emails that were send, I got this error message stating the error "Error in the HTTP2 framing layer solution" following the URL of the API it was connecting to.
+We have a lot of servers running on [Digitalocean](https://m.do.co/c/0801ad4bd810) that sends email using an email service provider like Postmark or Mailgun. And once in every 4-5 emails that were send, I got this error message stating the error "Error in the HTTP2 framing layer" following the URL of the API it was connecting to.
 
 At first I thought the problem was on the API service I was using, because of a drop in the SSL connection or something.
 
