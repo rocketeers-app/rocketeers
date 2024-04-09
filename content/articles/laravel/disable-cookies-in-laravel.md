@@ -14,6 +14,8 @@ Laravel uses cookies by default to attach the session to the same visitor and to
 
 > If you don't have authentication or forms on your website, than you don't need cookies and you can safely disable setting these cookies by Laravel.
 
+[→ How to disable CSRF in Laravel](https://rocketee.rs/disable-csrf-in-laravel) 
+
 ## How to prevent Laravel from using cookies
 
 To disable cookies the usage of cookies in Laravel, we need to make changes to the middleware stack that is setup by default. By default every visitor starts a new session and also has a unique CSRF token.
