@@ -1,6 +1,6 @@
 ---
-title: Error in the HTTP2 framing layer solution
-slug: error-in-the-http2-framing-layer-solution
+title: Error in the HTTP2 framing layer
+slug: error-in-the-http2-framing-layer
 category: Errors
 intro: Once in a while I got this error when connecting to an external service on servers running Ubuntu 18.x or 20.x. After some research I got this flaky bug resolved!
 published_at: 2023-09-04

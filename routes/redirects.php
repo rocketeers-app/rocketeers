@@ -8,6 +8,7 @@ Route::redirect('cloudflare-domain-import-in-bulk', 'import-multiple-sites-into-
 Route::redirect('cookieless-laravel', 'disable-cookies-in-laravel', 301);
 Route::redirect('disable-unnecessary-and-unused-php-versions-php-fpm-pools', 'disable-unused-php-fpm-pools', 301);
 Route::redirect('error-413-request-entity-too-large', '413-request-entity-too-large', 301);
+Route::redirect('error-in-the-http2-framing-layer-solution', 'error-in-the-http2-framing-layer', 301);
 Route::redirect('events-in-laravel', 'laravel-events', 301);
 Route::redirect('exporting-database-in-mysql-using-command-line', 'export-database-mysql-command-line', 301);
 Route::redirect('how-to-add-swap-space-on-ubuntu-servers', 'add-swap-space-on-ubuntu', 301);
