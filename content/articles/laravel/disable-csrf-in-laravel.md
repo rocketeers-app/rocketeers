@@ -1,5 +1,5 @@
 ---
-title: How to disable CSRF protection in Laravel
+title: Disable CSRF in Laravel
 slug: disable-csrf-in-laravel
 category: Laravel
 intro: Sometimes you need to disable the CSRF token verification in Laravel. A common use case is when you want to receive POST webhooks.
