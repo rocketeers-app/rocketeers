@@ -2,7 +2,7 @@
 title: Import MySQL database without timezone difference
 slug: mysql-import-without-timezone-difference
 category: Databases
-intro: When you're import a MySQL database from a server to your local computer, you might notice that the dates and times are different. 
+intro: When you import a MySQL database from a server to your local computer, you might notice that the dates and times are different. 
 published_at: 2024-05-02
 ---
 
