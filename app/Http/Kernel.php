@@ -30,11 +30,11 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
+            \Vormkracht10\MinifyHtml\Middleware\MinifyHtml::class,
             \Vormkracht10\LaravelStatic\Middleware\StaticResponse::class,
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
-            \Vormkracht10\MinifyHtml\Middleware\MinifyHtml::class,
         ],
 
         'api' => [
