@@ -17,9 +17,11 @@
     "spatie/laravel-feed": "^4.3",
     "spatie/laravel-markdown": "^2.4",
     "spatie/laravel-sitemap": "^7.0",
+    "vormkracht10/laravel-minify-html-middleware": "dev-main",
     "vormkracht10/laravel-open-graph-image": "^0.6.0",
     "vormkracht10/laravel-seo-scanner": "v3.5.7",
-    "vormkracht10/laravel-static": "dev-main"
+    "vormkracht10/laravel-static": "dev-main",
+    "vormkracht10/laravel-trailing-slash": "dev-main"
   },
   "require-dev": {
     "fakerphp/faker": "^1.9.1",
