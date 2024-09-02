@@ -1,6 +1,6 @@
 ---
-title: How much RAM memory cores on Ubuntu
-slug: how-much-ram-memory-on-ubuntu
+title: How much RAM memory on Ubuntu
+slug: how-much-memory-on-ubuntu
 category: Hosting
 intro: This command for Ubuntu shows you the RAM memory on your server
 published_at: 2024-09-02
