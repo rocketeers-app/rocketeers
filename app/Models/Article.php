@@ -2,16 +2,19 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Collection;
-use Orbit\Concerns\Orbital;
+use Orbit\Drivers\Yaml;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
-use Spatie\Sitemap\Contracts\Sitemapable;
+use Orbit\Contracts\Orbit;
+use Orbit\Concerns\Orbital;
 use Spatie\Sitemap\Tags\Url;
+use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Schema\Blueprint;
+use Orbit\Drivers\Markdown;
+use Spatie\Sitemap\Contracts\Sitemapable;
 
-class Article extends Model implements Feedable, Sitemapable
+class Article extends Model implements Feedable, Sitemapable, Orbit
 {
     use Orbital;
 
@@ -27,7 +30,12 @@ class Article extends Model implements Feedable, Sitemapable
         return 'slug';
     }
 
-    public static function schema(Blueprint $table)
+    public function getOrbitDriver(): string
+    {
+        return Markdown::class;
+    }
+
+    public function schema(Blueprint $table): void
     {
         $table->string('title');
         $table->string('slug');

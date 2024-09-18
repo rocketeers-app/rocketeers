@@ -2,13 +2,15 @@
 
 namespace App\Models;
 
+use Orbit\Drivers\Markdown;
+use Orbit\Contracts\Orbit;
+use Orbit\Concerns\Orbital;
+use Spatie\Sitemap\Tags\Url;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
-use Orbit\Concerns\Orbital;
 use Spatie\Sitemap\Contracts\Sitemapable;
-use Spatie\Sitemap\Tags\Url;
 
-class Feature extends Model implements Sitemapable
+class Feature extends Model implements Sitemapable, Orbit
 {
     use Orbital;
 
@@ -19,7 +21,12 @@ class Feature extends Model implements Sitemapable
         return 'slug';
     }
 
-    public static function schema(Blueprint $table)
+    public function getOrbitDriver(): string
+    {
+        return Markdown::class;
+    }
+
+    public function schema(Blueprint $table): void
     {
         $table->string('title');
         $table->string('slug');
