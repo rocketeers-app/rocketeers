@@ -17,7 +17,6 @@ use Filament\Forms\Components\MarkdownEditor;
 use App\Filament\Resources\ArticleResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\ArticleResource\RelationManagers;
-use League\CommonMark\Input\MarkdownInput;
 
 class ArticleResource extends Resource
 {
@@ -69,6 +68,7 @@ class ArticleResource extends Resource
                 TextColumn::make('published_at')
                     ->sortable(),
             ])
+            ->defaultSort('published_at', 'desc')
             ->filters([
                 //
             ])
