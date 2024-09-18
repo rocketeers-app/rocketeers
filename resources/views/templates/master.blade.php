@@ -4,7 +4,7 @@
 
 <head>
     @include('templates.partials.meta')
-    @vite('resources/css/app.css')
+    @vite('resources/css/app.css', 'web')
     @env('production')
     <script src="https://my.rocketee.rs/script.js" data-site="EXPMPOZO" defer></script>
     @endenv
@@ -124,7 +124,7 @@
         </p>
     </footer>
 
-    @vite('resources/js/app.js')
+    @vite('resources/js/app.js', 'web')
 </body>
 
 </html>
