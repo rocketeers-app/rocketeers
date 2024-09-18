@@ -1,10 +1,13 @@
 ---
-title: "Argument list too long (Bash: /bin/rm)"
+title: 'Argument list too long (Bash: /bin/rm)'
 slug: argument-list-too-long
-published_at: 2022-10-20
-category: Command Line
----
+category: 'Command Line'
+intro: null
+published_at: 2022-10-20T00:00:00+00:00
+created_at: null
+updated_at: 2024-09-18T15:39:53+00:00
 
+---
 ## The error and problem
 
 Sometimes you can encounter this error when executing a `rm ./directory/*` inside a directory to clean it up:

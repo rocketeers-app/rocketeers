@@ -7,11 +7,12 @@ use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
 use Orbit\Contracts\Orbit;
 use Orbit\Concerns\Orbital;
+use Orbit\Drivers\Markdown;
 use Spatie\Sitemap\Tags\Url;
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Database\Schema\Blueprint;
-use Orbit\Drivers\Markdown;
 use Spatie\Sitemap\Contracts\Sitemapable;
 
 class Article extends Model implements Feedable, Sitemapable, Orbit
@@ -20,10 +21,22 @@ class Article extends Model implements Feedable, Sitemapable, Orbit
 
     public $incrementing = false;
 
+    protected $guarded = [];
+
     protected $casts = [
         'published_at' => 'date:Y-m-d',
         'updated_at' => 'date:Y-m-d',
     ];
+
+    protected static function booted(): void
+    {
+        static::saved(function () {
+            defer(function () {
+                sleep(1);
+                Artisan::call('orbit:clear', ['--force' => true]);
+            });
+        });
+    }
 
     public function getKeyName()
     {

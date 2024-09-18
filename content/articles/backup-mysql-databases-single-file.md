@@ -1,11 +1,13 @@
 ---
-title: Backup MySQL databases in single file
+title: 'Backup MySQL databases in single file'
 slug: backup-mysql-databases-single-file
 category: Databases
-intro: How to dump existing MySQL databases on a server in a single file.
-published_at: 2023-01-12
----
+intro: 'How to dump existing MySQL databases on a server in a single file.'
+published_at: 2023-01-12T00:00:00+00:00
+created_at: null
+updated_at: 2024-09-18T15:38:08+00:00
 
+---
 ## MySQL backup bash script
 
 A clear and simple bash script to export all MySQL databases on your server into separate `.SQL` files.

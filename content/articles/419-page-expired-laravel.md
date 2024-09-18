@@ -1,11 +1,13 @@
 ---
-title: 419 Page Expired error in Laravel
+title: '419 Page Expired error in Laravel'
 slug: 419-page-expired-laravel
 category: Laravel
-intro: When working with Laravel you will encounter this error from time to time. Here's how you can fix this error.
-published_at: 2024-02-23
----
+intro: "When working with Laravel you will encounter this error from time to time. Here's how you can fix this error."
+published_at: 2024-02-23T00:00:00+00:00
+created_at: null
+updated_at: 2024-09-18T15:36:55+00:00
 
+---
 ## Why is the page expired?
 
 Laravel uses Cross-Site Request Forgery (CSRF) as a protection mechanism, that protects your app from external HTTP requests to your application.

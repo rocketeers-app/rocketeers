@@ -1,11 +1,13 @@
 ---
-title: Backup MySQL databases except system databases in a single file
+title: 'Backup MySQL databases except system databases in a single file'
 slug: backup-mysql-databases-except-system
 category: Databases
-intro: How to dump all MySQL databases on a server in a single file with the exception of certain (system) databases.
-published_at: 2023-01-12
----
+intro: 'How to dump all MySQL databases on a server in a single file with the exception of certain (system) databases.'
+published_at: 2023-01-12T00:00:00+00:00
+created_at: null
+updated_at: 2024-09-18T15:17:39+00:00
 
+---
 ## MySQL backup bash script
 
 A clear and simple bash script to export all MySQL databases on your server into a single backup file, excluding databases you don't want to backup.

@@ -2,11 +2,12 @@
 
 namespace App\Models;
 
-use Orbit\Drivers\Markdown;
 use Orbit\Contracts\Orbit;
 use Orbit\Concerns\Orbital;
+use Orbit\Drivers\Markdown;
 use Spatie\Sitemap\Tags\Url;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Database\Schema\Blueprint;
 use Spatie\Sitemap\Contracts\Sitemapable;
 
@@ -15,6 +16,18 @@ class Feature extends Model implements Sitemapable, Orbit
     use Orbital;
 
     public $incrementing = false;
+
+    protected $guarded = [];
+
+    protected static function booted(): void
+    {
+        static::saved(function () {
+            defer(function () {
+                sleep(1);
+                Artisan::call('orbit:clear', ['--force' => true]);
+            });
+        });
+    }
 
     public function getKeyName()
     {

@@ -1,11 +1,13 @@
 ---
-title: Best practices for sending email
+title: 'Best practices for sending email'
 slug: best-practices-sending-email
 category: Email
-intro: Improve the emails you're sending from your website or web app by following these best practices.
-published_at: 2022-12-06
----
+intro: "Improve the emails you're sending from your website or web app by following these best practices.5555"
+published_at: 2022-12-06T00:00:00+00:00
+created_at: null
+updated_at: 2024-09-18T15:35:31+00:00
 
+---
 ## First: Optimize deliverability
 
 First things first, make sure your [sending email technically correct following these tips](improving-email-deliverability). This way you'll make sure email is sent the right way your hard work on writing these emails isn't for nothing.

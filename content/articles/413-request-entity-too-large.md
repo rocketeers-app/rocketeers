@@ -1,11 +1,13 @@
 ---
-title: 413 Request Entity Too Large in Nginx
+title: '413 Request Entity Too Large in Nginx'
 slug: 413-request-entity-too-large
 category: Errors
-intro: When uploading files you can encounter this error, which is caused by a limit in the Nginx configuration.
-published_at: 2024-01-22
----
+intro: 'When uploading files you can encounter this error, which is caused by a limit in the Nginx configuration.'
+published_at: 2024-01-22T00:00:00+00:00
+created_at: null
+updated_at: 2024-09-18T15:35:52+00:00
 
+---
 ## About error 413
 
 The error with response code 413 shows up as "Request Entity Too Large" in the error logs of Nginx and "Payload Too Large" in the developer console of your browser. Other ways of telling you about this same error could be "Content Too Large" or "Requested content-length of ... is larger than the configured limit of ...".
