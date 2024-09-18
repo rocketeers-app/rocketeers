@@ -12,6 +12,7 @@ use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\DatePicker;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Forms\Components\MarkdownEditor;
 use App\Filament\Resources\ArticleResource\Pages;
@@ -35,6 +36,9 @@ class ArticleResource extends Resource
                 TextInput::make('slug')
                     ->required()
                     ->string()
+                    ->columnSpanFull(),
+                DatePicker::make('published_at')
+                    ->native(false)
                     ->columnSpanFull(),
                 Select::make('category')
                     ->native(false)
