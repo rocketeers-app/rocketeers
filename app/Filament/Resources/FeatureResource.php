@@ -48,6 +48,7 @@ class FeatureResource extends Resource
                     ->searchable()
                     ->sortable(),
             ])
+            ->defaultSort('title')
             ->filters([
                 //
             ])
