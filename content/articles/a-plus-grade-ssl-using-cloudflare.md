@@ -2,7 +2,7 @@
 title: 'How to get A+ grade SSL using Cloudflare'
 slug: a-grade-ssl-using-cloudflare
 category: Security
-intro: 'By default Cloudflare configures your security for SSL and HTTPS traffic for maximum connectivity and not for best security. Connectivity and security are unexchangeable, by letting more old insecure clients connect, you lower the bar for all clients that connect to your website.'
+intro: 'By default Cloudflare configures the security for SSL and HTTPS traffic for maximum connectivity and not for best security. Connectivity and security are unexchangeable, by letting more old insecure clients connect, you lower the bar for all clients that connect to your website.'
 published_at: 2024-09-24T00:00:00+00:00
 created_at: 2024-09-24T19:10:43+00:00
 updated_at: 2024-09-24T19:10:43+00:00
