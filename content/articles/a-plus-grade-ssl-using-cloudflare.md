@@ -2,12 +2,14 @@
 title: 'How to get A+ grade SSL using Cloudflare'
 slug: a-grade-ssl-using-cloudflare
 category: Security
-intro: 'By default Cloudflare configures the security for SSL and HTTPS traffic for maximum connectivity and not for best security. Connectivity and security are unexchangeable, by letting more old insecure clients connect, you lower the bar for all clients that connect to your website.'
+intro: 'By default Cloudflare configures the security for SSL and HTTPS traffic for maximum connectivity and not for best security. Your using Cloudflare, but you still want to have that A+ grade on SSLLabs.'
 published_at: 2024-09-24T00:00:00+00:00
 created_at: 2024-09-24T19:10:43+00:00
 updated_at: 2024-09-24T19:10:43+00:00
-
 ---
+
+Connectivity and security are unexchangeable, by letting more old insecure clients connect, you lower the bar for all clients that connect to your website.'
+
 To keep everything as secure as possible, it is advised to make use of the best new practices and to let go of old and crumbling technology. On the web security is always improving and therefore shifting away from older technologies that just don't make the cut anymore.
 
 To analyze your HTTPS connection for your website, the golden standard for SSL configuration is the [SSL Server Test from SSLLabs](https://globalsign.ssllabs.com). This test gives your security configuration a grade and shows you if there are areas for improvement.
