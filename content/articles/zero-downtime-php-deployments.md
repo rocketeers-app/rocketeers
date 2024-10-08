@@ -5,7 +5,7 @@ category: Hosting
 intro: 'Let me show you how you can deploy your PHP website or web applications without any downtime, using separate releases so you can rollback to a previous release quickly.'
 published_at: 2024-03-13T00:00:00+00:00
 created_at: null
-updated_at: 2024-10-08T00:00:00+00:00
+updated_at: 2024-10-08T13:26:51+00:00
 
 ---
 ## Deploying with zero downtime
@@ -30,16 +30,20 @@ So reloading these services should be avoided and that is the tricky part. But w
 
 First we need to create a top folder `/releases` where all releases can be found and a new release using a date format. I like to format `Y-m-d-HMS` which translates to `Year-Month-Day-HourMinuteSeconds` and for example `2024-10-08-144122`. This makes sure you can always distinguish a release folder from the time it was created and it orders them from old to new automatically.
 
+Also we state that we have an active release folder, that's in `/releases/current`. Where `current` is a symlink (`ln -s`) to the folder with the currently active release.
+
 ```bash
 NEW_RELEASE_DIRECTORY=$(date +"%Y-%m-%d-%H%M%S")
 
-mkdir -p /releases # create `releases` folder
-mkdir $NEW_RELEASE_DIRECTORY # create a folder for the new release
+# Create `releases` folder
+mkdir -p /releases
+
+# Create folder for the new release
+mkdir $NEW_RELEASE_DIRECTORY
 ```
 
 We put the new release directory inside a variable because we need the same directory multiple times in the next steps, and we don't want to have a new timestamp every time we need it.
 
-Also we define that we have an 'active' release folder, that's in `/releases/current`. Where `current` is a symlink (`ln -s`) to the active release folder.
 
 ### Pulling code from the git repository
 
@@ -110,12 +114,14 @@ cd /releases
 Then we create a new symlink called `deployment` inside:
 
 ```bash
+# Create deployment symlink
 ln -s ./releases/$NEW_RELEASE_DIRECTORY deployment
 ```
 
 Now, to switch from the previous release (dynamically pointed by `releases/current`) to the new release folder, we overwrite the active `current` symlink with the newly created `deployment` symlink:
 
 ```bash
+# Swap symlinks by overwriting the old with the new symlink
 mv -Tf deployment current
 ```
 
