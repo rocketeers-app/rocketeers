@@ -5,7 +5,7 @@ category: Hosting
 intro: 'Let me show you how you can deploy your PHP website or web applications without any downtime, using separate releases so you can rollback to a previous release quickly.'
 published_at: 2024-03-13T00:00:00+00:00
 created_at: null
-updated_at: 2024-10-08T00:00:00+00:00
+updated_at: 2024-10-08T13:06:03+00:00
 
 ---
 ## Deploying with zero downtime
@@ -123,7 +123,7 @@ Sometimes it's needed to execute some optimization tasks, on a server with not a
 
 
 ```bash
-# Remove .git folders from root and vendor files\
+# Remove .git folders from root and vendor files
 rm -Rf ./.git
 find vendor -type d -name '.git' -exec rm -rf {} +
 ```
