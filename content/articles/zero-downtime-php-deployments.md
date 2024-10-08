@@ -5,7 +5,7 @@ category: Hosting
 intro: 'Let me show you how you can deploy your PHP website or web applications without any downtime, using separate releases so you can rollback to a previous release quickly.'
 published_at: 2024-03-13T00:00:00+00:00
 created_at: null
-updated_at: 2024-10-08T14:51:29+00:00
+updated_at: 2024-10-08T00:00:00+00:00
 
 ---
 ## Deploying with zero downtime
@@ -18,7 +18,7 @@ Why is it important to have separate releases? While deploying a new release, yo
 
 This is also the only way we can make sure you can always instantly rollback to a previous deployment, when it's clear that there are problems with the just released version. By using a symlink, we can achieve multiple releases and point to one specific release.
 
-## Common issues for achieving zero downtime deployments
+## Common issues
 
 The most common issue regarding zero downtime deployments is the moment of switching from the current to the next version, this could require reloading the Nginx and PHP FPM processes and so you get challenged to keep your uptime.
 
@@ -45,7 +45,7 @@ mkdir $NEW_RELEASE_DIRECTORY
 We put the new release directory inside a variable because we need the same directory multiple times in the next steps, and we don't want to have a new timestamp every time we need it.
 
 
-### Pulling code from the git repository
+### Pulling in the code
 
 Then we clone the code from the git repository. In this step it's important to not pull in anymore then we need for a new release. This means no additional history, because this will only take in extra space and makes the downloading of all data take longer and therefore slows down your deployment time.
 
