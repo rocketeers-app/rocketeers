@@ -1,12 +1,11 @@
 <?php
 
+use Phiki\CommonMark\CodeBlockRenderer;
 use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
-use League\CommonMark\Extension\CommonMark\Node\Inline\Code;
 use League\CommonMark\Extension\ExternalLink\ExternalLinkExtension;
-use League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkExtension;
 use League\CommonMark\Extension\TableOfContents\TableOfContentsExtension;
-use Tempest\Highlight\CommonMark\CodeBlockRenderer;
-use Tempest\Highlight\CommonMark\InlineCodeBlockRenderer;
+use League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkExtension;
+use Phiki\CommonMark\PhikiExtension;
 
 return [
     'code_highlighting' => [
@@ -92,6 +91,7 @@ return [
         HeadingPermalinkExtension::class,
         TableOfContentsExtension::class,
         ExternalLinkExtension::class,
+        new PhikiExtension('aurora-x'),
     ],
 
     /*
@@ -101,7 +101,7 @@ return [
      * More info: https://commonmark.thephpleague.com/2.1/customization/rendering/
      */
     'block_renderers' => [
-        // ['class' => FencedCode::class, 'renderer' => new MyCustomCodeRenderer(), 'priority' => 0]
+        // ['class' => FencedCode::class, 'renderer' => new CodeBlockRenderer('one-dark-pro'), 'priority' => 10]
     ],
 
     /*

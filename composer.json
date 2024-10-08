@@ -8,12 +8,13 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "guzzlehttp/guzzle": "^7.9",
         "filament/filament": "^3.2",
+        "guzzlehttp/guzzle": "^7.9",
         "laravel/framework": "^11.23",
         "laravel/helpers": "^1.7",
         "laravel/octane": "^2.5",
         "laravel/tinker": "^2.9",
+        "ryangjchandler/phiki": "^0.1.1",
         "mtownsend/read-time": "^2.0",
         "rocketeers-app/rocketeers-laravel": "^2.1",
         "ryangjchandler/orbit": "^2.0.0-beta5",
@@ -82,6 +83,12 @@
             "php-http/discovery": true
         }
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/markvaneijk/phiki"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
