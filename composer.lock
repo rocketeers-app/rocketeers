@@ -5516,11 +5516,11 @@
         },
         {
             "name": "ryangjchandler/phiki",
-            "version": "v0.1.4",
+            "version": "v0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/markvaneijk/phiki",
-                "reference": "c6dafce0c9ecc9a67de86c9387ffc25223b867d2"
+                "reference": "19137c5ffb9b4e5717c85a4af041374de180d691"
             },
             "require": {
                 "league/commonmark": "^2.5.3",
@@ -5570,7 +5570,7 @@
                 }
             ],
             "description": "Syntax highlighting using TextMate grammars in PHP.",
-            "time": "2024-10-08T14:25:47+00:00"
+            "time": "2024-10-08T14:27:19+00:00"
         },
         {
             "name": "spatie/browsershot",
