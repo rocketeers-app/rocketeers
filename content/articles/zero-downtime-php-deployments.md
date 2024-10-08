@@ -54,6 +54,7 @@ This step contains al the commands you need to install your application. Using [
 Here is an example Laravel deployment script for a Filament app:
 
 ```bash
+# Install Composer dependencies
 php composer install \
     --no-ansi \
     --no-dev \
@@ -89,7 +90,10 @@ php artisan filament:assets
 # Cache Filament components and icons
 php artisan filament:optimize
 
+# Install npm dependencies
 npm install
+
+# Build assets using Vite
 npx vite build
 ```
 
