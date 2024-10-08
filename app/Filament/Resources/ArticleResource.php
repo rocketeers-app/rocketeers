@@ -40,6 +40,9 @@ class ArticleResource extends Resource
                 DatePicker::make('published_at')
                     ->native(false)
                     ->columnSpanFull(),
+                DatePicker::make('updated_at')
+                    ->native(false)
+                    ->columnSpanFull(),
                 Select::make('category')
                     ->native(false)
                     ->options(
