@@ -5,7 +5,7 @@ category: Hosting
 intro: 'Let me show you how you can deploy your PHP website or web applications without any downtime, using separate releases so you can rollback to a previous release quickly.'
 published_at: 2024-03-13T00:00:00+00:00
 created_at: null
-updated_at: 2024-10-08T14:53:17+00:00
+updated_at: 2024-10-08T00:00:00+00:00
 
 ---
 ## Deploying with zero downtime
@@ -53,7 +53,8 @@ Then we clone the code from the git repository. In this step it's important to n
 git clone \
     --depth 1 \
     --branch main \
-    --single-branch git@github.com:rocketeers-app/rocketeers.git \
+    --single-branch \
+    git@github.com:rocketeers-app/rocketeers.git \
     $NEW_RELEASE_DIRECTORY
 ```
 
