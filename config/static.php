@@ -10,7 +10,6 @@ return [
      */
     'driver' => 'crawler',
 
-
     /**
      * Enable or disable static caching (to quickly disable the creation of the static cache without detaching the middleware).
      * Don't forget to clear the static cache if needed, this does does not happen using this setting.
