@@ -79,7 +79,7 @@ return [
         'filename_max_length' => 255,
     ],
 
-    'optimizations' => [
+    'options' => [
         /**
          * Define if you want to save the static cache after response has been sent to browser.
          */

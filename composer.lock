@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e3aa28621ddc555be924d26d2b656f22",
+    "content-hash": "c3c2faf212cf6ae48e597f69b300fd02",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -9704,16 +9704,10 @@
         {
             "name": "vormkracht10/laravel-static",
             "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vormkracht10/laravel-static.git",
-                "reference": "bca488ee086f90fd18cbbf008e3e4f0d465ccb7d"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vormkracht10/laravel-static/zipball/bca488ee086f90fd18cbbf008e3e4f0d465ccb7d",
-                "reference": "bca488ee086f90fd18cbbf008e3e4f0d465ccb7d",
-                "shasum": ""
+                "type": "path",
+                "url": "/var/www/laravel-static",
+                "reference": "67284be855260f7d50d8bed3b27ddd030c9b37fc"
             },
             "require": {
                 "illuminate/contracts": "^9.0|^10.0|^11.0",
@@ -9733,7 +9727,6 @@
                 "phpstan/extension-installer": "^1.4",
                 "phpstan/phpstan-deprecation-rules": "^1.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -9750,7 +9743,25 @@
                     "Vormkracht10\\LaravelStatic\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Vormkracht10\\LaravelStatic\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -9768,17 +9779,10 @@
                 "laravel-static",
                 "vormkracht10"
             ],
-            "support": {
-                "issues": "https://github.com/vormkracht10/laravel-static/issues",
-                "source": "https://github.com/vormkracht10/laravel-static/tree/main"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/vormkracht10",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-11-12T22:43:41+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
         },
         {
             "name": "vormkracht10/laravel-trailing-slash",
