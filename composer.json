@@ -84,14 +84,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": {
-        "laravel-static": {
-            "type": "path",
-            "url": "/var/www/laravel-static",
-            "options": {
-                "symlink": true
-            }
-        }
-    }
+    "prefer-stable": true
 }
