@@ -2,20 +2,19 @@
 
 namespace App\Models;
 
-use Orbit\Drivers\Yaml;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Artisan;
+use Orbit\Concerns\Orbital;
+use Orbit\Contracts\Orbit;
+use Orbit\Drivers\Markdown;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
-use Orbit\Contracts\Orbit;
-use Orbit\Concerns\Orbital;
-use Orbit\Drivers\Markdown;
-use Spatie\Sitemap\Tags\Url;
-use Illuminate\Support\Collection;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Artisan;
-use Illuminate\Database\Schema\Blueprint;
 use Spatie\Sitemap\Contracts\Sitemapable;
+use Spatie\Sitemap\Tags\Url;
 
-class Article extends Model implements Feedable, Sitemapable, Orbit
+class Article extends Model implements Feedable, Orbit, Sitemapable
 {
     use Orbital;
 

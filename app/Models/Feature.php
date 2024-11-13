@@ -2,16 +2,16 @@
 
 namespace App\Models;
 
-use Orbit\Contracts\Orbit;
-use Orbit\Concerns\Orbital;
-use Orbit\Drivers\Markdown;
-use Spatie\Sitemap\Tags\Url;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Artisan;
+use Orbit\Concerns\Orbital;
+use Orbit\Contracts\Orbit;
+use Orbit\Drivers\Markdown;
 use Spatie\Sitemap\Contracts\Sitemapable;
+use Spatie\Sitemap\Tags\Url;
 
-class Feature extends Model implements Sitemapable, Orbit
+class Feature extends Model implements Orbit, Sitemapable
 {
     use Orbital;
 

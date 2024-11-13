@@ -23,7 +23,8 @@
                 </p>
             </div>
         </div>
-        <x-markdown class="prose text-gray-200 prose-h2:mb-3 prose-h2:text-emerald-400 prose-h2:text-3xl prose-h3:text-2xl md:prose-pre:-mx-10 lg:prose-pre:-mx-24 xl:prose-pre:-mx-32 prose-pre:-mx-4 md:prose-pre:p-10 prose-pre:py-10 md:prose-h2:mb-4 prose-pre:!bg-[#0d1117] md:prose-xl prose-invert prose-a:underline prose-a:!text-emerald-400 prose-a:opacity-100 hover:prose-a:text-emerald-200 prose-a:decoration-2 prose-a:underline-offset-4">
+        <x-markdown
+            class="prose text-gray-200 prose-h2:mb-3 prose-h2:text-emerald-400 prose-h2:text-3xl prose-h3:text-2xl md:prose-pre:-mx-10 lg:prose-pre:-mx-24 xl:prose-pre:-mx-32 prose-pre:-mx-4 md:prose-pre:p-10 prose-pre:py-10 md:prose-h2:mb-4 prose-pre:!bg-[#0d1117] md:prose-xl prose-invert prose-a:underline prose-a:!text-emerald-400 prose-a:opacity-100 hover:prose-a:text-emerald-200 prose-a:decoration-2 prose-a:underline-offset-4">
             {!! $article->content !!}
         </x-markdown>
         @if(session('message'))

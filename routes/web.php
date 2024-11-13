@@ -1,16 +1,16 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FeatureController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LandingPages\DevelopersController;
+use App\Http\Controllers\LandingPages\DigitalAgenciesController;
 use App\Http\Controllers\PricingController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\SubscribeController;
+use Illuminate\Support\Facades\Route;
 use Vormkracht10\LaravelStatic\Middleware\StaticResponse;
-use App\Http\Controllers\LandingPages\DevelopersController;
-use App\Http\Controllers\LandingPages\DigitalAgenciesController;
 
 require 'redirects.php';
 

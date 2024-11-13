@@ -88,6 +88,6 @@ return [
         /**
          * Minify HTML before saving static file.
          */
-        'minify_html' => true,
+        'minify_html' => false,
     ],
 ];
