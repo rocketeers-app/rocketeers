@@ -9707,12 +9707,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vormkracht10/laravel-static.git",
-                "reference": "12a93462286098c5238d8b7c7162e73e3c97cd8e"
+                "reference": "cbddc7872d96c2f257a3f384144d7e212a9faf7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vormkracht10/laravel-static/zipball/12a93462286098c5238d8b7c7162e73e3c97cd8e",
-                "reference": "12a93462286098c5238d8b7c7162e73e3c97cd8e",
+                "url": "https://api.github.com/repos/vormkracht10/laravel-static/zipball/cbddc7872d96c2f257a3f384144d7e212a9faf7d",
+                "reference": "cbddc7872d96c2f257a3f384144d7e212a9faf7d",
                 "shasum": ""
             },
             "require": {
@@ -9778,7 +9778,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-13T15:27:12+00:00"
+            "time": "2024-11-13T16:19:14+00:00"
         },
         {
             "name": "vormkracht10/laravel-trailing-slash",
