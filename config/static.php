@@ -17,7 +17,7 @@ return [
      * 
      * A good practice is to enable this setting only in production using `app()->isProduction()`.
      */
-    'enabled' => env('STATIC_ENABLED', app()->isProduction()),
+    'enabled' => env('STATIC_ENABLED', true),
 
     'build' => [
         /**
