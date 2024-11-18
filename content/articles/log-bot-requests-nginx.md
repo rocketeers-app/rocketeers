@@ -30,20 +30,20 @@ map $http_user_agent $bot {
 
 This checks the user agent string for matches for known bot names and then it maps it to a specific name that is set to variable `$bot`.
 
-## Log requests when it's a bot
-
-Now we can log these bot requests by creating a specific `bots.log` file using the `access_log` directive that logs requests only if `$bot` is filled:
-
-```bash
-access_log /var/www/logs/bots.log bots if=$bot;
-```
-
 ## Readble log format
 
 To make the entries readable, you can optionally choose to define a specific `log_format` for the bot requests:
 
 ```bash
 log_format bots "$time_local: $request_method $scheme://$host$request_uri [$status] $bytes_sent @ $request_time ($http_referer)";
+```
+
+## Log requests when it's a bot
+
+Now we can log these bot requests by creating a specific `bots.log` file using the `access_log` directive that logs requests only if `$bot` is filled and set the `log_format` to the newly created `bots` format.
+
+```bash
+access_log /var/www/logs/bots.log bots if=$bot;
 ```
 
 ## Log files per bot
