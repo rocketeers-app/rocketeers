@@ -10,7 +10,7 @@ updated_at: 2024-10-08T00:00:00+00:00
 ---
 ## Deploying with zero downtime
 
-Of course you want to deploy your PHP applications without any interruptions for your visitors and users. But somehow, this isn't as simple as it reads. The combination of PHP (FPM), Nginx and separate release folders make this task a little more complex that we would like. That's the bad news, the good news is we have a great way to solve these issues.
+Of course you want to deploy your PHP applications without any interruptions for your visitors and users. But somehow, this isn't as simple as it reads. The combination of PHP (FPM), nginx and separate release folders make this task a little more complex that we would like. That's the bad news, the good news is we have a great way to solve these issues.
 
 ## Why separate releases are important
 
@@ -20,7 +20,7 @@ This is also the only way we can make sure you can always instantly rollback to 
 
 ## Common issues
 
-The most common issue regarding zero downtime deployments is the moment of switching from the current to the next version, this could require reloading the Nginx and PHP FPM processes and so you get challenged to keep your uptime.
+The most common issue regarding zero downtime deployments is the moment of switching from the current to the next version, this could require reloading the nginx and PHP FPM processes and so you get challenged to keep your uptime.
 
 So reloading these services should be avoided and that is the tricky part. But we've figured the ultimate way to omit reloading and to keep your application and active users safe!
 

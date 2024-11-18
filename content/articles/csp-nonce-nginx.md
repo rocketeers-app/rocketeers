@@ -1,8 +1,8 @@
 ---
-title: Configure Content Security Policy with nonce using Nginx
+title: Configure Content Security Policy with nonce using nginx
 slug: content-security-policy
-category: Nginx
-intro: How to configure Content Security Policy (CSP) with secure and easy to configure nonces in Nginx.
+category: nginx
+intro: How to configure Content Security Policy (CSP) with secure and easy to configure nonces in nginx.
 published_at: 2024-01-21
 ---
 
@@ -26,7 +26,7 @@ When it's about performance, the server level is unbeaten. Especially someone li
 
 ## Requirements
 
-We need a server with Nginx installed and the sub_filter module enabled. The sub_filter module is used to replace the nonce placeholder with the generated nonce.
+We need a server with nginx installed and the sub_filter module enabled. The sub_filter module is used to replace the nonce placeholder with the generated nonce.
 
 How to check if the sub_filter module is enabled:
 
@@ -36,11 +36,11 @@ nginx -V 2>&1 | tr ' ' '\n' | grep -qi 'http_sub_module' && echo "installed" || 
 
 If the module is present, the ouput of the command above will be `installed`.
 
-## Configuring Nginx
+## Configuring nginx
 
 ### We need a nonce
 
-A nonce should be a lenghty random string and therefore unique for each request. In Nginx we could create a variable containing a unique random string, but this ends up installing extensions to be able to do so. So instead we use the SSL session ID as a nonce. This is a unique string for each request and is already available in Nginx. Fortunately the session ID contains only characters that are allowed in a nonce.
+A nonce should be a lenghty random string and therefore unique for each request. In nginx we could create a variable containing a unique random string, but this ends up installing extensions to be able to do so. So instead we use the SSL session ID as a nonce. This is a unique string for each request and is already available in nginx. Fortunately the session ID contains only characters that are allowed in a nonce.
 
 ```bash
 set $cspNonce $ssl_session_id;
@@ -48,7 +48,7 @@ set $cspNonce $ssl_session_id;
 
 ### Injecting the nonce into the response
 
-Now we have a nonce, we need to inject it into the responses that Nginx serves:
+Now we have a nonce, we need to inject it into the responses that nginx serves:
 
 ```bash
 sub_filter_once off;
@@ -56,7 +56,7 @@ sub_filter_types *;
 sub_filter NGINX_CSP_NONCE $cspNonce;
 ```
 
-Here we use `NGINX_CSP_NONCE` as the placeholder for the nonce. This placeholder can be used in the output of your application, and as long it goes through Nginx, it will be replaced with a fresh and unique nonce:
+Here we use `NGINX_CSP_NONCE` as the placeholder for the nonce. This placeholder can be used in the output of your application, and as long it goes through nginx, it will be replaced with a fresh and unique nonce:
 
 ```html
 <script nonce="NGINX_CSP_NONCE">
@@ -68,7 +68,7 @@ Here we use `NGINX_CSP_NONCE` as the placeholder for the nonce. This placeholder
 
 ### Sending the nonce with the CSP headers
 
-Now to apply the nonce to the CSP headers sent by Nginx to the client, we can use the `add_header` directive:
+Now to apply the nonce to the CSP headers sent by nginx to the client, we can use the `add_header` directive:
 
 ```bash
 add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'nonce-$cspNonce'; style-src 'self' 'nonce-$cspNonce' always";

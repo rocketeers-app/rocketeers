@@ -10,7 +10,7 @@ published_at: 2023-04-26
 
 Laravel Valet is a tool that makes developing locally more enjoyable, because it makes your Mac instantly ready for development on your local computer. It's a minimalist tool, that uses Homebrew to install everything you need and get started quickly.
 
-Laravel Valet uses Nginx, DnsMasq and PHP binaries to make it easy to develop using PHP and being able to switch to different PHP versions.
+Laravel Valet uses nginx, DnsMasq and PHP binaries to make it easy to develop using PHP and being able to switch to different PHP versions.
 
 ## Not only for Laravel apps
 

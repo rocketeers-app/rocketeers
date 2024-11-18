@@ -12,7 +12,7 @@ Since june 2022 Laravel Valet got a very nice upgrade in using different PHP ver
 
 ## Isolate a PHP version per project
 
-The first command that's new is `valet isolate` this command can be used to isolate a project using one specific PHP version. After that the Nginx server that Valet installs on your Mac knows which PHP version to use for your project.
+The first command that's new is `valet isolate` this command can be used to isolate a project using one specific PHP version. After that the nginx server that Valet installs on your Mac knows which PHP version to use for your project.
 
 For example the command for a project locked into using only PHP 8.1 is:
 

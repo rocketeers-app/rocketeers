@@ -1,8 +1,8 @@
 ---
-title: Server Side Includes (SSI) in Nginx
+title: Server Side Includes (SSI) in nginx
 slug: server-side-includes-ssi-nginx
-category: Nginx
-intro: Server Side Includes can be a very handy feature when dealing with caching or including (dynamic) files into static files. Here's how to use it and configure Nginx to enable the power of SSI.
+category: nginx
+intro: Server Side Includes can be a very handy feature when dealing with caching or including (dynamic) files into static files. Here's how to use it and configure nginx to enable the power of SSI.
 published_at: 2023-12-07
 ---
 
@@ -41,7 +41,7 @@ Content for other cases.
 <title><!--#echo var="pageTitle" --></title>
 ```
 
-To use SSI, your web server needs to be configured to recognize and process SSI directives. The file extension ".shtml" is often associated with SSI-enabled files, but the configuration can vary depending on the server software being used (e.g., Apache, Nginx). Make sure that the server administrator has enabled SSI processing for the desired file extensions.
+To use SSI, your web server needs to be configured to recognize and process SSI directives. The file extension ".shtml" is often associated with SSI-enabled files, but the configuration can vary depending on the server software being used (e.g., Apache, nginx). Make sure that the server administrator has enabled SSI processing for the desired file extensions.
 
 ## When can SSI be useful?
 
@@ -54,7 +54,7 @@ While including files into another file is a typical task for dynamic scripting 
 5. It is straightforward, lightweight and makes HTML a little bit dynamic
 6. You have no excuses anymore for an outdated copyright year number in the footer
 
-## How to enable SSI in Nginx
+## How to enable SSI in nginx
 
 ### Add nginx apt repository
 
@@ -83,9 +83,9 @@ location / {
 }
 ```
 
-### Reload Nginx service
+### Reload nginx service
 
-Reload the Nginx service to apply the configuration changes without downtime:
+Reload the nginx service to apply the configuration changes without downtime:
 
 ```bash
 sudo service nginx reload

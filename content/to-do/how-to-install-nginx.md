@@ -1,4 +1,4 @@
 ---
-title: How to install Nginx
+title: How to install nginx
 slug: how-to-install-nginx
 ---

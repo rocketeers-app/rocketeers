@@ -1,8 +1,8 @@
 ---
-title: 'Use Nginx try_files to make your site static'
+title: 'Use nginx try_files to make your site static'
 slug: nginx-try-files
-category: Nginx
-intro: 'The `try_files` directive in Nginx is incredibly powerful and useful when you want to make your dynamic website more performant. Learn how to leverage this to make your website fully static.'
+category: nginx
+intro: 'The `try_files` directive in nginx is incredibly powerful and useful when you want to make your dynamic website more performant. Learn how to leverage this to make your website fully static.'
 published_at: '2024-11-18T00:00:00+00:00'
 created_at: '2024-11-18T11:03:02+00:00'
 updated_at: null
@@ -17,13 +17,13 @@ So, for example you can set it to:
 try_files index1.html index2.php
 ```
 
-If `index1.html` exists, it is served by Nginx. If it does not exist, it will serve using the second file `index2.php`.
+If `index1.html` exists, it is served by nginx. If it does not exist, it will serve using the second file `index2.php`.
 
 ## How to use `try_files` for static or cached content
 
 As you already saw in the previous example, it is easy to put a static file in front of a dynamic file. But the only problem here is that in this case always `index.html` will be served.
 
-You can solve this by making the first entry dynamic using variables in Nginx. Requests have multiple variables that are dynamic based on the specific request the web server is receiving.
+You can solve this by making the first entry dynamic using variables in nginx. Requests have multiple variables that are dynamic based on the specific request the web server is receiving.
 
 Some of these are:
 
@@ -35,7 +35,7 @@ $uri # path
 $query_string # query string (e.g. `?a=b`)
 ```
 
-You can find all variables on the [official Nginx website](https://nginx.org/en/docs/http/ngx_http_core_module.html).
+You can find all variables on the [official nginx website](https://nginx.org/en/docs/http/ngx_http_core_module.html).
 
 Using these variables, you can make a unique file location for each request. So this could be:
 
