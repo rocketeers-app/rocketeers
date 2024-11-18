@@ -1,14 +1,14 @@
 ---
-title: 'Log bot requests to your website in nginx'
+title: 'Log bot requests in nginx'
 slug: log-bot-requests-nginx
-category: nginx
-intro: 'If you want to know when and how often bots visit your website, you can easily track this using the following configuration in nginx.'
+category: Nginx
+intro: 'If you want to know when and how often bots visit your website, you can easily track this using the following configuration in Nginx.'
 published_at: '2024-11-18T00:00:00+00:00'
 created_at: '2024-11-18T11:22:41+00:00'
-updated_at: null
+updated_at: '2024-11-18T11:57:54+00:00'
 
 ---
-## Detect bots using nginx
+## Detect bots using Nginx
 
 First we need to detect if the current visitor's user agent indicates it is a bot. We can do this with the `map` directive in nginx:
 
