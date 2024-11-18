@@ -5,7 +5,7 @@ category: Nginx
 intro: 'If you want to know when and how often bots visit your website, you can easily track this using the following configuration in Nginx.'
 published_at: '2024-11-18T00:00:00+00:00'
 created_at: '2024-11-18T11:22:41+00:00'
-updated_at: '2024-11-18T00:00:00+00:00'
+updated_at: '2024-11-18T15:01:08+00:00'
 
 ---
 ## Detect bots using Nginx
@@ -86,14 +86,14 @@ if ($bot = "twitter") {
 And therefore setup log files per bot:
 
 ```bash
-access_log                  /var/www/logs/bots/google.log bots if=$google;
-access_log                  /var/www/logs/bots/bing.log bots if=$bing;
-access_log                  /var/www/logs/bots/yahoo.log bots if=$yahoo;
-access_log                  /var/www/logs/bots/duckduckgo.log bots if=$duckduckgo;
-access_log                  /var/www/logs/bots/baidu.log bots if=$baidu;
-access_log                  /var/www/logs/bots/yandex.log bots if=$yandex;
-access_log                  /var/www/logs/bots/sogou.log bots if=$sogou;
-access_log                  /var/www/logs/bots/exabot.log bots if=$exabot;
-access_log                  /var/www/logs/bots/apple.log bots if=$apple;
-access_log                  /var/www/logs/bots/twitter.log bots if=$twitter;
+access_log /var/www/logs/bots/google.log bots if=$google;
+access_log /var/www/logs/bots/bing.log bots if=$bing;
+access_log /var/www/logs/bots/yahoo.log bots if=$yahoo;
+access_log /var/www/logs/bots/duckduckgo.log bots if=$duckduckgo;
+access_log /var/www/logs/bots/baidu.log bots if=$baidu;
+access_log /var/www/logs/bots/yandex.log bots if=$yandex;
+access_log /var/www/logs/bots/sogou.log bots if=$sogou;
+access_log /var/www/logs/bots/exabot.log bots if=$exabot;
+access_log /var/www/logs/bots/apple.log bots if=$apple;
+access_log /var/www/logs/bots/twitter.log bots if=$twitter;
 ```
