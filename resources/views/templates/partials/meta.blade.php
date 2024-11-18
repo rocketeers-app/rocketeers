@@ -10,14 +10,12 @@
 <meta name="robots" content="index,follow">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta property="author" content="Mark van Eijk">
-@if(isset(app()->view->getSections()['description']))
+@if(isset(app()->view->getSections()['description']) && trim(app()->view->getSections()['description']))
 <meta name="description" content="{{ app()->view->getSections()['description'] }}">
-@endif
-@if(isset(app()->view->getSections()['keywords']))
-<meta name="keywords" content="{{ app()->view->getSections()['keywords'] }}">
-@endif
-@if(isset(app()->view->getSections()['description']))
 <meta property="og:description" content="{{ app()->view->getSections()['description'] }}">
+@endif
+@if(isset(app()->view->getSections()['keywords']) && trim(app()->view->getSections()['keywords']))
+<meta name="keywords" content="{{ app()->view->getSections()['keywords'] }}">
 @endif
 <x-feed-links />
 <x-open-graph-image::metatags :title="$title" subtitle="Rocketeers" />
