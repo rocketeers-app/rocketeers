@@ -1,6 +1,7 @@
 @extends('templates.master')
 
 @section('title', $article->title. ' - '. config('app.name'))
+@section('description', strip_tags($article->intro))
 @section('published_at', $article?->published_at?->format('Y-m-d'))
 @section('updated_at', $article?->updated_at?->format('Y-m-d'))
 
