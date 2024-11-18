@@ -4,10 +4,13 @@
 
 <head>
     @include('templates.partials.meta')
-    @vite('resources/css/app.css', 'web')
+    
     @env('production')
     <script src="https://my.rocketee.rs/script.js" data-site="EXPMPOZO" defer></script>
     @endenv
+
+    @vite('resources/css/app.css', 'web')
+    @vite('resources/js/app.js', 'web')
 </head>
 
 <body class="bg-gray-900" x-data="{ menu: false }">
@@ -123,8 +126,6 @@
             Hosted by <a href="https://m.do.co/c/0801ad4bd810" target="_blank" rel="noopener" class="underline">DigitalOcean</a> - analytics by <a href="https://usefathom.com/ref/WCCANW" target="_blank" rel="noopener" class="underline">Fathom</a>
         </p>
     </footer>
-
-    @vite('resources/js/app.js', 'web')
 </body>
 
 </html>
