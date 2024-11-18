@@ -5,7 +5,7 @@ category: Nginx
 intro: 'The `try_files` directive in Nginx is incredibly powerful and useful when you want to make your dynamic website more performant. Learn how to leverage this to make your website fully static.'
 published_at: '2024-11-18T00:00:00+00:00'
 created_at: '2024-11-18T11:03:02+00:00'
-updated_at: null
+updated_at: '2024-11-18T11:07:36+00:00'
 
 ---
 ## How `try_files` works
@@ -35,7 +35,7 @@ $uri # path
 $query_string # query string (e.g. `?a=b`)
 ```
 
-Find all variables on the [official Nginx website](https://nginx.org/en/docs/http/ngx_http_core_module.html).
+You can find all variables on the [official Nginx website](https://nginx.org/en/docs/http/ngx_http_core_module.html).
 
 Using these variables, you can make a unique file location for each request. So this could be:
 
@@ -45,12 +45,16 @@ Using these variables, you can make a unique file location for each request. So 
 
 This creates a path that points to the `cache` folder (relative to the document root) and inside this folder you have a custom path.
 
+### $host
 In this example it begins with a `$host` folder, this is needed when you host multiple domains from the same virtual host.
 
+### $request_method
 Then it creates a folder based on the $http_method (like GET or POST) and this is because of the simple reason we don't want to cache other requests than `GET`. So when creating the files, we only create a `/GET/` path inside this folder.
 
+### $uri
 After that we have the `$uri` which can contain slashes and therefore creates folders, while the last segment is the file. So `https://rocketee.rs/category/nginx/try_files` would create the path `category/nginx` and the file `try_files`.
 
+#### $query_string
 Not necessary, but could be useful is adding the `$query_string` variable. This makes the request unique per different query string that is used. If the content on your webpages is not affected by query strings, you could remove it and have the same cache file respond to it.
 
 ## Configuring `try_files`
@@ -62,6 +66,8 @@ try_files /cache/$host/$http_method/$uri?$query_string.html index.php
 ```
 
 This checks first the cache path and if it does not exist it executes index.php. So when this happens, you can use the dynamic response of index.php to create a cached file.
+
+## Creating the cache file using PHP
 
 In simple plain PHP this would look like this:
 
