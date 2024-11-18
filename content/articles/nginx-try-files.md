@@ -5,7 +5,7 @@ category: Nginx
 intro: 'The `try_files` directive in Nginx is incredibly powerful and useful when you want to make your dynamic website more performant. Learn how to leverage this to make your website fully static.'
 published_at: '2024-11-18T00:00:00+00:00'
 created_at: '2024-11-18T11:03:02+00:00'
-updated_at: '2024-11-18T11:07:36+00:00'
+updated_at: null
 
 ---
 ## How `try_files` works
@@ -80,7 +80,7 @@ $query = parse_url($uri, PHP_URL_QUERY);
 
 file_put_contents(
     filename: "/cache/{$_SERVER['HTT_HOST']}/{$_SERVER['REQUEST_METHOD']}/{$path}?{$query}.html",
-	  data: $response,
+    data: $response,
 );
 ```
 
