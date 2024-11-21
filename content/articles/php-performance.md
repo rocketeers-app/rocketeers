@@ -5,14 +5,14 @@ category: Hosting
 intro: 'The performance and speed of PHP can be improved in different ways. Find out the multiple pathways to better performance.'
 published_at: '2024-10-10T00:00:00+00:00'
 created_at: '2024-10-10T15:10:22+00:00'
-updated_at: '2024-11-21T00:00:00+00:00'
+updated_at: '2024-11-21T11:15:44+00:00'
 
 ---
 ## Enable OPcache
 
 Using the OPcache PHP extension is one of the most significant (and easy) things you can do to improve PHP performance. When a PHP script runs, the server translates the script into a form the computer can understand (called "opcode") every time someone visits the website. This process takes time. With the OPcache extension enabled thee translated version (opcode) is stored in memory, so the server doesn’t have to re-translate the script every time. Instead, it reuses the stored version, making the website load faster.
 
-```
+```php
 # Install OPcache extension (change PHP version accordingly)
 sudo apt install php8.4-opache
 
@@ -34,7 +34,7 @@ After enabling OPcache, you should also consider enabling the [OPcache JIT compi
 
 Enable JIT by adding these lines to the OPcache config:
 
-```
+```php
 opcache.jit=on
 opcache.jit_buffer_size=128M
 ```
