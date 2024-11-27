@@ -1,6 +1,6 @@
-@extends('templates.master')
-
-@section('main')
+<x-page
+    title="Contact"
+>
     <div class="container max-w-screen-md py-10 mx-auto">
         <div class="text-center">
             <h1 class="block mb-4 text-3xl font-extrabold text-emerald-400 sm:text-6xl">
@@ -11,4 +11,4 @@
             </p>
         </div>
     </div>
-@endsection
+</x-page>

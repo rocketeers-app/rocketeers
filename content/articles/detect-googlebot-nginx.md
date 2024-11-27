@@ -1,7 +1,7 @@
 ---
 title: 'Detect Googlebot visits using nginx'
 slug: detect-googlebot-nginx
-category: nginx
+category: Nginx
 intro: 'How to detect when and how often Googlebot visits your website using a few configuration lines in nginx.'
 published_at: '2024-11-18T00:00:00+00:00'
 created_at: '2024-11-18T11:30:51+00:00'

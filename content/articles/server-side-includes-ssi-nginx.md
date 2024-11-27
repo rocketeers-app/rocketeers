@@ -1,7 +1,7 @@
 ---
 title: Server Side Includes (SSI) in nginx
 slug: server-side-includes-ssi-nginx
-category: nginx
+category: Nginx
 intro: Server Side Includes can be a very handy feature when dealing with caching or including (dynamic) files into static files. Here's how to use it and configure nginx to enable the power of SSI.
 published_at: 2023-12-07
 ---

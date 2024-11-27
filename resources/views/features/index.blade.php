@@ -1,8 +1,6 @@
-@extends('templates.master')
-
-@section('title', 'Features - '.config('app.name'))
-
-@section('main')
+<x-page
+    title="Features"
+>
     <h1 class="mb-8 text-xl font-extrabold leading-tight text-center text-white md:mb-16 sm:text-4xl">Every feature to manage<br>servers and sites with ease</h1>
 
     <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -20,4 +18,4 @@
         <li class="text-gray-400">... {{ $detail->title }}</li>
         @endforeach
     </ul>
-@endsection
+</x-page>

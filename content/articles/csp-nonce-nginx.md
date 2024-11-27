@@ -1,7 +1,7 @@
 ---
 title: Configure Content Security Policy with nonce using nginx
 slug: content-security-policy
-category: nginx
+category: Nginx
 intro: How to configure Content Security Policy (CSP) with secure and easy to configure nonces in nginx.
 published_at: 2024-01-21
 ---

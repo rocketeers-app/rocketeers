@@ -1,7 +1,7 @@
 ---
 title: 'Log bot requests in nginx'
 slug: log-bot-requests-nginx
-category: nginx
+category: Nginx
 intro: 'If you want to know when and how often bots visit your website, you can easily track this using the following configuration in nginx.'
 published_at: '2024-11-18T00:00:00+00:00'
 created_at: '2024-11-18T11:22:41+00:00'

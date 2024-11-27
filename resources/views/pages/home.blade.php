@@ -1,13 +1,14 @@
-@extends('templates.master')
-
-@section('main')
+<x-page
+    title="Sites management for digital agencies and developers"
+>
     <div class="container max-w-screen-md py-10 mx-auto">
         <div class="text-center">
             <p class="block mb-2 text-base text-gray-500 sm:text-xl">Launching in 2024</p>
             <h1 class="block mb-4 text-3xl font-extrabold text-emerald-400 sm:text-6xl">
-                Sites management for digital agencies and developers
+                Self hosting made easy
             </h1>
-            <p class="max-w-xl m-4 mx-auto mb-8 text-base leading-normal text-white sm:text-xl">Always in control in every aspect of your sites and web apps using our SaaS control panel for server hosting, domains,<br>performance, uptime, metrics and more.</p>
+            <h2 class="block mb-4 text-1xl font-extrabold text-emerald-400 sm:text-4xl lowercase">For developers and agencies</h2>
+            <p class="max-w-xl m-4 mx-auto mb-8 text-base leading-normal text-white sm:text-xl">Always in control in every aspect of your sites and web apps.<br><br>All batteries included: server config, domains, security, performance, uptime and metrics.<br><br>Bring your own Cloud providers (DigitalOcean, Hetzner, GitHub, Cloudflare).</p>
         </div>
         @if(session('message'))
             <div class="mt-4 font-bold text-center text-emerald-400">
@@ -24,4 +25,4 @@
             </div>
         @endif
     </div>
-@endsection
+</x-page>

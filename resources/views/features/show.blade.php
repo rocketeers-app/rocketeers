@@ -1,8 +1,6 @@
-@extends('templates.master')
-
-@section('title', $feature->title. ' - '. config('app.name'))
-
-@section('main')
+<x-page
+    :title="$feature->title"
+>
     <div class="max-w-screen-md mx-auto">
         <h2 class="mb-4 text-lg font-bold tracking-wide text-gray-600 uppercase md:text-xl">Features</h2>
         <h1 class="mb-5 text-xl font-extrabold leading-tight md:text-4xl text-emerald-400">{{ $feature->title }}</h1>
@@ -10,4 +8,4 @@
             {!! $feature->description !!}
         </x-markdown>
     </div>
-@endsection
+</x-page>

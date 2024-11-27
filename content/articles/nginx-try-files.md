@@ -1,7 +1,7 @@
 ---
 title: 'Use nginx try_files to make your site static'
 slug: nginx-try-files
-category: nginx
+category: Nginx
 intro: 'The `try_files` directive in nginx is incredibly powerful and useful when you want to make your dynamic website more performant. Learn how to leverage this to make your website fully static.'
 published_at: '2024-11-18T00:00:00+00:00'
 created_at: '2024-11-18T11:03:02+00:00'

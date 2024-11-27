@@ -1,11 +1,7 @@
-@extends('templates.master')
-
-@section('title', $article->title. ' - '. config('app.name'))
-@section('description', strip_tags($article->intro))
-@section('published_at', $article?->published_at?->format('Y-m-d'))
-@section('updated_at', $article?->updated_at?->format('Y-m-d'))
-
-@section('main')
+<x-page
+    :title="$article->title"
+    :description="strip_tags($article->intro)"
+>
     <div class="max-w-screen-md mx-auto">
         <div class="max-w-xl mx-auto text-center">
             <h2 class="mb-4 text-sm font-bold tracking-wide text-gray-600 uppercase md:text-xl">Knowledge</h2>
@@ -58,4 +54,4 @@
         </div>
         @endif
     </div>
-@endsection
+</x-page>

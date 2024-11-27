@@ -1,8 +1,6 @@
-@extends('templates.master')
-
-@section('title', ($category ?? 'Knowledge').' - '.config('app.name'))
-
-@section('main')
+<x-page
+    :title="$category ?? 'Knowledge'"
+>
     <div class="max-w-screen-md mx-auto">
         @if(isset($category))
         <p class="mb-2"><a href="{{ route('knowledge') }}" class="text-gray-400">&larr; Back to knowledge</a></p>
@@ -34,4 +32,4 @@
         @php($previousDate = $article->published_at)
         @endforeach
     </div>
-@endsection
+</x-page>

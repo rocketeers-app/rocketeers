@@ -1,8 +1,6 @@
-@extends('templates.master')
-
-@section('title', 'Sites management for Developers')
-
-@section('main')
+<x-page
+    title="Sites management for Digital Agencies"
+>
     <div class="max-w-screen-md mx-auto">
         <div class="max-w-xl mx-auto text-center">
             <h2 class="mb-4 text-sm font-bold tracking-wide text-gray-600 uppercase md:text-xl">Self-host and manage all your sites on different providers easily</h2>
@@ -29,4 +27,4 @@
             </div>
         @endif
     </div>
-@endsection
+</x-page>
