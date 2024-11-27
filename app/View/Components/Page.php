@@ -14,6 +14,7 @@ class Page extends Component
     public function __construct(
         public ?string $title,
         public ?string $description,
+        public ?string $keywords,
     )
     {
         if (blank($this->title)) {
