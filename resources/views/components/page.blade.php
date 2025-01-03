@@ -27,6 +27,7 @@
     
     @production
     <script src="https://cdn.usefathom.com/script.js" data-site="EXPMPOZO" defer></script>
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="vcdW/eTmVTfa8nVBCnbUyw" async></script>
     @endproduction
 
     @vite('resources/css/app.css', 'web')
