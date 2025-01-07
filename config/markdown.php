@@ -1,10 +1,8 @@
 <?php
 
-use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
 use League\CommonMark\Extension\ExternalLink\ExternalLinkExtension;
 use League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkExtension;
 use League\CommonMark\Extension\TableOfContents\TableOfContentsExtension;
-use Phiki\CommonMark\CodeBlockRenderer;
 use Phiki\CommonMark\PhikiExtension;
 
 return [
