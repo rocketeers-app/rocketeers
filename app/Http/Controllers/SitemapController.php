@@ -13,13 +13,20 @@ class SitemapController extends Controller
 {
     public function __invoke(Request $request)
     {
-        return Sitemap::create()
+        $sitemap = Sitemap::create()
             ->add(Url::create(route('home')))
             ->add(Url::create('knowledge'))
-            // ->add(Url::create(route('doc.index')))
-            ->add(Url::create(route('feature.index')))
-            // ->add(Doc::published()->get())
+            ->add(Url::create(route('feature.index')));
+        
+        Article::pluck('category')
+            ->unique()
+            ->filter()
+            ->each(fn ($category) => $sitemap->add(Url::create(str_slug($category))));
+
+        $sitemap
             ->add(Article::published()->get())
             ->add(Feature::published()->get());
+
+        return $sitemap;
     }
 }
