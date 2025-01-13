@@ -42,7 +42,7 @@
         @endif
 
         @if($relatedArticles->count())
-        <h1 class="mt-10 mb-10 text-2xl font-extrabold leading-tight text-gray-200 md:mt-20 sm:text-4xl">Related articles</h1>
+        <h4 class="mt-10 mb-10 text-2xl font-extrabold leading-tight text-gray-200 md:mt-20 sm:text-4xl">Related articles</h4>
         <div class="grid gap-10 md:grid-cols-2">
             @foreach($relatedArticles as $relatedArticle)
             <div>
