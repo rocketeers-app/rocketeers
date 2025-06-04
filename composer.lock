@@ -155,16 +155,16 @@
         },
         {
             "name": "backstage/laravel-og-image",
-            "version": "v1.0.6",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/backstagephp/laravel-og-image.git",
-                "reference": "ec676855734d4d17f2f2192b93c17647ac9f5925"
+                "reference": "2eace6b86aeb0bffbc55db09e7f39ba850b7ff08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backstagephp/laravel-og-image/zipball/ec676855734d4d17f2f2192b93c17647ac9f5925",
-                "reference": "ec676855734d4d17f2f2192b93c17647ac9f5925",
+                "url": "https://api.github.com/repos/backstagephp/laravel-og-image/zipball/2eace6b86aeb0bffbc55db09e7f39ba850b7ff08",
+                "reference": "2eace6b86aeb0bffbc55db09e7f39ba850b7ff08",
                 "shasum": ""
             },
             "require": {
@@ -234,7 +234,7 @@
             ],
             "support": {
                 "issues": "https://github.com/backstagephp/laravel-og-image/issues",
-                "source": "https://github.com/backstagephp/laravel-og-image/tree/v1.0.6"
+                "source": "https://github.com/backstagephp/laravel-og-image/tree/v1.0.8"
             },
             "funding": [
                 {
@@ -242,7 +242,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-04T12:34:30+00:00"
+            "time": "2025-06-04T13:07:21+00:00"
         },
         {
             "name": "backstage/laravel-static",
