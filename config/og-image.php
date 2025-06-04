@@ -8,7 +8,13 @@ return [
 
     'chrome' => [
         'binary' => '/snap/bin/chromium',
-        'flags' => [],
+        'flags' => [
+            '--disable-gpu',
+            '--disable-dev-shm-usage',
+            '--no-sandbox',
+            '--disable-software-rasterizer',
+            '--disable-setuid-sandbox'
+        ],
     ],
 
     // The cache location to use.
