@@ -18,7 +18,11 @@
         }
         </style>
 
-        @vite('resources/css/app.css', 'web')
+        <style>
+        @php
+        echo file_get_contents(glob(base_path('public/web/assets/*.css'))[0])
+        @endphp
+        </style>
     </head>
     <body class="flex items-center min-h-screen">
         <div class="bg-gray-900 w-[1200px] h-[630px] text-white p-12 border-emerald-400 border-b-[16px] flex items-center">
