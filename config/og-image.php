@@ -9,11 +9,13 @@ return [
     'chrome' => [
         'path' => env('CHROME_PATH', '/usr/bin/chromium-browser'),
         'flags' => [
-            '--disable-gpu',
             '--disable-dev-shm-usage',
-            '--no-sandbox',
-            '--disable-software-rasterizer',
+            '--disable-gpu',
             '--disable-setuid-sandbox',
+            '--disable-software-rasterizer',
+            '--hide-scrollbars',
+            '--mute-audio',
+            '--no-sandbox',
         ],
     ],
 
