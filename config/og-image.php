@@ -1,8 +1,10 @@
 <?php
 
 return [
+    'debug' => env('OG_IMAGE_DEBUG', true), // disable caching og images for development
+
     'extension' => 'jpg', // jpg, png, webp
-    'quality' => 100,
+
     'width' => 1200,
     'height' => 630,
 
@@ -24,11 +26,6 @@ return [
         'disk' => 'public',
         'path' => 'og-images',
     ],
-
-    // Whether to use the browse URL instead of the HTML input.
-    // This is slower, but makes fonts available.
-    // Alternative: http
-    'method' => 'html',
 
     'metatags' => [
         'og:title' => 'title',
