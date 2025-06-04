@@ -7,7 +7,7 @@ return [
     'height' => 630,
 
     'chrome' => [
-        'binary' => '/snap/bin/chromium',
+        'binary' => '/usr/bin/chromium-browser',
         'flags' => [
             '--disable-gpu',
             '--disable-dev-shm-usage',
