@@ -7,13 +7,13 @@ return [
     'height' => 630,
 
     'chrome' => [
-        'binary' => '/usr/bin/chromium-browser',
+        'path' => env('CHROME_PATH', '/usr/bin/chromium-browser'),
         'flags' => [
             '--disable-gpu',
             '--disable-dev-shm-usage',
             '--no-sandbox',
             '--disable-software-rasterizer',
-            '--disable-setuid-sandbox'
+            '--disable-setuid-sandbox',
         ],
     ],
 

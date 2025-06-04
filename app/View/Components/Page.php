@@ -15,8 +15,7 @@ class Page extends Component
         public ?string $title,
         public ?string $description,
         public ?string $keywords,
-    )
-    {
+    ) {
         if (blank($this->title)) {
             $this->title = config('app.name');
         } elseif (! str_ends_with($this->title, ' - '.config('app.name'))) {

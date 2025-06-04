@@ -9,8 +9,8 @@ use App\Http\Controllers\LandingPages\DigitalAgenciesController;
 use App\Http\Controllers\PricingController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\SubscribeController;
-use Illuminate\Support\Facades\Route;
 use Backstage\Static\Laravel\Middleware\StaticResponse;
+use Illuminate\Support\Facades\Route;
 
 require 'redirects.php';
 

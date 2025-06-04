@@ -17,7 +17,7 @@ class SitemapController extends Controller
             ->add(Url::create(route('home')))
             ->add(Url::create('knowledge'))
             ->add(Url::create(route('feature.index')));
-        
+
         Article::pluck('category')
             ->unique()
             ->filter()
