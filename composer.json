@@ -6,6 +6,10 @@
     ],
     "require": {
         "php": "^8.3",
+        "backstage/laravel-minify-html-middleware": "@dev",
+        "backstage/laravel-og-image": "^1.0",
+        "backstage/laravel-static": "^0.2.4",
+        "backstage/laravel-trailing-slash": "^0.1",
         "filament/filament": "^3.2",
         "guzzlehttp/guzzle": "^7.9",
         "laravel/framework": "^11.23",
@@ -13,18 +17,12 @@
         "laravel/octane": "^2.5",
         "laravel/tinker": "^2.10",
         "mtownsend/read-time": "^2.0",
-        "rocketeers-app/rocketeers-laravel": "^2.1",
+        "phiki/phiki": "^1.0",
+        "rocketeers-app/rocketeers-laravel": "^2.2",
         "ryangjchandler/orbit": "^2.0.0-beta6",
-        "phiki/phiki": "^0.3",
-        "spatie/browsershot": "^4.3",
-        "spatie/crawler": "^8.2",
         "spatie/laravel-feed": "^4.4",
         "spatie/laravel-markdown": "^2.6",
-        "spatie/laravel-sitemap": "^7.2",
-        "vormkracht10/laravel-minify-html-middleware": "dev-main",
-        "vormkracht10/laravel-open-graph-image": "^0.8.0",
-        "vormkracht10/laravel-static": "@dev",
-        "vormkracht10/laravel-trailing-slash": "dev-main"
+        "spatie/laravel-sitemap": "^7.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.24",

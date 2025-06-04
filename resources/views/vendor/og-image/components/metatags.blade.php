@@ -1,4 +1,4 @@
-@foreach(config('open-graph-image.metatags') as $property => $key)
+@foreach(config('og-image.metatags') as $property => $key)
     @if($attributes->has($key))
     <meta property="{{ $property }}" content="{{ $attributes->get($key) }}">
     @endif
@@ -9,6 +9,6 @@
 <meta name="twitter:creator" content="@markvaneijk">
 
 <meta property="og:image" content="{!! og($attributes) !!}">
-<meta property="og:image:type" content="image/{{ config('open-graph-image.image.extension') }}">
-<meta property="og:image:width" content="{{ config('open-graph-image.image.width') }}">
-<meta property="og:image:height" content="{{ config('open-graph-image.image.height') }}">
+<meta property="og:image:type" content="image/{{ config('og-image.extension') }}">
+<meta property="og:image:width" content="{{ config('og-image.width') }}">
+<meta property="og:image:height" content="{{ config('og-image.height') }}">

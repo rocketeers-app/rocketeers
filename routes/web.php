@@ -10,7 +10,7 @@ use App\Http\Controllers\PricingController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\SubscribeController;
 use Illuminate\Support\Facades\Route;
-use Vormkracht10\LaravelStatic\Middleware\StaticResponse;
+use Backstage\Static\Laravel\Middleware\StaticResponse;
 
 require 'redirects.php';
 

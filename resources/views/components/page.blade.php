@@ -23,8 +23,8 @@
     <meta name="keywords" content="{{ $keywords }}">
     @endif
     <x-feed-links />
-    <x-open-graph-image::metatags :title="$title" subtitle="Rocketeers" />
-    
+    <x-og-image-tags :title="$title" subtitle="Rocketeers" />
+
     @production
     <script src="https://cdn.usefathom.com/script.js" data-site="EXPMPOZO" defer></script>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="vcdW/eTmVTfa8nVBCnbUyw" async></script>
@@ -35,16 +35,16 @@
 </head>
 
 <body class="bg-gray-900" x-data="{ menu: false }">
-    <header class="container max-w-screen-xl pb-4 mx-auto border-b border-gray-800 md:pb-10">
+    <header class="container pb-4 mx-auto max-w-screen-xl border-b border-gray-800 md:pb-10">
         <div class="pt-5 md:pt-10">
-            <nav class="relative flex items-center justify-between px-4 mx-auto sm:px-6" aria-label="Global">
-                <div class="flex items-center flex-1">
-                    <div class="flex items-center justify-between w-full md:w-auto">
+            <nav class="flex relative justify-between items-center px-4 mx-auto sm:px-6" aria-label="Global">
+                <div class="flex flex-1 items-center">
+                    <div class="flex justify-between items-center w-full md:w-auto">
                         <a href="/" class="text-2xl font-extrabold text-emerald-400 hover:text-emerald-200">
                             Rocketeers
                         </a>
                         <div class="flex items-center md:hidden">
-                            <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false" @click="menu = true">
+                            <button type="button" class="inline-flex justify-center items-center p-2 text-gray-400 bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false" @click="menu = true">
                                 <span class="sr-only">Open main menu</span>
                                 <!-- Heroicon name: outline/menu -->
                                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -64,7 +64,7 @@
                     {{-- <a href="{{ route('doc.index') }}" class="hover:text-gray-300">Docs</a> <span class="mr-2 text-gray-800">|</span> --}}
                     <a href="https://rocketeers.app" class="hover:text-gray-300">
                         Login
-                        <span class="inline-flex items-center px-2 py-1 ml-2 text-xs font-medium text-white bg-gray-600 border border-transparent rounded-md hover:bg-gray-700">
+                        <span class="inline-flex items-center px-2 py-1 ml-2 text-xs font-medium text-white bg-gray-600 rounded-md border border-transparent hover:bg-gray-700">
                             BETA
                         </span>
                     </a>
@@ -82,13 +82,13 @@
             From: "opacity-100 scale-100"
             To: "opacity-0 scale-95"
         -->
-        <div class="absolute inset-x-0 top-0 z-10 p-2 transition origin-top transform md:hidden" x-show="menu" style="display: none">
-            <div class="overflow-hidden bg-gray-800 rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
-                <div class="flex items-center justify-between px-5 pt-4">
+        <div class="absolute inset-x-0 top-0 z-10 p-2 transition transform origin-top md:hidden" x-show="menu" style="display: none">
+            <div class="overflow-hidden bg-gray-800 rounded-lg ring-1 ring-black ring-opacity-5 shadow-md">
+                <div class="flex justify-between items-center px-5 pt-4">
                     <div class="text-2xl font-extrabold text-white">
                         <a href="/">Rocketeers</a>
                     </div>
-                    <button type="button" class="inline-flex items-center justify-center p-2 text-gray-800 bg-gray-600 rounded-md hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-600" @click="menu = false">
+                    <button type="button" class="inline-flex justify-center items-center p-2 text-gray-800 bg-gray-600 rounded-md hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-600" @click="menu = false">
                         <span class="sr-only">Close menu</span>
                         <!-- Heroicon name: outline/x -->
                         <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -98,11 +98,11 @@
                 </div>
                 <div class="p-3 pb-8">
                     <div class="px-2">
-                        <a href="{{ route('feature.index') }}" class="block px-4 py-3 text-base font-medium text-gray-200 border-t border-gray-700 rounded-md hover:bg-gray-700">Features</a>
-                        <a href="{{ route('pricing') }}" class="block px-4 py-3 text-base font-medium text-gray-200 border-t border-gray-700 rounded-md hover:bg-gray-700">Pricing</a>
-                        <a href="{{ route('knowledge') }}" class="block px-4 py-3 text-base font-medium text-gray-200 border-t border-gray-700 rounded-md hover:bg-gray-700">Knowledge</a>
+                        <a href="{{ route('feature.index') }}" class="block px-4 py-3 text-base font-medium text-gray-200 rounded-md border-t border-gray-700 hover:bg-gray-700">Features</a>
+                        <a href="{{ route('pricing') }}" class="block px-4 py-3 text-base font-medium text-gray-200 rounded-md border-t border-gray-700 hover:bg-gray-700">Pricing</a>
+                        <a href="{{ route('knowledge') }}" class="block px-4 py-3 text-base font-medium text-gray-200 rounded-md border-t border-gray-700 hover:bg-gray-700">Knowledge</a>
                         {{-- <a href="{{ route('doc.index') }}" class="hover:text-gray-300">Docs</a> <span class="mr-2">|</span> --}}
-                        <a href="https://rocketeers.app" class="block w-full px-4 py-3 font-medium text-white rounded-md shadow bg-emerald-400 hover:bg-emerald-300">Login&nbsp;&nbsp;<span class="px-2 py-1 text-sm rounded bg-emerald-600">BETA</span></a>
+                        <a href="https://rocketeers.app" class="block px-4 py-3 w-full font-medium text-white bg-emerald-400 rounded-md shadow hover:bg-emerald-300">Login&nbsp;&nbsp;<span class="px-2 py-1 text-sm bg-emerald-600 rounded">BETA</span></a>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@
         {{ $slot }}
     </main>
     <footer class="pb-8 bg-[#0d1117] md:pb-16">
-        <div class="container max-w-screen-xl px-6 py-16 mx-auto border-b border-gray-800 md:px-8">
+        <div class="container px-6 py-16 mx-auto max-w-screen-xl border-b border-gray-800 md:px-8">
             <div class="grid gap-8 lg:gap-6 lg:grid-cols-2">
                 <div class="border-r border-gray-800">
                     <h2 class="mb-4 text-sm tracking-wide text-gray-500 uppercase">Knowledge</h2>
