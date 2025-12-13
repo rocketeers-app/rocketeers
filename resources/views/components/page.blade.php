@@ -26,7 +26,7 @@
     <x-og-image-tags :title="$title" subtitle="Rocketeers" />
 
     @production
-    <script src="https://cdn.usefathom.com/script.js" data-site="EXPMPOZO" defer></script>
+    <script src="https://cdn.visitors.now/v.js" data-token="ba6384a5-26ea-4fc2-abb9-0bec714d9f16"></script>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="vcdW/eTmVTfa8nVBCnbUyw" async></script>
     @endproduction
 
@@ -143,8 +143,6 @@
             @if(isset($sourceUrl))
             <a href="{{ $sourceUrl }}" target="_blank" rel="noopener" class="underline">View source of this page</a>
             @endif
-
-            Hosted by <a href="https://m.do.co/c/0801ad4bd810" target="_blank" rel="noopener" class="underline">DigitalOcean</a> - analytics by <a href="https://usefathom.com/ref/WCCANW" target="_blank" rel="noopener" class="underline">Fathom</a>
         </p>
     </footer>
 </body>
