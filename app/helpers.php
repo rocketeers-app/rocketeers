@@ -1,6 +1,6 @@
 <?php
 
-use Vormkracht10\LaravelStatic\Console\Terminal;
+use Backstage\Laravel\Static\Console\Terminal;
 
 if (! function_exists('markdown')) {
     function markdown($markdown)
