@@ -3,7 +3,7 @@
 use League\CommonMark\Extension\ExternalLink\ExternalLinkExtension;
 use League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkExtension;
 use League\CommonMark\Extension\TableOfContents\TableOfContentsExtension;
-use Phiki\CommonMark\PhikiExtension;
+use Phiki\Adapters\CommonMark\PhikiExtension;
 
 return [
     'code_highlighting' => [
@@ -89,7 +89,7 @@ return [
         HeadingPermalinkExtension::class,
         TableOfContentsExtension::class,
         ExternalLinkExtension::class,
-        new PhikiExtension('aurora-x'),
+        PhikiExtension::class,
     ],
 
     /*

@@ -17,7 +17,7 @@
         "laravel/octane": "^2.5",
         "laravel/tinker": "^2.10",
         "mtownsend/read-time": "^2.0",
-        "phiki/phiki": "^1.0",
+        "phiki/phiki": "^2.0",
         "rocketeers-app/rocketeers-laravel": "^2.2",
         "ryangjchandler/orbit": "^2.0.0-beta6",
         "spatie/laravel-feed": "^4.4",
