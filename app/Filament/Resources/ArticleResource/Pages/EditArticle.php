@@ -2,6 +2,8 @@
 
 namespace App\Filament\Resources\ArticleResource\Pages;
 
+use Filament\Actions\Action;
+use Filament\Actions\DeleteAction;
 use App\Filament\Resources\ArticleResource;
 use App\Models\Article;
 use Filament\Actions;
@@ -14,13 +16,13 @@ class EditArticle extends EditRecord
     protected function getHeaderActions(): array
     {
         return [
-            Actions\Action::make()
+            Action::make()
                 ->name('preview')
                 ->label('Preview')
                 ->color('gray')
                 ->openUrlInNewTab()
                 ->url(fn (Article $record) => route('knowledge', ['slug' => $record->slug])),
-            Actions\DeleteAction::make(),
+            DeleteAction::make(),
         ];
     }
 }

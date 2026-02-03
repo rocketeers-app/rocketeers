@@ -1,7 +1,6 @@
-import { defineConfig } from 'vite';
-import laravel, { refreshPaths } from 'laravel-vite-plugin'
-import tailwindcss from 'tailwindcss';
-import tailwindConfig from './tailwind.web.config.cjs';
+import { defineConfig } from "vite";
+import tailwindcss from '@tailwindcss/vite';
+import laravel, { refreshPaths } from "laravel-vite-plugin";
 
 export default defineConfig({
     plugins: [
@@ -14,12 +13,6 @@ export default defineConfig({
             ],
             refresh: true,
         }),
+        tailwindcss(),
     ],
-    css: {
-        postcss: {
-            plugins: [
-                tailwindcss(tailwindConfig),
-            ],
-        },
-    },
 });

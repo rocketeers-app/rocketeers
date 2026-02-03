@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+/* Tailwind CSS v4 @source directives */
+@source '../views/**/*';
+
+@plugin '@tailwindcss/typography';
 
 ol.table-of-contents {
     margin-left: 0;

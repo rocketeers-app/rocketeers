@@ -1,1 +1,9 @@
-@import '../../../../vendor/filament/filament/resources/css/theme.css';
+@import 'tailwindcss';
+@import '../../../../vendor/filament/filament/resources/css/index.css';
+
+/* Tailwind CSS v4 @source directives - tell Tailwind where to scan for classes */
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+@source '../../../../resources/views/components/**/*';
+@source '../../../../resources/views/livewire/**/*';
+@source '../../../../app/Livewire/**/*';
