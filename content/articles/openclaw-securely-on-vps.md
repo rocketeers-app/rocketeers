@@ -1,6 +1,6 @@
 ---
-title: "How to Setup OpenClaw on VPS Securely"
-pageTitle: "How to Setup OpenClaw on VPS Securely: The Complete 2026 Guide"
+title: "How to setup OpenClaw securely on your own VPS"
+pageTitle: "How to setup OpenClaw securely on VPS: The Complete 2026 Guide"
 slug: setup-openclaw-vps-securely
 category: Security
 intro: OpenClaw is a powerful open-source AI assistant that runs on your own infrastructure. Learn how to deploy it securely on a VPS to avoid common security pitfalls.
