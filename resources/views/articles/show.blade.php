@@ -1,11 +1,11 @@
 <x-page
-    :title="$article->title"
+    :title="$article->pageTitle ?? $article->title"
     :description="strip_tags($article->intro)"
 >
     <div class="max-w-screen-md mx-auto">
         <div class="max-w-xl mx-auto text-center">
             <h2 class="mb-4 text-sm font-bold tracking-wide text-gray-600 uppercase md:text-xl">Knowledge</h2>
-            <h1 class="mb-4 text-2xl font-extrabold leading-tight text-white md:text-5xl">{{ $article->title }}</h1>
+            <h1 class="mb-4 text-2xl font-extrabold leading-tight text-white md:text-5xl">{{ $article->pageTitle }}</h1>
             <h3 class="mb-4"><a href="{{ route('knowledge', ['slug' => str_slug($article->category)]) }}" class="text-xl font-extrabold text-gray-600 md:text-2xl">#{{ str_replace(' ', '', $article->category) }}</a></h3>
             <div class="mb-10">
                 @if($article->intro)

@@ -23,8 +23,8 @@ class Article extends Model implements Feedable, Orbit, Sitemapable
     protected $guarded = [];
 
     protected $casts = [
-        'published_at' => 'date:Y-m-d',
-        'updated_at' => 'date:Y-m-d',
+        "published_at" => "date:Y-m-d",
+        "updated_at" => "date:Y-m-d",
     ];
 
     protected static function booted(): void
@@ -32,14 +32,14 @@ class Article extends Model implements Feedable, Orbit, Sitemapable
         static::saved(function () {
             defer(function () {
                 sleep(1);
-                Artisan::call('orbit:clear', ['--force' => true]);
+                Artisan::call("orbit:clear", ["--force" => true]);
             });
         });
     }
 
     public function getKeyName()
     {
-        return 'slug';
+        return "slug";
     }
 
     public function getOrbitDriver(): string
@@ -49,17 +49,18 @@ class Article extends Model implements Feedable, Orbit, Sitemapable
 
     public function schema(Blueprint $table): void
     {
-        $table->string('title');
-        $table->string('slug');
-        $table->string('category')->nullable();
-        $table->text('intro')->nullable();
-        $table->text('content')->nullable();
-        $table->date('published_at')->nullable();
+        $table->string("title");
+        $table->string("pageTitle")->nullable();
+        $table->string("slug");
+        $table->string("category")->nullable();
+        $table->text("intro")->nullable();
+        $table->text("content")->nullable();
+        $table->date("published_at")->nullable();
     }
 
     public function scopePublished($query)
     {
-        return $query->whereNotNull('published_at');
+        return $query->whereNotNull("published_at");
     }
 
     public function toFeedItem(): FeedItem
@@ -70,19 +71,17 @@ class Article extends Model implements Feedable, Orbit, Sitemapable
             ->summary($this->content)
             ->updated($this->updated_at ?? $this->published_at)
             ->link($this->url)
-            ->authorName('Mark van Eijk');
+            ->authorName("Mark van Eijk");
     }
 
     public function getFeedItems(): Collection
     {
-        return Article::published()
-            ->orderByDesc('published_at')
-            ->get();
+        return Article::published()->orderByDesc("published_at")->get();
     }
 
     public function getUrlAttribute()
     {
-        return route('knowledge', ['slug' => $this->attributes['slug']]);
+        return route("knowledge", ["slug" => $this->attributes["slug"]]);
     }
 
     public function toSitemapTag(): Url|string|array
